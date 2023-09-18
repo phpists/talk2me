@@ -67,12 +67,12 @@ $('.quantity_inner .quantity').bind("change keyup input click", function() {
 });
 //конец инпут +-
 // начало код срабатывания бургер меню на чистом javascript
-var burgerCtr = document.querySelector("#burger-menu");
-var menuCtr = document.querySelector("#mobile-menu");
-burgerCtr.addEventListener("click", function () {
-  this.classList.toggle("active");
-  menuCtr.classList.toggle("show_mobile_menu");
-});
+// var burgerCtr = document.querySelector("#burger-menu");
+// var menuCtr = document.querySelector("#mobile-menu");
+// burgerCtr.addEventListener("click", function () {
+//   this.classList.toggle("active");
+//   menuCtr.classList.toggle("show_mobile_menu");
+// });
 // конец бургера
 
 // ---------------------------------------------------------------------
@@ -220,7 +220,7 @@ let tabBlock = document.querySelectorAll('.tabs');
 tabBlock.forEach(element => {
   let tabsParent = element.querySelector('ul');
   let tabs = tabsParent.querySelectorAll('li');
-  let tabsContent = element.querySelectorAll('div');
+  let tabsContent = element.querySelectorAll('.tabs__content');
 
   tabHideContent();
   tabShowContent();
