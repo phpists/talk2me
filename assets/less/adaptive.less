@@ -8,7 +8,34 @@
   }
 }
 
+@media (min-width: 1221px) {
+  .specialists .dropdown-firststyle {
+    display: none !important;
+  }
+
+  .swiper-pagination-specialists {
+    display: none;
+  }
+}
+
 @media (max-width: 1220px) {
+  .history {
+    margin-bottom: 0 !important;
+  }
+
+  .sertificates-normal {
+    margin-bottom: 70px;
+  }
+
+  .sertificates-normal .title {
+    font-size: 28px;
+    margin-bottom: 11px;
+  }
+
+  .mySwiperSpecialists {
+    padding-bottom: 38px !important;
+  }
+
   .wrapper {
     padding: 0 50px;
   }
@@ -687,7 +714,7 @@
   }
 
   .specialists .specialists-list {
-    margin: 0 auto 105px 48px;
+    margin: 0 auto 0 0 !important;
     overflow: hidden;
   }
 
@@ -1240,6 +1267,14 @@
 }
 
 @media (max-width: 900px) {
+  .sertificates-normal .arrows {
+    display: none;
+  }
+
+  .swiperSertificates-pagination {
+    margin-top: 0 !important;
+  }
+
   .help-list .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px 40px;
@@ -1327,6 +1362,10 @@
     width: 100%;
     // overflow: hidden;
   }
+
+  .mobile-descr {
+    display: none !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 899px) {
@@ -1342,12 +1381,24 @@
     // overflow: hidden;
   }
 }
-@media (min-width: 769px){
-  .mySwiper{
+
+@media (min-width: 769px) {
+  .mySwiper {
     overflow: visible !important;
   }
 }
+
 @media (max-width: 768px) {
+  .mySwiperSpecialists {
+    .swiper-slide {
+      min-width: 300px;
+
+      .specialists .specialist-card {
+        min-width: 300px;
+      }
+    }
+  }
+
   .help-list .cards {
     gap: unset;
     padding: 0;
@@ -1423,5 +1474,15 @@
     background-size: auto 381px;
     background-position-y: 0;
     position: relative;
+  }
+}
+
+@media (max-width: 480px) {
+  .mySwiperSertificates .swiper-wrapper .swiper-slide-active {
+    transform: translateZ(0);
+  }
+
+  .sertificates-normal {
+    padding: 0 50px;
   }
 }

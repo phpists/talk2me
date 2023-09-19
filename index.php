@@ -652,25 +652,84 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
             и получите <b class="mx-1">скидку 20%</b> на первую сессию
           </div>
         </div>
-        <div class="step">
-          <div class="status-title"><b>1</b> из 9</div>
-          <div class="title">Как вас зовут?</div>
-          <input type="text" class="step-input" placeholder="ФИО" />
-          <div class="status-info">
-            Ваше имя или псевдоним, будет доступно вашему психологу
-          </div>
-          <div class="flex items-center step-footer">
-            <div class="progress-wrapper">
-              <div class="progress">
-                <div style="width: 20%"></div>
+        <div class="swiper mySwiperQuestion">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="step">
+                <div class="status-title"><b>1</b> из 9</div>
+                <div class="title">Как вас зовут?</div>
+                <input type="text" class="step-input" placeholder="ФИО" />
+                <div class="status-info">
+                  Ваше имя или псевдоним, будет доступно вашему психологу
+                </div>
+                <div class="flex items-center step-footer">
+                  <div class="progress-wrapper">
+                    <div class="progress">
+                      <div style="width: 11%"></div>
+                    </div>
+                    <div class="progress-title">осталось еще <b>8 вопросов</b></div>
+                  </div>
+                  <div class="flex items-center btns one-btn">
+                    <button class="next-btn flex items-center mySwiperQuestion-next">
+                      Далее <img src="./assets/img/next-arrow.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div class="progress-title">осталось еще <b>8 вопросов</b></div>
             </div>
-            <div class="flex items-center btns">
-              <img src="./assets/img/back.svg" alt="" class="back-btn" />
-              <button class="next-btn flex items-center">
-                Далее <img src="./assets/img/next-arrow.svg" alt="" />
-              </button>
+            <div class="swiper-slide">
+              <div class="step">
+                <div class="status-title"><b>2</b> из 9</div>
+                <div class="title">Сколько вам лет?</div>
+                <input type="text" class="step-input" placeholder="16 или больше" />
+                <div class="status-info">
+                Для получения услуг вам должно быть 16 или больше лет
+                </div>
+                <div class="flex items-center step-footer">
+                  <div class="progress-wrapper">
+                    <div class="progress">
+                      <div style="width: 22%"></div>
+                    </div>
+                    <div class="progress-title">осталось еще <b>7 вопросов</b></div>
+                  </div>
+                  <div class="flex items-center btns">
+                    <img src="./assets/img/back.svg" alt="" class="back-btn mySwiperQuestion-prev" />
+                    <button class="next-btn flex items-center mySwiperQuestion-next">
+                      Далее <img src="./assets/img/next-arrow.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="step">
+                <div class="status-title"><b>3</b> из 9</div>
+                <div class="title">Был ли у вас опыт терапии?</div>
+                <div class="radio-items">
+                  <label class="container-radio active">Да
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                  <label class="container-radio">Нет
+                    <input type="radio" name="radio">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                </div>
+                <div class="flex items-center step-footer">
+                  <div class="progress-wrapper">
+                    <div class="progress">
+                      <div style="width: 33%"></div>
+                    </div>
+                    <div class="progress-title">осталось еще <b>6 вопросов</b></div>
+                  </div>
+                  <div class="flex items-center btns">
+                    <img src="./assets/img/back.svg" alt="" class="back-btn mySwiperQuestion-prev" />
+                    <button class="next-btn flex items-center mySwiperQuestion-next">
+                      Далее <img src="./assets/img/next-arrow.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1058,9 +1117,25 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
             <li class="tabs__item">Коуч</li>
           </ul>
         </div>
-        <div class="specialists-all wrapper">
-        все специалисты <img src="./assets/img/select-arrow.svg" alt="" />
-      </div>
+        <div class="custom-select dropdown-firststyle">
+          <select>
+            <option value="0">Психолог</option>
+            <option value="1">Семейный психолог</option>
+            <option value="2">Коуч</option>
+            <option value="3">Подростковый психолог</option>
+            <option value="4">Детский психолог</option>
+            <option value="5">Гипнотерапевт</option>
+            <option value="6">Подростковый психолог</option>
+            <option value="7">Детский психолог</option>
+            <option value="8">Детский психолог</option>
+            <option value="9">Детский психолог</option>
+            <option value="10">Детский психолог</option>
+            <option value="11">Детский психолог</option>
+          </select>
+        </div>
+        <a href="#" class="specialists-all wrapper">
+          все специалисты <img src="./assets/img/select-arrow.svg" alt="" />
+        </a>
         <div class="tabs__content">
           <div class="specialists-list">
             <div class="slider-container"></div>
@@ -1077,7 +1152,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1089,10 +1164,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1107,7 +1182,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1119,10 +1194,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1137,7 +1212,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1149,10 +1224,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1167,7 +1242,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1179,10 +1254,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1197,7 +1272,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1209,10 +1284,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1227,7 +1302,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1239,10 +1314,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1257,7 +1332,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1269,10 +1344,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1287,7 +1362,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1299,10 +1374,10 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
@@ -1317,7 +1392,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                           <img src="./assets/img/stars.svg" alt="" />
                         </div>
                       </div>
-                      <div class="reviews-link">250 отзывов</div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
                     </div>
                     <div class="name">
                       Андреева <br />
@@ -1329,14 +1404,15 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="directions-item">Направление 1</div>
                     <div class="directions-item">Направление 2</div>
                     <div class="directions-item">Направление 3</div>
-                    <div class="directions-show-all">смотреть все направления</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
                     <div class="flex items-center">
-                      <button class="specialist-more-btn">подробнее</button>
-                      <button class="specialist-sing-btn">записаться</button>
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination-specialists"></div>
             </div>
           </div>
           <div class="specialists-arrows flex items-center justify-center wrapper">
@@ -1345,1136 +1421,1140 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
           </div>
         </div>
         <div class="tabs__content">
-        <div class="specialists-list">
-        <div class="slider-container"></div>
-        <div class="swiper mySwiperSpecialists">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+          <div class="specialists-list">
+            <div class="slider-container"></div>
+            <div class="swiper mySwiperSpecialists">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
-                </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
                 </div>
               </div>
+              <div class="swiper-pagination-specialists"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="specialists-arrows flex items-center justify-center wrapper">
-        <div class="arrow swiper-prev"></div>
-        <div class="arrow swiper-next"></div>
-      </div>
+          <div class="specialists-arrows flex items-center justify-center wrapper">
+            <div class="arrow swiper-prev"></div>
+            <div class="arrow swiper-next"></div>
+          </div>
         </div>
         <div class="tabs__content">
-        <div class="specialists-list">
-        <div class="slider-container"></div>
-        <div class="swiper mySwiperSpecialists">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+          <div class="specialists-list">
+            <div class="slider-container"></div>
+            <div class="swiper mySwiperSpecialists">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
-                </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
                 </div>
               </div>
+              <div class="swiper-pagination-specialists"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="specialists-arrows flex items-center justify-center wrapper">
-        <div class="arrow swiper-prev"></div>
-        <div class="arrow swiper-next"></div>
-      </div>
+          <div class="specialists-arrows flex items-center justify-center wrapper">
+            <div class="arrow swiper-prev"></div>
+            <div class="arrow swiper-next"></div>
+          </div>
         </div>
         <div class="tabs__content">
-        <div class="specialists-list">
-        <div class="slider-container"></div>
-        <div class="swiper mySwiperSpecialists">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+          <div class="specialists-list">
+            <div class="slider-container"></div>
+            <div class="swiper mySwiperSpecialists">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
-                </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
                 </div>
               </div>
+              <div class="swiper-pagination-specialists"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="specialists-arrows flex items-center justify-center wrapper">
-        <div class="arrow swiper-prev"></div>
-        <div class="arrow swiper-next"></div>
-      </div>
+          <div class="specialists-arrows flex items-center justify-center wrapper">
+            <div class="arrow swiper-prev"></div>
+            <div class="arrow swiper-next"></div>
+          </div>
         </div>
         <div class="tabs__content">
-        <div class="specialists-list">
-        <div class="slider-container"></div>
-        <div class="swiper mySwiperSpecialists">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+          <div class="specialists-list">
+            <div class="slider-container"></div>
+            <div class="swiper mySwiperSpecialists">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
                 </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="specialist-card">
-                <div class="photo"></div>
-                <div class="header">
-                  <div class="rate-info">
-                    <div class="rate-title">Средняя оценка</div>
-                    <div class="flex">
-                      <div class="rate-value">5/5</div>
-                      <img src="./assets/img/stars.svg" alt="" />
+                <div class="swiper-slide">
+                  <div class="specialist-card">
+                    <div class="photo"></div>
+                    <div class="header">
+                      <div class="rate-info">
+                        <div class="rate-title">Средняя оценка</div>
+                        <div class="flex">
+                          <div class="rate-value">5/5</div>
+                          <img src="./assets/img/stars.svg" alt="" />
+                        </div>
+                      </div>
+                      <a href="#" class="reviews-link">250 отзывов</a>
+                    </div>
+                    <div class="name">
+                      Андреева <br />
+                      Оксана Валерьевна
+                    </div>
+                    <div class="role">Психолог, психолог</div>
+                    <div class="experience">Опыт работы - 6 лет</div>
+                    <div class="directions-title">Направления работы:</div>
+                    <div class="directions-item">Направление 1</div>
+                    <div class="directions-item">Направление 2</div>
+                    <div class="directions-item">Направление 3</div>
+                    <a href="#" class="directions-show-all">смотреть все направления</a>
+                    <div class="flex items-center">
+                      <a href="#" class="specialist-more-btn">подробнее</a>
+                      <a href="#" class="specialist-sing-btn">записаться</a>
                     </div>
                   </div>
-                  <div class="reviews-link">250 отзывов</div>
-                </div>
-                <div class="name">
-                  Андреева <br />
-                  Оксана Валерьевна
-                </div>
-                <div class="role">Психолог, психолог</div>
-                <div class="experience">Опыт работы - 6 лет</div>
-                <div class="directions-title">Направления работы:</div>
-                <div class="directions-item">Направление 1</div>
-                <div class="directions-item">Направление 2</div>
-                <div class="directions-item">Направление 3</div>
-                <div class="directions-show-all">смотреть все направления</div>
-                <div class="flex items-center">
-                  <button class="specialist-more-btn">подробнее</button>
-                  <button class="specialist-sing-btn">записаться</button>
                 </div>
               </div>
+              <div class="swiper-pagination-specialists"></div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="specialists-arrows flex items-center justify-center wrapper">
-        <div class="arrow swiper-prev"></div>
-        <div class="arrow swiper-next"></div>
-      </div>
+          <div class="specialists-arrows flex items-center justify-center wrapper">
+            <div class="arrow swiper-prev"></div>
+            <div class="arrow swiper-next"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -2513,55 +2593,6 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
           <span>тест на толерантность и умение работать <br />
             с уязвимыми группами</span>
         </div>
-      </div>
-    </section>
-    <section class="info-block-2">
-      <div class="info-content desktop">
-        <div class="expert"></div>
-        <div class="title">
-          Сервис, созданный <br />
-          <span>психологами</span>
-          <img src="./assets/img/verify-icon.svg" alt="" />
-        </div>
-        <div class="quote-wrapper">
-          <img src="./assets/img/quote.svg" alt="" class="quote-icon" />
-          <div class="quote-title">
-            «Мы довольно строго отбираем психологов и работаем только с теми,
-            кого смело могли бы порекомендовать собственным друзьям»
-          </div>
-          <div class="divider"></div>
-          <div class="name">Екатерина Артеменко</div>
-          <div class="desrc">
-            Гештальт-терапевт, супервизор, член Общества Практикующих
-            психологов «Гештальт-подход», Комьюнити директор «Ясно»
-          </div>
-        </div>
-        <div class="dots-wrapper">
-          <img src="./assets/img/dots.svg" alt="" class="dots" />
-          <button class="select-btn">подобрать психолога</button>
-        </div>
-      </div>
-      <div class="info-content-mobile">
-        <div class="expert"></div>
-        <img src="./assets/img/verify-icon.svg" alt="" />
-        <div class="title">
-          Сервис, созданный <br /><span> психологами</span>
-        </div>
-        <div class="quote-wrapper">
-          <img src="./assets/img/quote.svg" alt="" class="quote-icon" />
-          <div class="quote-title">
-            «Мы довольно строго отбираем психологов и работаем только с теми,
-            кого смело могли бы порекомендовать собственным друзьям»
-          </div>
-          <div class="divider"></div>
-          <div class="name">Екатерина Артеменко</div>
-          <div class="desrc">
-            Гештальт-терапевт, супервизор, член Общества Практикующих
-            психологов «Гештальт-подход», Комьюнити директор «Ясно»
-          </div>
-        </div>
-        <img src="./assets/img/dots.svg" alt="" class="dots" />
-        <button class="select-btn">подобрать психолога</button>
       </div>
     </section>
     <section class="info-block-3">
@@ -2644,11 +2675,11 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
         <img src="./assets/img/question-info-mobile.svg" alt="" class="mobile" />
       </div>
       <div class="info-socmedia-list">
-        <img src="./assets/img/telegram.svg" alt="" />
-        <img src="./assets/img/watsup.svg" alt="" />
-        <img src="./assets/img/chat.svg" alt="" />
+        <a href="#"><img src="./assets/img/telegram.svg" alt="" /></a>
+        <a href="#"><img src="./assets/img/watsup.svg" alt="" /></a>
+        <a href="#"><img src="./assets/img/chat.svg" alt="" /></a>
       </div>
-      <div class="info-text">Посмотреть все контакты</div>
+      <a href="#" class="info-text">Посмотреть все контакты</a>
     </section>
     <section class="info-block-5 wrapper">
       <div class="photo"></div>
@@ -2670,7 +2701,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
         <div class="flex items-center w-full">
           <div class="rate-main">4.8</div>
           <div class="rate-descr">
-            На основании <span>1500 отзывов</span> <br />
+            На основании <a href="#">1500 отзывов</a> <br />
             и 150 оценок
           </div>
         </div>
@@ -2687,8 +2718,21 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
       </div>
       <div class="sort-wrapper">
         <div class="sort-title">Сортировать:</div>
-        <div class="sort-dropdown">
-          Сначала новые <img src="./assets/img/select-arrow.svg" alt="" />
+        <div class="custom-select dropdown-firststyle">
+          <select>
+            <option value="0">Сначала новые</option>
+            <option value="1">Семейный психолог</option>
+            <option value="2">Коуч</option>
+            <option value="3">Подростковый психолог</option>
+            <option value="4">Детский психолог</option>
+            <option value="5">Гипнотерапевт</option>
+            <option value="6">Подростковый психолог</option>
+            <option value="7">Детский психолог</option>
+            <option value="8">Детский психолог</option>
+            <option value="9">Детский психолог</option>
+            <option value="10">Детский психолог</option>
+            <option value="11">Детский психолог</option>
+          </select>
         </div>
       </div>
     </section>
@@ -2791,7 +2835,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="from">из 5</div>
                   </div>
                 </div>
-                <div class="link">в отзывах Google</div>
+                <a href="#" class="link">в отзывах Google</a>
               </div>
             </div>
           </div>
@@ -2812,7 +2856,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="from">из 5</div>
                   </div>
                 </div>
-                <div class="link">в отзывах ZOON</div>
+                <a href="#" class="link">в отзывах ZOON</a>
               </div>
             </div>
           </div>
@@ -2833,7 +2877,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="from">из 5</div>
                   </div>
                 </div>
-                <div class="link">в отзывах 2GIS</div>
+                <a href="#" class="link">в отзывах 2GIS</a>
               </div>
             </div>
           </div>
@@ -2854,7 +2898,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                     <div class="from">из 5</div>
                   </div>
                 </div>
-                <div class="link">в отзывах Irecommend</div>
+                <a href="#" class="link">в отзывах Irecommend</a>
               </div>
             </div>
           </div>
@@ -2912,62 +2956,36 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
         </div>
       </div>
     </section>
-    <section class="serificates">
+    <section class="sertificates-normal">
       <div class="title">Сертификаты и дипломы</div>
-      <div class="subtitle">
-        <img src="./assets/img/magnifisent-glass.svg" alt="">
-        Кликните, чтобы увеличить
-      </div>
-      <div class="relative">
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none"
-          class="prev-arrow">
-          <circle cx="23" cy="22.8027" r="22.5" fill="url(#paint0_linear_488_56108)" />
-          <path d="M27.543 33.3027L17.4995 22.8027L27.543 12.3027" stroke="white" stroke-width="1.82609"
-            stroke-linecap="round" />
-          <defs>
-            <linearGradient id="paint0_linear_488_56108" x1="4" y1="9.30273" x2="37.5" y2="41.8027"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="#4E869F" />
-              <stop offset="0.479167" stop-color="#71AECA" />
-              <stop offset="1" stop-color="#4E869F" />
-            </linearGradient>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none"
-          class="next-arrow">
-          <circle cx="23" cy="22.8027" r="22.5" fill="url(#paint0_linear_488_56108)" />
-          <path d="M18.9766 33.3027L29.02 22.8027L18.9766 12.3027" stroke="white" stroke-width="1.82609"
-            stroke-linecap="round" />
-          <defs>
-            <linearGradient id="paint0_linear_488_56108" x1="4" y1="9.30273" x2="37.5" y2="41.8027"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="#4E869F" />
-              <stop offset="0.479167" stop-color="#71AECA" />
-              <stop offset="1" stop-color="#4E869F" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <div class="list">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+      <span class="mobile-descr">Кликните, чтобы увеличить</span>
+      <div class="swiper mySwiperSertificates">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./assets/img/sertificat-slide.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/img/sertificat-slide.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/img/sertificat-slide.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/img/sertificat-slide.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/img/sertificat-slide.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/img/sertificat-slide.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./assets/img/sertificat-slide.jpg" alt=""></div>
+        </div>
+        <div class="arrows">
+          <div class="swiperSertificates-prev"></div>
+          <div class="swiperSertificates-next"></div>
         </div>
       </div>
-      <img src="./assets/img/dots.svg" alt="" class="dots" />
+      <div class="swiperSertificates-pagination"></div>
     </section>
     <section class="faq">
       <div class="title">
-        Ответы на
-        <span>часто <br />
-          задаваемые вопросы
-        </span>
+        Ответы на <span>часто задаваемые вопросы</span>
       </div>
       <div class="faq-cards wrapper">
-        <div class="faq-card active">
+        <div class="faq-card">
           <div class="faq-card-header">
             <div class="faq-title">Что спрашивает психолог на приеме?</div>
-            <img src="./assets/img/close-faq.svg" alt="" />
+            <img src="./assets/img/open-faq.svg" alt="" />
           </div>
-          <div class="divider"></div>
           <div class="text">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -2983,11 +3001,14 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
             <div class="faq-title">Что спрашивает психолог на приеме?</div>
             <img src="./assets/img/open-faq.svg" alt="" />
           </div>
-        </div>
-        <div class="faq-card">
-          <div class="faq-card-header">
-            <div class="faq-title">Что спрашивает психолог на приеме?</div>
-            <img src="./assets/img/open-faq.svg" alt="" />
+          <div class="text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
           </div>
         </div>
         <div class="faq-card">
@@ -2995,11 +3016,44 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
             <div class="faq-title">Что спрашивает психолог на приеме?</div>
             <img src="./assets/img/open-faq.svg" alt="" />
           </div>
+          <div class="text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
         </div>
         <div class="faq-card">
           <div class="faq-card-header">
             <div class="faq-title">Что спрашивает психолог на приеме?</div>
             <img src="./assets/img/open-faq.svg" alt="" />
+          </div>
+          <div class="text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-card-header">
+            <div class="faq-title">Что спрашивает психолог на приеме?</div>
+            <img src="./assets/img/open-faq.svg" alt="" />
+          </div>
+          <div class="text">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum."
           </div>
         </div>
       </div>
@@ -3007,16 +3061,18 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
     <section class="about">
       <div class="title">О нас пишут</div>
       <div class="list">
-        <img src="./assets/img/Logo.png" alt="" />
-        <img src="./assets/img/Logo (1).png" alt="" />
-        <img src="./assets/img/Logo (2).png" alt="" />
-        <img src="./assets/img/Logo (3).png" alt="" />
-        <img src="./assets/img/Logo (4).png" alt="" />
-        <img src="./assets/img/Logo.png" alt="" />
-        <img src="./assets/img/Logo (1).png" alt="" />
-        <img src="./assets/img/Logo (2).png" alt="" />
-        <img src="./assets/img/Logo (3).png" alt="" />
-        <img src="./assets/img/Logo (4).png" alt="" />
+      </div>
+      <div class='marquee' style='overflow:hidden'>
+        <div class="img"><img src="./assets/img/Logo.png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (1).png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (2).png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (3).png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (4).png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo.png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (1).png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (2).png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (3).png" alt="" /></div>
+        <div class="img"><img src="./assets/img/Logo (4).png" alt="" /></div>
       </div>
     </section>
     <section class="articles wrapper">
@@ -3117,50 +3173,50 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
       <div class="wrapper content">
         <div class="title">Talk2me</div>
         <div class="col">
-          <div class="link">Услуги</div>
-          <div class="link">Специалисты</div>
-          <div class="link">Цены</div>
-          <div class="link">О нас</div>
-          <div class="link">Блог</div>
+          <a href="#" class="link">Услуги</a>
+          <a href="#" class="link">Специалисты</a>
+          <a href="#" class="link">Цены</a>
+          <a href="#" class="link">О нас</a>
+          <a href="#" class="link">Блог</a>
         </div>
         <div class="col socmedias-wrapper socmedias-mobile" style="display: none">
           <div class="link col-title">Соц. сети:</div>
           <div class="socmedias">
-            <img src="./assets/img/vk.svg" alt="" />
-            <img src="./assets/img/youtube.svg" alt="" />
-            <img src="./assets/img/instagram.svg" alt="" />
-            <img src="./assets/img/twitter.svg" alt="" />
-            <img src="./assets/img/facebook.svg" alt="" />
+            <a href="#"><img src="./assets/img/vk.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/youtube.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/instagram.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/twitter.svg" alt="" /></a>
+            <a href="#"><img src="./assets/img/facebook.svg" alt="" /></a>
           </div>
         </div>
         <div class="col contacts">
-          <div class="link col-title">Контакты</div>
-          <div class="link">+7 (000) 000-00-00</div>
+          <a href="#" class="link col-title">Контакты</a>
+          <a href="tel:+70000000000" class="link">+7 (000) 000-00-00</a>
           <div class="link">
-            <div class="footer-card">
+            <a href="#" class="footer-card">
               <div class="card-title email">Электронная почта</div>
               <div class="descr">info@sitename.ru</div>
-            </div>
+            </a>
           </div>
           <div class="link">
-            <div class="footer-card">
+            <a href="#" class="footer-card">
               <div class="card-title">Адрес</div>
               <div class="descr">
                 г. Алматы ул. Петровско <br />
                 разумовская, 145, оф. 34
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="flex flex-col justify-between h-full">
           <div class="col socmedias-wrapper">
             <div class="link col-title">Соц. сети:</div>
             <div class="socmedias">
-              <img src="./assets/img/vk.svg" alt="" />
-              <img src="./assets/img/youtube.svg" alt="" />
-              <img src="./assets/img/instagram.svg" alt="" />
-              <img src="./assets/img/twitter.svg" alt="" />
-              <img src="./assets/img/facebook.svg" alt="" />
+              <a href="#"><img src="./assets/img/vk.svg" alt="" /></a>
+              <a href="#"><img src="./assets/img/youtube.svg" alt="" /></a>
+              <a href="#"><img src="./assets/img/instagram.svg" alt="" /></a>
+              <a href="#"><img src="./assets/img/twitter.svg" alt="" /></a>
+              <a href="#"><img src="./assets/img/facebook.svg" alt="" /></a>
             </div>
           </div>
           <div class="company-card">
