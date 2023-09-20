@@ -43,31 +43,99 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
 </head>
 
 <body>
-  <div class="wrapper-container-signin">
+  <div class="wrapper-container">
     <div class="main-content">
       <header class="signin-header">
-        <div class="logo">
-          <img src="./assets/img/logo.svg" alt="">
+        <div class="container-item">
+          <div class="logo">
+            <img src="./assets/img/logo.svg" alt="">
+          </div>
         </div>
       </header>
       <main>
-        <div class="container">
-          <div class="title">
-            <span>Регистрация</span>
-          </div>
-          <div class="form-window">
-            <div class="tabs">
-              <a href="#" class="tab">Войти</a>
-              <a href="#" class="tab active">Зарегистрироваться</a>
+        <section class="sec-generalquestions">
+          <div class="container-item">
+            <div class="title">
+              <h2>Общие вопросы</h2>
             </div>
-            <div class="form-content">
-              <div class="done-content">
-                <span>Вы успешно зарегистрировались на платформе TALK2ME!</span>
-                <a href="#">перейти в личный кабинет</a>
+            <form action="#">
+              <label class="main-label">
+                Как Вас зовут?
+                <input type="text" placeholder="ФИО">
+                <span class="input-descr">Ваше имя или псевдоним, будет доступно Вашему клиенту</span>
+              </label>
+              <label class="main-label">
+                Сколько Вам лет?
+                <input type="number" placeholder="16 или больше">
+                <span class="input-descr">Для предоставления услуг вам должно быть 16 или больше лет</span>
+              </label>
+              <label class="main-label">
+                Укажите Ваш пол
+                <div class="radio-items">
+                  <label class="container-radio active">Женщина
+                    <input type="radio" checked="checked" name="radio1">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                  <label class="container-radio">Мужчина
+                    <input type="radio" name="radio1">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                </div>
+              </label>
+              <div class="mainlabel-items">
+                <label class="mainlabel-item">
+                  Есть ли у Вас опыт работы?
+                  <div class="radio-items">
+                    <label class="container-radio active">Да
+                      <input type="radio" checked="checked" name="radio2" onclick="toggleExperienceInput(true)">
+                      <span class="checkmark-radio"></span>
+                    </label>
+                    <label class="container-radio">Нет
+                      <input type="radio" name="radio2" onclick="toggleExperienceInput(false)">
+                      <span class="checkmark-radio"></span>
+                    </label>
+                  </div>
+                </label>
+                <label class="mainlabel-item" id="mainlabel">
+                  Укажите Ваш опыт работы
+                  <label id="childlabel">
+                    <input type="number" id="experienceInput">
+                    Лет
+                  </label>
+                </label>
               </div>
-            </div>
+              <label class="main-label parent-checkboxes">
+                <div class="mainlabel-checkboxitem">
+                  Email
+                  <div class="checkbox-container">
+                    <input type="email" placeholder="Введите Вашу электронную почту">
+                    <label class="container-checkbox">Подписаться на новости сервиса
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark-checkbox"></span>
+                    </label>
+                  </div>
+                </div>
+              </label>
+              <label class="main-label parent-checkboxes">
+                <div class="mainlabel-checkboxitem">
+                  Пароль
+                  <div class="checkbox-container">
+                    <div class="password-container">
+                      <input type="password" id="registerpassword" oninput="checkInput()">
+                      <span class="placeholder">Введите пароль, который будет использоваться для авторизации на
+                        сайте</span>
+                    </div>
+                    <label class="container-checkbox">Сгенерировать пароль автоматически
+                      <input type="checkbox">
+                      <span class="checkmark-checkbox"></span>
+                    </label>
+                  </div>
+                </div>
+              </label>
+              <button>Далее <img src="./assets/img/formarrow-next.svg" alt=""></button>
+            </form>
           </div>
-        </div>
+        </section>
       </main>
     </div>
     <footer>

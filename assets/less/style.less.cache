@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:124275:"@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:143863:"@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @charset "UTF-8";
 @-ms-viewport {
   width: device-width;
@@ -4481,6 +4481,377 @@ footer.footer .socmedias {
 .wrapper-container-signin .main-content .container .cp2-form form label:last-of-type {
   margin-bottom: 0;
 }
+.container-item {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.wrapper-container footer {
+  background: #E3E6E8;
+  backdrop-filter: blur(12.5px);
+  padding: 25px 0;
+}
+.wrapper-container footer .footer-logo {
+  color: #305F74;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.wrapper-container footer .years {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.wrapper-container footer .container {
+  max-width: 1060px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.wrapper-container footer .container .socials {
+  margin-left: auto;
+  display: flex;
+}
+.wrapper-container footer .container .socials a:not(:last-child) {
+  margin-right: 15px;
+}
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #676767;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-image: url('../img/checkbox-notactive.svg');
+  transform: translateY(-50%);
+  transition: .3s;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container-checkbox input:checked~.checkmark-checkbox {
+  background-image: url(../img/checkbox-active.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.checkmark-checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container-checkbox input:checked~.checkmark-checkbox:after {
+  display: block;
+}
+.sec-generalquestions {
+  padding-top: 85px;
+  padding-bottom: 140px;
+}
+.sec-generalquestions .container-item .title {
+  margin-bottom: 10px;
+}
+.sec-generalquestions .container-item .title h2 {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.sec-generalquestions .container-item form button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  height: 85px;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.sec-generalquestions .container-item form button img {
+  margin-left: 26px;
+}
+.sec-generalquestions .container-item form button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-generalquestions .container-item form button:hover:before {
+  opacity: 0;
+}
+.sec-generalquestions .container-item form .mainlabel-items,
+.sec-generalquestions .container-item form .main-label {
+  margin-top: 30px;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #A0A0A0;
+  display: flex;
+  flex-direction: column;
+}
+.sec-generalquestions .container-item form .mainlabel-items.parent-checkboxes,
+.sec-generalquestions .container-item form .main-label.parent-checkboxes {
+  display: flex;
+  flex-direction: row;
+}
+.sec-generalquestions .container-item form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem,
+.sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.sec-generalquestions .container-item form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container,
+.sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+  display: flex;
+  margin-top: 20px;
+}
+.sec-generalquestions .container-item form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container input,
+.sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container input {
+  width: 100%;
+  margin-top: 0;
+  margin-right: 60px;
+}
+.sec-generalquestions .container-item form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox,
+.sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox {
+  align-items: center;
+  display: flex;
+}
+.sec-generalquestions .container-item form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox input,
+.sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox input {
+  height: unset;
+  width: unset;
+  margin: 0;
+}
+.sec-generalquestions .container-item form .mainlabel-items .password-container,
+.sec-generalquestions .container-item form .main-label .password-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-right: 60px;
+}
+.sec-generalquestions .container-item form .mainlabel-items .password-container .placeholder,
+.sec-generalquestions .container-item form .main-label .password-container .placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22px;
+  color: #BFBFBF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  max-width: 414px;
+  transition: .3s;
+}
+.sec-generalquestions .container-item form .mainlabel-items .password-container input,
+.sec-generalquestions .container-item form .main-label .password-container input {
+  margin: 0;
+}
+.sec-generalquestions .container-item form .mainlabel-items .password-container input:focus+.placeholder,
+.sec-generalquestions .container-item form .main-label .password-container input:focus+.placeholder {
+  opacity: 0;
+}
+.sec-generalquestions .container-item form .mainlabel-items input,
+.sec-generalquestions .container-item form .main-label input {
+  color: #353535;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  transition: .3s;
+  height: 65px;
+  padding-left: 30px;
+  max-width: 800px;
+  margin-top: 20px;
+}
+.sec-generalquestions .container-item form .mainlabel-items input:focus,
+.sec-generalquestions .container-item form .main-label input:focus {
+  border: 0.824px solid #353535;
+}
+.sec-generalquestions .container-item form .mainlabel-items input::placeholder,
+.sec-generalquestions .container-item form .main-label input::placeholder {
+  color: #BFBFBF;
+}
+.sec-generalquestions .container-item form .mainlabel-items .input-descr,
+.sec-generalquestions .container-item form .main-label .input-descr {
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 20px;
+}
+.sec-generalquestions .container-item form .mainlabel-items .radio-items,
+.sec-generalquestions .container-item form .main-label .radio-items {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.sec-generalquestions .container-item form .mainlabel-items .radio-items .container-radio,
+.sec-generalquestions .container-item form .main-label .radio-items .container-radio {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  height: 70px;
+  width: 100%;
+  max-width: 236px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.096px;
+}
+.sec-generalquestions .container-item form .mainlabel-items .radio-items .container-radio:not(.active),
+.sec-generalquestions .container-item form .main-label .radio-items .container-radio:not(.active) {
+  background: #E5E7E9;
+  border: 1px solid #E5E7E9;
+  color: #9E9E9E;
+}
+.sec-generalquestions .container-item form .mainlabel-items .radio-items .container-radio:not(.active):hover,
+.sec-generalquestions .container-item form .main-label .radio-items .container-radio:not(.active):hover {
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  color: #212121;
+}
+.sec-generalquestions .container-item form .mainlabel-items .radio-items .container-radio .checkmark-radio,
+.sec-generalquestions .container-item form .main-label .radio-items .container-radio .checkmark-radio {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.sec-generalquestions .container-item form .mainlabel-items input[type="password"],
+.sec-generalquestions .container-item form .mainlabel-items input[type="email"],
+.sec-generalquestions .container-item form .main-label input[type="password"],
+.sec-generalquestions .container-item form .main-label input[type="email"] {
+  max-width: 600px;
+}
+.sec-generalquestions .container-item form .main-label:last-of-type {
+  border: 0;
+}
+.sec-generalquestions .container-item form .mainlabel-items {
+  flex-direction: row;
+  gap: 90px;
+}
+.sec-generalquestions .container-item form .mainlabel-items #childlabel {
+  margin-top: 20px;
+}
+.sec-generalquestions .container-item form .mainlabel-items #childlabel input {
+  margin-top: 0;
+}
+.sec-generalquestions .container-item form .mainlabel-items .mainlabel-item {
+  width: 100%;
+  transition: .3s;
+}
+.sec-generalquestions .container-item form .mainlabel-items .mainlabel-item label {
+  display: flex;
+  align-items: center;
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  transition: .3s;
+}
+.sec-generalquestions .container-item form .mainlabel-items .mainlabel-item label input {
+  margin-right: 30px;
+  max-width: 235px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.sec-generalquestions .container-item form .mainlabel-items .mainlabel-item label input:disabled {
+  background: #E5E7E9;
+}
+.sec-generalquestions .container-item form .mainlabel-items .mainlabel-item .radio-items .container-radio {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.096px;
+}
+.sec-generalquestions .container-item form .mainlabel-items .mainlabel-item .radio-items .container-radio:not(.active) {
+  background: #E5E7E9;
+  border: 1px solid #E5E7E9;
+  color: #9E9E9E;
+}
+.sec-generalquestions .container-item form .mainlabel-items .mainlabel-item .radio-items .container-radio:not(.active):hover {
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  color: #212121;
+}
 @media (max-width: 1400px) {
   .info-block-2 .info-content {
     padding-left: 500px;
@@ -5695,6 +6066,149 @@ footer.footer .socmedias {
     padding: 0 50px;
   }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+  .wrapper-container footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec-generalquestions .container-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .sec-generalquestions .container-item form .mainlabel-items {
+    flex-direction: column;
+  }
+  .sec-generalquestions .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-generalquestions {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+    flex-direction: column;
+  }
+  .sec-generalquestions .container-item form .main-label .radio-items .container-radio {
+    width: 50%;
+  }
+  .wrapper-container footer .container {
+    flex-direction: column;
+  }
+  .wrapper-container footer .container .footer-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .wrapper-container footer .container .years {
+    font-size: 16px;
+  }
+  .wrapper-container footer .container .socials {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .sec-generalquestions .container-item .title h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .sec-generalquestions .container-item form .main-label {
+    font-size: 16px;
+  }
+  .sec-generalquestions .container-item form .main-label input {
+    height: 42px;
+    margin-top: 0;
+    font-size: 10px;
+    padding-left: 20px;
+  }
+  .sec-generalquestions .container-item form .main-label .radio-items {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .main-label .input-descr {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .mainlabel-item .radio-items .container-radio,
+  .sec-generalquestions .container-item form .main-label .radio-items .container-radio {
+    height: 45px;
+    padding-left: 50px;
+    font-size: 13px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .radio-items .container-radio .checkmark-radio,
+  .sec-generalquestions .container-item form .main-label .radio-items .container-radio .checkmark-radio {
+    left: 19px;
+    width: 19px;
+    height: 19px;
+  }
+  .container-radio input:checked~.checkmark-radio,
+  .checkmark-radio,
+  .container-radio input:checked~.checkmark-radio {
+    background-size: contain;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .radio-items,
+  .sec-generalquestions .container-item form .main-label .radio-items {
+    gap: 19px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .mainlabel-item {
+    font-size: 16px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .radio-items {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items #childlabel {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items #childlabel {
+    font-size: 10px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items #childlabel input {
+    height: 42px;
+    margin-right: 10px;
+    width: 45%;
+    font-size: 10px;
+    padding-left: 20px;
+  }
+  .sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox {
+    font-size: 10px;
+    padding-left: 28px;
+  }
+  .checkmark-checkbox {
+    width: 17px;
+    height: 17px;
+  }
+  .container-checkbox {
+    margin-top: 11px;
+  }
+  .sec-generalquestions .container-item form .main-label .password-container .placeholder {
+    font-size: 10px;
+    width: 90%;
+  }
+  .sec-generalquestions .container-item form .main-label {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border: 0;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items {
+    gap: 14px;
+    padding-bottom: 10px;
+    border: 0;
+  }
+  .sec-generalquestions .container-item form button {
+    margin-top: 68px;
+  }
+}
 @media (min-width: 320px) and (max-width: 575px) {
   .wrapper-container-signin footer {
     padding: 30px 0 40px;
@@ -5781,5 +6295,128 @@ footer.footer .socmedias {
     height: 60px;
     margin-bottom: 80px;
   }
+  .sec-generalquestions .container-item form .mainlabel-items {
+    flex-direction: column;
+  }
+  .sec-generalquestions .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-generalquestions {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+    flex-direction: column;
+  }
+  .sec-generalquestions .container-item form .main-label .radio-items .container-radio {
+    width: 50%;
+  }
+  .wrapper-container footer .container {
+    flex-direction: column;
+  }
+  .wrapper-container footer .container .footer-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .wrapper-container footer .container .years {
+    font-size: 16px;
+  }
+  .wrapper-container footer .container .socials {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .sec-generalquestions .container-item .title h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .sec-generalquestions .container-item form .main-label {
+    font-size: 16px;
+  }
+  .sec-generalquestions .container-item form .main-label input {
+    height: 42px;
+    margin-top: 0;
+    font-size: 10px;
+    padding-left: 20px;
+  }
+  .sec-generalquestions .container-item form .main-label .radio-items {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .main-label .input-descr {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .mainlabel-item .radio-items .container-radio,
+  .sec-generalquestions .container-item form .main-label .radio-items .container-radio {
+    height: 45px;
+    padding-left: 50px;
+    font-size: 13px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .radio-items .container-radio .checkmark-radio,
+  .sec-generalquestions .container-item form .main-label .radio-items .container-radio .checkmark-radio {
+    left: 19px;
+    width: 19px;
+    height: 19px;
+  }
+  .container-radio input:checked~.checkmark-radio,
+  .checkmark-radio,
+  .container-radio input:checked~.checkmark-radio {
+    background-size: contain;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .radio-items,
+  .sec-generalquestions .container-item form .main-label .radio-items {
+    gap: 19px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .mainlabel-item {
+    font-size: 16px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items .radio-items {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items #childlabel {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items #childlabel {
+    font-size: 10px;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items #childlabel input {
+    height: 42px;
+    margin-right: 10px;
+    width: 45%;
+    font-size: 10px;
+    padding-left: 20px;
+  }
+  .sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+    margin-top: 0;
+  }
+  .sec-generalquestions .container-item form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox {
+    font-size: 10px;
+    padding-left: 28px;
+  }
+  .checkmark-checkbox {
+    width: 17px;
+    height: 17px;
+  }
+  .container-checkbox {
+    margin-top: 11px;
+  }
+  .sec-generalquestions .container-item form .main-label .password-container .placeholder {
+    font-size: 10px;
+    width: 90%;
+  }
+  .sec-generalquestions .container-item form .main-label {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border: 0;
+  }
+  .sec-generalquestions .container-item form .mainlabel-items {
+    gap: 14px;
+    padding-bottom: 10px;
+    border: 0;
+  }
+  .sec-generalquestions .container-item form button {
+    margin-top: 68px;
+  }
 }
-";s:5:"files";a:6:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1695196914;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\modal.less";i:1635662832;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1650062708;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1695197008;}s:7:"updated";i:1695197009;}
+";s:5:"files";a:6:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1695231140;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\modal.less";i:1635662832;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1650062708;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1695231593;}s:7:"updated";i:1695231594;}

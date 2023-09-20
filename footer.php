@@ -227,13 +227,43 @@
 </script>
 <script>
     $('.container-radio').click(function () {
+        var $parentContainer = $(this).closest('.radio-items'); // Замените '.parent-container' на селектор вашего контейнера
         if ($(this).find('input[type="radio"]').is(':checked')) {
-            $('.container-radio').removeClass('active');
+            $parentContainer.find('.container-radio').removeClass('active');
             $(this).addClass('active');
         } else {
             $(this).removeClass('active');
         }
     });
+</script>
+<script>
+    function toggleExperienceInput(enabled) {
+        var experienceInput = document.getElementById("experienceInput");
+        experienceInput.disabled = !enabled;
+        var mainlabel = document.getElementById("mainlabel");
+        var childlabel = document.getElementById("childlabel");
+
+        if (experienceInput.disabled) {
+            mainlabel.style.color = "#A0A0A0";
+            childlabel.style.color = "#A0A0A0";
+        } else {
+            mainlabel.style.color = "#212121";
+            childlabel.style.color = "#676767";
+        }
+    }
+</script>
+<script>
+    function checkInput() {
+        const inputElement = document.getElementById("registerpassword");
+        const placeholderElement = document.querySelector(".placeholder");
+
+        if (inputElement.value.trim() !== "") {
+            placeholderElement.style.display = "none";
+        } else {
+            placeholderElement.style.display = "block";
+        }
+    }
+
 </script>
 </body>
 
