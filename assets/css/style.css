@@ -4112,6 +4112,375 @@ footer.footer .socmedias {
 .subtitle img {
   margin-right: 8px;
 }
+.wrapper-container-signin {
+  height: 100svh;
+  min-height: 1080px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-container-signin footer {
+  background: #E3E6E8;
+  backdrop-filter: blur(12.5px);
+  padding: 25px 0;
+}
+.wrapper-container-signin footer .footer-logo {
+  color: #305F74;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+.wrapper-container-signin footer .years {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.wrapper-container-signin footer .container {
+  max-width: 1060px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.wrapper-container-signin footer .container .socials {
+  margin-left: auto;
+  display: flex;
+}
+.wrapper-container-signin footer .container .socials a:not(:last-child) {
+  margin-right: 15px;
+}
+.wrapper-container-signin .main-content {
+  background-image: url('../img/lc-specialist.jpg');
+  padding-bottom: 90px;
+  min-height: 1000px;
+  height: 100%;
+}
+.wrapper-container-signin .main-content .signin-header .logo {
+  display: flex;
+  justify-content: center;
+}
+.wrapper-container-signin .main-content .container {
+  max-width: 1060px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper-container-signin .main-content .container .title {
+  margin: 40px auto 30px;
+}
+.wrapper-container-signin .main-content .container .title span {
+  color: #212121;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper-container-signin .main-content .container .btn-signin {
+  border-radius: 10px;
+  border: 2px solid #4E869F;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 320px;
+  height: 85px;
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+}
+.wrapper-container-signin .main-content .container .btn-signin:hover {
+  background: #4E869F;
+  color: #fff;
+}
+.wrapper-container-signin .main-content .container .form-window {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  width: 100%;
+}
+.wrapper-container-signin .main-content .container .form-window .tabs {
+  display: flex;
+  border-radius: 10px;
+  background: #E5E7E9;
+}
+.wrapper-container-signin .main-content .container .form-window .tabs .tab {
+  width: 50%;
+  background: #E5E7E9;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9E9E9E;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 10px 10px 0 0;
+  transition: .3s;
+}
+.wrapper-container-signin .main-content .container .form-window .tabs .tab:hover,
+.wrapper-container-signin .main-content .container .form-window .tabs .tab.active {
+  color: #fff;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+}
+.wrapper-container-signin .main-content .container .form-window .form-content {
+  filter: drop-shadow(0px 15px 20px rgba(0,0,0,0.05));
+  background: #fff;
+  padding: 40px 70px;
+  border-radius: 0 0 10px 10px;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content .done-content span {
+  color: #305F74;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content .done-content a {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  height: 85px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content .done-content a:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.wrapper-container-signin .main-content .container .form-window .form-content .done-content a:hover:before {
+  opacity: 0;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form .signin-text {
+  margin-top: 20px;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form .signin-text .auth {
+  margin-bottom: 35px;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form .signin-text span {
+  color: #353535;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  margin-right: 10px;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form .signin-text a {
+  color: #6C9165;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label {
+  color: #353535;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label:focus-within .input .icon svg path {
+  fill: #6C9165;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label .input {
+  position: relative;
+  margin-top: 7px;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label .input .icon {
+  position: absolute;
+  top: 50%;
+  left: 27px;
+  transform: translateY(-50%);
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label .input .icon svg {
+  transition: .3s;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label .input input {
+  height: 85px;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  border-radius: 10px;
+  background: #F8F8F8;
+  border: 0.824px solid #F8F8F8;
+  transition: .3s;
+  padding-left: 57px;
+  padding-right: 57px;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label .input input:focus {
+  border: 0.824px solid #353535;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form label .input input::placeholder {
+  color: #BFBFBF;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form a {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  border-bottom: 1px dashed #305F74;
+  width: max-content;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  height: 85px;
+  margin-top: 30px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.wrapper-container-signin .main-content .container .form-window .form-content form button:hover:before {
+  opacity: 0;
+}
+.wrapper-container-signin .main-content .container .changepassword-form .form-content form label {
+  margin-bottom: 0;
+}
+.wrapper-container-signin .main-content .container .changepassword-form .form-content form label span {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  margin-bottom: 15px;
+}
+.wrapper-container-signin .main-content .container .changepassword-form .form-content form label .input {
+  margin-top: 30px;
+}
+.wrapper-container-signin .main-content .container .changepassword-form .form-content form .signin-text {
+  max-width: 318px;
+}
+.wrapper-container-signin .main-content .container .changepassword-form .form-content form .signin-text p {
+  color: #9A9A9A;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+.wrapper-container-signin .main-content .container .changepassword-form .form-content form .signin-text p a {
+  color: #6C9165;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+  text-decoration-line: underline;
+  border: 0;
+}
+.wrapper-container-signin .main-content .container .confirm-password .form-content form label .input input {
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.wrapper-container-signin .main-content .container .confirm-password .form-content .signin-text {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-container-signin .main-content .container .confirm-password .form-content .signin-text span {
+  color: #9A9A9A;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+.wrapper-container-signin .main-content .container .cp2-form form label:last-of-type {
+  margin-bottom: 0;
+}
 @media (max-width: 1400px) {
   .info-block-2 .info-content {
     padding-left: 500px;
@@ -4129,6 +4498,16 @@ footer.footer .socmedias {
   }
 }
 @media (max-width: 1220px) {
+  .wrapper-container-signin .main-content {
+    min-height: unset;
+  }
+  .wrapper-container-signin {
+    min-height: unset;
+  }
+  .wrapper-container-signin footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .history {
     margin-bottom: 0 !important;
   }
@@ -5314,5 +5693,92 @@ footer.footer .socmedias {
   }
   .sertificates-normal {
     padding: 0 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 575px) {
+  .wrapper-container-signin footer {
+    padding: 30px 0 40px;
+  }
+  .wrapper-container-signin footer .container {
+    flex-direction: column;
+  }
+  .wrapper-container-signin footer .footer-logo {
+    margin: 0 0 10px;
+  }
+  .wrapper-container-signin footer .container .socials {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .wrapper-container-signin .main-content .container .btn-signin {
+    height: 60px;
+    max-width: 220px;
+    color: #4E869F;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.33px;
+    text-transform: uppercase;
+    background: #fff;
+    margin-top: 30px;
+  }
+  .wrapper-container-signin .main-content .container .title {
+    margin: 25px auto 20px;
+  }
+  .wrapper-container-signin .main-content .container .form-window {
+    max-width: 320px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .form-content {
+    padding: 28px 48px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .form-content form label .input input {
+    height: 58px;
+    font-size: 11px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .form-content form label {
+    font-size: 11px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .tabs .tab,
+  .wrapper-container-signin .main-content .container .form-window .form-content form .signin-text a,
+  .wrapper-container-signin .main-content .container .form-window .form-content form .signin-text span,
+  .wrapper-container-signin .main-content .container .form-window .form-content form a {
+    font-size: 8px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .form-content form button {
+    height: 60px;
+    font-size: 11px;
+  }
+  .wrapper-container-signin .main-content .container .title span {
+    font-size: 28px;
+  }
+  .wrapper-container-signin .main-content {
+    padding-bottom: 50px;
+  }
+  .wrapper-container-signin .main-content .container .changepassword-form .form-content form label span {
+    font-size: 14px;
+  }
+  .wrapper-container-signin .main-content .container .changepassword-form .form-content form label span {
+    margin-bottom: 5px;
+  }
+  .wrapper-container-signin .main-content .container .changepassword-form .form-content form .signin-text {
+    margin-top: 15px;
+  }
+  .wrapper-container-signin .main-content .container .changepassword-form .form-content form .signin-text p a,
+  .wrapper-container-signin .main-content .container .changepassword-form .form-content form .signin-text p {
+    font-size: 8px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .tabs .tab {
+    height: 40px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .form-content .done-content span {
+    font-size: 18px;
+  }
+  .wrapper-container-signin .main-content .container .form-window .form-content .done-content a {
+    margin-top: 73px;
+    font-size: 11px;
+    height: 60px;
+    margin-bottom: 80px;
   }
 }
