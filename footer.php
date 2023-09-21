@@ -265,6 +265,106 @@
     }
 
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-dropdown");
+        const tabContents = document.querySelectorAll(".tab-content-dropdown");
+
+        tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                const tabId = tab.getAttribute("data-tab");
+
+                tabContents.forEach((content) => {
+                    content.style.display = "none";
+                });
+
+                document.getElementById(tabId).style.display = "flex";
+                // Удаляем класс "active" у всех табов
+                tabs.forEach((t) => {
+                    t.classList.remove("active");
+                });
+
+                // Добавляем класс "active" только активному табу
+                tab.classList.add("active");
+            });
+        });
+
+        // Добавляем код для адаптивных табов
+        const screenWidth = window.innerWidth;
+        if (screenWidth <= 768) {
+            // Преобразовываем табы в выпадающий список
+            const tabList = document.createElement("select");
+            tabList.className = "mobile-tab-list";
+
+            tabs.forEach((tab) => {
+                const option = document.createElement("option");
+                option.value = tab.getAttribute("data-tab");
+                option.text = tab.innerText;
+                tabList.appendChild(option);
+            });
+
+            tabList.addEventListener("change", () => {
+                const selectedTabId = tabList.value;
+                tabContents.forEach((content) => {
+                    content.style.display = "none";
+                });
+                document.getElementById(selectedTabId).style.display = "flex";
+
+            });
+
+            // Вставляем выпадающий список после табов
+            const tabsContainer = document.querySelector(".tabs-dropdown");
+            tabsContainer.appendChild(tabList);
+        }
+    });
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const checkboxes = document.querySelectorAll(".custom-checkbox-selected .container input[type='checkbox']");
+
+        checkboxes.forEach(function (checkbox) {
+            const container = checkbox.closest(".custom-checkbox-selected .container");
+            if (!checkbox.checked) {
+                container.style.backgroundColor = "#E5E7E9";
+                container.style.color = "#9E9E9E";
+            }
+            checkbox.addEventListener("change", function () {
+                const container = this.closest(".custom-checkbox-selected .container");
+                if (!this.checked) {
+                    container.style.backgroundColor = "#E5E7E9";
+                    container.style.color = "#9E9E9E";
+                } else {
+                    container.style.backgroundColor = "";
+                    container.style.color = "";
+                }
+            });
+        });
+    });
+</script>
+<script>
+    const showRadio = document.getElementById('showRadio');
+    const hideRadio = document.getElementById('hideRadio');
+    const block = document.getElementById('hiddenBlock');
+
+    // Добавляем обработчики событий при изменении состояния радиокнопок
+    showRadio.addEventListener('change', function () {
+        if (showRadio.checked) {
+            block.style.display = 'flex'; // Показываем блок
+        }
+    });
+
+    hideRadio.addEventListener('change', function () {
+        if (hideRadio.checked) {
+            block.style.display = 'none'; // Скрываем блок
+        }
+    });
+</script>
+<script>
+    $('.show-add-options').click(function () {
+        $('.option-item').toggleClass('active')
+    });
+</script>
 </body>
 
 </html>
