@@ -1279,6 +1279,92 @@
   }
 }
 
+@media (min-width: 1031px) {
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tabs-dropdown .mobile-dropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 1030px) {
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown-desktop {
+    display: none;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    background: transparent;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown {
+    position: relative;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    position: relative;
+    z-index: 1;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown.active {
+    background: #fff;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .mobile-dropdown {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-selected {
+    border-radius: 5px;
+    background: linear-gradient(278deg, #6C9165 0%, #90B589 46.15%, #6C9165 100%);
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    line-height: 140%;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items {
+    padding: 15px 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items div,
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items .same-as-selected {
+    border: 0;
+    color: #212121;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 0;
+    padding: 5px 20px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+    top: ~'calc(100% + 10px)';
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown {
+    color: #212121;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    border: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .sertificates-normal .arrows {
     display: none;
@@ -1502,6 +1588,7 @@
 
 // NORMALBREAKPOINTS
 @media (min-width: 768px) and (max-width: 1200px) {
+
   .wrapper-container footer {
     padding-left: 20px;
     padding-right: 20px;
@@ -1521,6 +1608,40 @@
     gap: 20px;
     flex-direction: column;
   }
+
+  // 
+  .sec-personalquestions .container-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 1 0 30%;
+
+    .container {
+      max-width: unset;
+    }
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .show-all {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .mobile-dropdown {
+    .custom-select {
+      .select-selected {
+        height: 57px;
+      }
+    }
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer{
+    justify-content: space-between;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected{
+    flex: 0 0 30%;
+  }
+  // 
 }
 
 @media (max-width: 768px) {
@@ -1535,6 +1656,229 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+
+  // 
+  .sec-personalquestions .container-item form .main-label .radio-items {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px 20px;
+  }
+
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio {
+    // max-width: 150px;
+    padding-left: 51px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    word-break: break-all;
+    flex: 0 0 46.8%;
+    min-width: 150px;
+    height: 45px;
+  }
+
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio .checkmark-radio {
+    left: 19px;
+    width: 19px;
+    height: 19px;
+  }
+
+  .sec-personalquestions .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown-desktop {
+    display: none;
+  }
+
+  .sec-personalquestions .container-item form .main-label input {
+    margin-top: 10px;
+  }
+
+  .sec-personalquestions .container-item form .main-label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding-bottom: 30px;
+    border: 0;
+    margin-top: 0;
+  }
+
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio input {
+    margin-top: 0;
+  }
+
+  .sec-personalquestions .container-item .title {
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      text-align: center;
+      line-height: 130%;
+    }
+  }
+
+  .sec-personalquestions .container-item form .selected-items {
+    padding-top: 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .selected-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .selected-descr {
+    color: #676767;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 10px;
+    /* 450% */
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown {
+    gap: 10px 20px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    height: 45px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    word-break: break-all;
+    padding-left: 46px;
+    padding-right: 10px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+    width: 19px;
+    height: 19px;
+    left: 19px
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 1 0 45%;
+    min-width: 150px;
+    max-width: 45%;
+  }
+
+  // .sec-personalquestions .container-item form .main-label .radio-items,
+  // .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown,
+  // .sec-personalquestions .container-item form .selected-notdropdown .tab-content {
+  //   justify-content: space-between;
+  // }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .show-all {
+    color: #4E869F;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 12.557px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.377px;
+    text-transform: uppercase;
+    height: 50px;
+    max-width: 195px;
+    margin: 20px auto 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer {
+    border: 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-notdropdown a {
+    color: #6C9165;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 30px auto;
+  }
+
+  .sec-personalquestions {
+    padding-bottom: 70px;
+    padding-top: 35px;
+  }
+
+  .signin-header .container-item .logo img {
+    max-width: 105px;
+    margin: 0 auto;
+  }
+
+  .sec-personalquestions .container-item form button {
+    margin: 70px auto 0;
+  }
+
+  .sec-personalquestions .container-item form .dropdown-item {
+    padding-top: 0;
+
+    span {
+      color: #212121;
+      font-family: Raleway;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 125% */
+    }
+  }
+
+  .sec-personalquestions .container-item form .main-label textarea {
+    max-height: 100px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .sec-personalquestions .container-item form .main-label {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .sec-personalquestions .container-item form .main-label #hiddenBlock span {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 281.25% */
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected,
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio {
+    max-width: unset;
+    flex: 0 0 46.8%;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    max-width: unset;
+  }
+
+  // 
   .sec-generalquestions .container-item form .mainlabel-items {
     flex-direction: column;
   }
@@ -1982,7 +2326,7 @@
     padding-right: 50px;
   }
 
-  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown {
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown-desktop {
     display: none;
   }
 
@@ -2036,5 +2380,143 @@
     line-height: 100%;
     margin-top: 10px;
     /* 450% */
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown {
+    gap: 10px 20px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    height: 45px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    word-break: break-all;
+    padding-left: 46px;
+    padding-right: 10px;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+    width: 19px;
+    height: 19px;
+    left: 19px
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 1 0 45%;
+    min-width: 150px;
+    max-width: 45%;
+  }
+
+  .sec-personalquestions .container-item form .main-label .radio-items,
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown,
+  .sec-personalquestions .container-item form .selected-notdropdown .tab-content {
+    justify-content: space-between;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .show-all {
+    color: #4E869F;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 12.557px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.377px;
+    text-transform: uppercase;
+    height: 50px;
+    max-width: 195px;
+    margin: 20px auto 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer {
+    border: 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-notdropdown a {
+    color: #6C9165;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 30px auto;
+  }
+
+  .sec-personalquestions {
+    padding-bottom: 70px;
+    padding-top: 35px;
+  }
+
+  .signin-header .container-item .logo img {
+    max-width: 105px;
+    margin: 0 auto;
+  }
+
+  .sec-personalquestions .container-item form button {
+    margin: 70px auto 0;
+  }
+
+  .sec-personalquestions .container-item form .dropdown-item {
+    padding-top: 0;
+
+    span {
+      color: #212121;
+      font-family: Raleway;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      /* 125% */
+    }
+  }
+
+  .sec-personalquestions .container-item form .main-label textarea {
+    max-height: 100px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .sec-personalquestions .container-item form .main-label {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .sec-personalquestions .container-item form .main-label #hiddenBlock span {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 281.25% */
+  }
+}
+
+@media (max-width: 420px) {
+
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected,
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio {
+    max-width: unset;
+    min-width: unset;
+    flex: 1 0 100%;
+
+    .container {
+      max-width: unset;
+    }
   }
 }

@@ -288,36 +288,7 @@
                 tab.classList.add("active");
             });
         });
-
-        // Добавляем код для адаптивных табов
-        const screenWidth = window.innerWidth;
-        if (screenWidth <= 768) {
-            // Преобразовываем табы в выпадающий список
-            const tabList = document.createElement("select");
-            tabList.className = "mobile-tab-list";
-
-            tabs.forEach((tab) => {
-                const option = document.createElement("option");
-                option.value = tab.getAttribute("data-tab");
-                option.text = tab.innerText;
-                tabList.appendChild(option);
-            });
-
-            tabList.addEventListener("change", () => {
-                const selectedTabId = tabList.value;
-                tabContents.forEach((content) => {
-                    content.style.display = "none";
-                });
-                document.getElementById(selectedTabId).style.display = "flex";
-
-            });
-
-            // Вставляем выпадающий список после табов
-            const tabsContainer = document.querySelector(".tabs-dropdown");
-            tabsContainer.appendChild(tabList);
-        }
     });
-
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -364,6 +335,150 @@
     $('.show-add-options').click(function () {
         $('.option-item').toggleClass('active')
     });
+</script>
+<script>
+    const customSelects = document.querySelectorAll('.custom-select');
+
+    customSelects.forEach((customSelect, index) => {
+        const selectItemsDivs = customSelect.querySelectorAll('.select-items div');
+
+        selectItemsDivs.forEach((selectItem, tabIndex) => {
+            selectItem.classList.add('tab-dropdown');
+            selectItem.setAttribute('data-tab', `tab${tabIndex + 1}`);
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+    $(function () {
+        // Устанавливаем первым днем недели понедельник (по умолчанию 0 - воскресенье)
+        $.datepicker.setDefaults({
+            firstDay: 1,
+            dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь']
+        });
+
+        // Список конкретных дат, которые будут неактивными (в формате 'гггг-мм-дд')
+        var disabledDates = ['2023-09-05', '2023-09-12', '2023-09-19'];
+
+        // Инициализируем Datepicker
+        $('#datepicker').datepicker({
+            dateFormat: 'DD, d MM yy',
+            beforeShowDay: function (date) {
+                // Преобразуем текущую дату в формат 'гггг-мм-дд' для сравнения
+                var formattedDate = $.datepicker.formatDate('yy-mm-dd', date);
+
+                // Проверяем, является ли текущая дата неактивной
+                var isInactive = (disabledDates.indexOf(formattedDate) !== -1);
+
+                // Возвращаем результат, указывая, активен ли день, и класс для стилизации (если нужно)
+                return [!isInactive, ''];
+            }
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script>
+<script>
+    // Получаем элемент инпута
+    var timeInput = document.getElementById('timeInput');
+
+    // Добавляем обработчик события на клик
+    timeInput.addEventListener('click', function () {
+        // Устанавливаем значение инпута в пустую строку
+        timeInput.value = '';
+
+        // Добавляем маску "__:__" в инпут
+        timeInput.placeholder = '__:__';
+    });
+
+    // Добавляем обработчик события на убирание фокуса (клик вне инпута)
+    timeInput.addEventListener('blur', function () {
+        // Если значение инпута пустое, возвращаем маску "__:__"
+        if (timeInput.value === '') {
+            timeInput.placeholder = 'Укажите время консультации';
+        }
+    });
+    // Добавляем обработчик события на изменение значения инпута
+    timeInput.addEventListener('input', function () {
+        // Оставляем только цифры введенного значения
+        var inputValue = timeInput.value.replace(/\D/g, '');
+
+        // Форматируем введенное значение как "99:99"
+        if (inputValue.length >= 4) {
+            var hours = inputValue.slice(0, 2);
+            var minutes = inputValue.slice(2, 4);
+            timeInput.value = hours + ':' + minutes;
+        }
+    });
+</script>
+<script>
+    // JavaScript код
+    const input = document.getElementById('message-input');
+    const buttons = document.querySelectorAll('.message-container .buttons a');
+
+    input.addEventListener('focus', () => {
+        // При фокусировке на input изменяем src изображений внутри <a>
+        buttons.forEach(button => {
+            const img = button.querySelector('img');
+            if (img) {
+                // Заменяем src изображения на значение data-src
+                const dataSrc = button.getAttribute('data-src');
+                img.src = dataSrc;
+            }
+        });
+    });
+
+    input.addEventListener('blur', () => {
+        // При потере фокуса возвращаем изображения обратно
+        buttons.forEach(button => {
+            const img = button.querySelector('img');
+            if (img) {
+                img.src = img.getAttribute('alt'); // Возвращаем исходные изображения
+            }
+        });
+    });
+</script>
+<script>
+    // Получаем ссылку "Редактировать" и инпуты
+    const editButton = document.getElementById("editButton");
+    const saveButton = document.getElementById("saveButton");
+    const nameInput = document.getElementById("nameInput");
+    const birthdateInput = document.getElementById("birthdateInput");
+    const phoneInput = document.getElementById("phoneInput");
+    const emailInput = document.getElementById("emailInput");
+
+    // Обработчик события клика на ссылке "Редактировать"
+    editButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+
+        // Включаем редактирование для двух последних инпутов
+        phoneInput.disabled = false;
+        emailInput.disabled = false;
+
+        // Скрываем ссылку "Редактировать" и показываем кнопку "Сохранить изменения"
+        editButton.style.display = "none";
+        saveButton.style.display = "inline-block";
+    });
+
+    // Обработчик события клика на кнопке "Сохранить изменения"
+    saveButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Предотвращаем переход по кнопке
+
+        // Здесь можно добавить код для сохранения изменений (например, отправку данных на сервер)
+
+        // Выключаем редактирование для всех инпутов
+        nameInput.disabled = true;
+        birthdateInput.disabled = true;
+        phoneInput.disabled = true;
+        emailInput.disabled = true;
+
+        // Скрываем кнопку "Сохранить изменения" и показываем ссылку "Редактировать"
+        saveButton.style.display = "none";
+        editButton.style.display = "flex";
+    });
+
 </script>
 </body>
 

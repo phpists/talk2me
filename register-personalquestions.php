@@ -98,10 +98,22 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                 <span class="selected-descr">Выберите один или несколько вариантов</span>
                 <div class="tabs-parentcontainer">
                   <div class="tabs-dropdown">
-                    <div class="tab-dropdown active" data-tab="tab1">Моё состояние</div>
-                    <div class="tab-dropdown" data-tab="tab2">Отношения</div>
-                    <div class="tab-dropdown" data-tab="tab3">Работа, учеба</div>
-                    <div class="tab-dropdown" data-tab="tab4">События в жизни</div>
+                    <div class="tab-dropdown tab-dropdown-desktop active" data-tab="tab1">Моё состояние</div>
+                    <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab2">Отношения</div>
+                    <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab3">Работа, учеба</div>
+                    <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab4">События в жизни</div>
+                    <div class="mobile-dropdown">
+                      <div class="custom-select">
+                        <select>
+                          <option value="0">Мое состояние</option>
+                          <option value="1">Мое состояние</option>
+                          <option value="2">Отношения</option>
+                          <option value="3">Работа, учеба</option>
+                          <option value="4">События в жизни</option>
+                        </select>
+                      </div>
+
+                    </div>
                   </div>
                   <div class="tab-content-dropdown" id="tab1" style="display: flex;">
                     <div class="custom-checkbox-selected">

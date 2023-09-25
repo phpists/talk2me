@@ -86,7 +86,7 @@ for (i = 0; i < l; i++) {
           for (k = 0; k < yl; k++) {
             y[k].removeAttribute("class");
           }
-          this.setAttribute("class", "same-as-selected");
+          this.classList.add("same-as-selected");
           break;
         }
       }

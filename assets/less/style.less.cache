@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:163452:"@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:211687:"@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @charset "UTF-8";
 @-ms-viewport {
   width: device-width;
@@ -5317,6 +5317,7 @@ footer.footer .socmedias {
   font-style: normal;
   font-weight: 400;
   line-height: 37.096px;
+  height: 57px;
 }
 .sec-personalquestions .container-item form .mainlabel-items .radio-items .container-radio:not(.active),
 .sec-personalquestions .container-item form .main-label .radio-items .container-radio:not(.active) {
@@ -5389,11 +5390,1093 @@ footer.footer .socmedias {
   background: #E5E7E9;
   border: 1px solid #E5E7E9;
   color: #9E9E9E;
+  height: 57px;
 }
 .sec-personalquestions .container-item form .mainlabel-items .mainlabel-item .radio-items .container-radio:not(.active):hover {
   border: 1px solid #DBDBDB;
   background: #FFF;
   color: #212121;
+}
+.sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .mobile-dropdown .custom-select .select-selected:after {
+  content: '';
+  border: 0;
+  right: 20px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background-image: url('../img/greendropdown-arrow.svg');
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+.sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .mobile-dropdown .custom-select .select-selected.select-arrow-active:after {
+  transform: translateY(-100%) rotate(180deg);
+}
+.personalaccount-header .container-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personalaccount-header .container-item .consult {
+  margin-left: auto;
+  margin-right: 120px;
+}
+.personalaccount-header .container-item .consult a {
+  color: #4E869F;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.personalaccount-header .container-item .person {
+  display: flex;
+  align-items: center;
+}
+.personalaccount-header .container-item .person .avatar img {
+  border-radius: 50%;
+  max-width: 54px;
+  max-height: 47px;
+  object-fit: cover;
+}
+.personalaccount-header .container-item .person .name {
+  color: #6C9165;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+  margin-right: 20px;
+}
+.wrapper-container-pa {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sec-paspecialist__step1 {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+.sec-paspecialist__step1 .container-item .title h2 {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.sec-paspecialist__step1 .container-item .title p {
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.sec-paspecialist__step1 .container-item .main-content {
+  margin-top: 30px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption {
+  display: flex;
+  background: #E5E7E9;
+  width: max-content;
+  border-radius: 10px 10px 0 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption .tabs__item {
+  background: #E5E7E9;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 230px;
+  color: #9E9E9E;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 10px 10px 0 0;
+  transition: .3s;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption .tabs__item.active {
+  color: #fff;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+  filter: drop-shadow(0px 9px 15px rgba(0,0,0,0.15));
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption .tabs__item:hover {
+  cursor: pointer;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.active {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker-year {
+  display: none;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker table {
+  margin-bottom: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker table thead {
+  padding-bottom: 10px;
+  display: table-caption;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker-month {
+  color: #212121;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 17.582px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-prev:hover {
+  background: unset;
+  border: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-prev span {
+  left: 50px;
+  background-image: url('../img/datepicker-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: unset;
+  margin: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-title {
+  margin: 0;
+  line-height: 100%;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-next:hover {
+  background: unset;
+  border: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-next span {
+  background-image: url('../img/datepicker-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+  right: 50px;
+  position: unset;
+  margin: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker th {
+  padding: 0 11px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-header {
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 150px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-state-default,
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-widget-content .ui-state-default {
+  color: #212121;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 17.582px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.176px;
+  border: 1.099px solid transparent;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-state-active,
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-widget-content .ui-state-active {
+  border-radius: 5.495px;
+  border: 1.099px solid #4E869F;
+  background: transparent;
+  color: #4E869F;
+  text-align: center;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-state-highlight,
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-widget-content .ui-state-highlight {
+  border: 0;
+  background: transparent;
+  color: #212121;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-widget.ui-widget-content {
+  border: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-widget-header,
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-widget-content {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker th span {
+  color: #818181;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14.286px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.176px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-next {
+  border-color: none;
+  border: 0;
+  right: 0;
+  top: 0;
+  width: unset;
+  height: unset;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-next:hover span {
+  background-image: url('../img/datepicker-arrow-active.svg');
+  transform: rotate(0);
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-prev {
+  border-color: none;
+  border: 0;
+  left: 0;
+  top: 0;
+  width: unset;
+  height: unset;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker .ui-datepicker .ui-datepicker-prev:hover span {
+  background-image: url('../img/datepicker-arrow-active.svg');
+  transform: rotate(180deg);
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item .all-date {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  height: 75px;
+  max-width: 272px;
+  border-radius: 10px;
+  border: 2px solid #4E869F;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  padding: 0 36px;
+  transition: .3s;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item .all-date:hover {
+  background: #4E869F;
+  color: #fff;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background {
+  background: #fff;
+  max-width: 760px;
+  padding: 0 60px;
+  width: 100%;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+  display: flex;
+  justify-content: space-between;
+  padding: 52px 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr {
+  display: flex;
+  flex-direction: column;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr .name {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  margin-top: 20px;
+  max-width: 220px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr .date {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr .date:before {
+  content: url(../img/date-icon.svg);
+  margin-right: 8px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  height: 85px;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect:hover:before {
+  opacity: 0;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .cancel {
+  margin-top: 15px;
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  height: 80px;
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.45px;
+  border-radius: 10px;
+  border: 2px solid #4E869F;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+  text-transform: uppercase;
+  padding: 0 30px;
+  transition: .3s;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .cancel:hover {
+  background: #4e869f;
+  color: #fff;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .goto-chat {
+  color: #6C9165;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  border-bottom: 1px dashed #6c9165;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  margin: 20px auto 0;
+  display: flex;
+  width: max-content;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult {
+  background: #fff;
+  padding: 52px 60px;
+  width: 100%;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table {
+  width: 100%;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table .table-head {
+  background: #F8F8F8;
+  height: 40px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table .table-head th {
+  color: #818181;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr:not(.table-head) {
+  border: 0.8px solid #DBDBDB;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr .name-specialist {
+  display: flex;
+  align-items: center;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr .name-specialist .name {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20.176px;
+  max-width: 182px;
+  margin-left: 26px;
+  text-align: left;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr .history-chat a {
+  color: #6C9165;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20.176px;
+  border-bottom: 1px dashed #6c9165;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr .date-consult {
+  color: #212121;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.176px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr .date-consult:before {
+  content: url('../img/date-icon.svg');
+  margin-right: 10px;
+}
+.sec-paspecialist__step2 {
+  padding-top: 70px;
+}
+.sec-paspecialist__step2 .container-item .title {
+  margin-bottom: 70px;
+}
+.sec-paspecialist__step2 .container-item .title a {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.sec-paspecialist__step2 .container-item .title a:before {
+  content: url('../img/arrow-back-consult.svg');
+  margin-right: 15px;
+}
+.sec-paspecialist__step2 .container-item .main-content {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 20px 20px 60px 40px;
+  display: flex;
+}
+.sec-paspecialist__step2 .container-item .main-content .item {
+  width: 100%;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item {
+  max-width: 320px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item span {
+  color: #212121;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  max-width: 243px;
+  margin: 20px auto 0;
+  display: flex;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form {
+  margin-top: 30px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .dropdown-firststyle {
+  margin: 0;
+  height: 39px;
+  background: #E5E7E9;
+  border-radius: 5px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .dropdown-firststyle .select-selected {
+  background: #E5E7E9;
+  color: #818181;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .top-dropdowns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .top-dropdowns .dropdown-firststyle:first-child {
+  max-width: 200px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .top-dropdowns .dropdown-firststyle:last-child {
+  max-width: 110px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form input {
+  margin-top: 10px;
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  height: 39px;
+  width: 100%;
+  border-radius: 5px;
+  background: #E5E7E9;
+  padding: 0 20px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form input:focus {
+  border: 1px solid #353535;
+  background: #fff;
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form input:focus::placeholder {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form input::placeholder {
+  color: #818181;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  height: 85px;
+  margin-top: 44px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form button:hover:before {
+  opacity: 0;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .stop-consult {
+  color: #6C9165;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-top: 60px;
+  border-bottom: 1px dashed #6c9165;
+  display: flex;
+  width: max-content;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .date-item {
+  padding: 30px;
+  border: 0.824px solid #DBDBDB;
+  border-radius: 10px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .date-item ul {
+  max-height: 216px;
+  overflow-y: scroll;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .date-item ul li {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .date-item ul li:after {
+  content: url('../img/consult-date.svg');
+  margin-left: 13px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  margin-top: -3px;
+}
+.sec-paspecialist__step2 .container-item .main-content .item .date-item ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.sec-paspecialist__step4 {
+  padding-top: 70px;
+  padding-bottom: 140px;
+}
+.sec-paspecialist__step4 .container-item .title {
+  margin-bottom: 40px;
+}
+.sec-paspecialist__step4 .container-item .title h2 {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  margin-top: 40px;
+}
+.sec-paspecialist__step4 .container-item .title a {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+.sec-paspecialist__step4 .container-item .title a:before {
+  content: url('../img/arrow-back-consult.svg');
+  margin-right: 15px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window {
+  background: #fff;
+  border: 0.824px solid #dbdbdb;
+  border-radius: 10px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list {
+  padding: 50px 50px 93px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to,
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from {
+  display: flex;
+  align-items: center;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .avatar,
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .avatar {
+  width: 104px;
+  min-width: 104px;
+  margin-right: 25px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .avatar img,
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .message,
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .message {
+  max-width: 664px;
+  background: #F1EFF0;
+  padding: 17px 26px;
+  border-radius: 10px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .message p,
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .message p {
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to {
+  flex-direction: row-reverse;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input {
+  padding: 0 50px 73px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container {
+  display: flex;
+  position: relative;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons {
+  display: flex;
+  position: absolute;
+  left: 34px;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons a:not(:last-child) {
+  margin-right: 11px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container button {
+  padding-right: 14px;
+  padding-left: 14px;
+  margin-left: 26px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container input {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  padding-left: 146px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  height: 67px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container input:focus {
+  border-color: #353535;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container input::placeholder {
+  color: #BFBFBF;
+}
+.sec-pa-settings-specialist__step1 {
+  padding-top: 85px;
+  padding-bottom: 140px;
+}
+.sec-pa-settings-specialist__step1 .container-item .title {
+  margin-bottom: 50px;
+}
+.sec-pa-settings-specialist__step1 .container-item .title h2 {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs {
+  display: flex;
+  gap: 30px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption {
+  max-width: 260px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption .tabs__item {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background: #E5E7E9;
+  color: #9E9E9E;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption .tabs__item:hover {
+  cursor: pointer;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption .tabs__item.active {
+  color: #fff;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+  box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data {
+  width: 100%;
+  background: #fff;
+  padding: 40px 40px 258px 50px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .title h3 {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .title p {
+  max-width: 545px;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form {
+  display: flex;
+  gap: 55px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .avatar-item .avatar {
+  width: 90px;
+  min-width: 90px;
+  height: 90px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .avatar-item .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .avatar-item a {
+  margin-top: 12px;
+  color: #6C9165;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  display: flex;
+  border-bottom: 1px dashed #6c9165;
+  width: max-content;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label {
+  display: flex;
+  align-items: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label p {
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label input {
+  max-width: 380px;
+  min-width: 380px;
+  width: 100%;
+  border-radius: 5px;
+  background: #F8F8F8;
+  height: 50px;
+  padding: 0 30px;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-right: 30px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label input:disabled {
+  color: #9E9E9E;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label input:not(:disabled) {
+  border: 0.824px solid #353535;
+  background: #fff;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs a {
+  color: #818181;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 20px;
+  display: flex;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs a:before {
+  content: url('../img/edit.svg');
+  margin-right: 10px;
+  display: block;
+  width: 10px;
+  height: 12px;
+  margin-top: 1px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs #saveButton {
+  max-width: 240px;
+  margin-top: 50px;
+  color: #FFF;
+  border-radius: 10px;
+  height: 65px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs #saveButton:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs #saveButton:hover:before {
+  opacity: 0;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password {
+  background: #fff;
+  padding: 40px 50px 165px;
+  width: 100%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password .title {
+  margin-bottom: 40px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password .title h3 {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form {
+  max-width: 380px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form button {
+  max-width: 240px;
+  margin-top: 50px;
+  color: #FFF;
+  border-radius: 10px;
+  height: 65px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  margin-top: 55px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form button:hover:before {
+  opacity: 0;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label {
+  color: #353535;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label:focus-within .container-input:before {
+  content: url('../img/password-icon-active.svg');
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label:focus-within .container-input input {
+  border: 0.824px solid #353535;
+  background: #FFF;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input {
+  position: relative;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input:before {
+  content: url('../img/password-icon.svg');
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 18px;
+  display: block;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input input {
+  border-radius: 5px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  height: 50px;
+  margin-top: 5px;
+  padding-left: 58px;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input input::placeholder {
+  color: #BFBFBF;
 }
 @media (max-width: 1400px) {
   .info-block-2 .info-content {
@@ -6435,6 +7518,80 @@ footer.footer .socmedias {
     opacity: 1 !important;
   }
 }
+@media (min-width: 1031px) {
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tabs-dropdown .mobile-dropdown {
+    display: none;
+  }
+}
+@media (max-width: 1030px) {
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown-desktop {
+    display: none;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    background: transparent;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown {
+    position: relative;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    position: relative;
+    z-index: 1;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown.active {
+    background: #fff;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .mobile-dropdown {
+    width: 100%;
+    max-width: 320px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-selected {
+    border-radius: 5px;
+    background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+    color: #FFF;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    line-height: 140%;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items {
+    padding: 15px 0;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items div,
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items .same-as-selected {
+    border: 0;
+    color: #212121;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 0;
+    padding: 5px 20px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-select .select-items {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.05);
+    top: calc(100% + 10px);
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown {
+    color: #212121;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: left;
+    border: 0;
+  }
+}
 @media (max-width: 900px) {
   .sertificates-normal .arrows {
     display: none;
@@ -6626,6 +7783,29 @@ footer.footer .socmedias {
     gap: 20px;
     flex-direction: column;
   }
+  .sec-personalquestions .container-item {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 1 0 30%;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    max-width: unset;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .show-all {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .mobile-dropdown .custom-select .select-selected {
+    height: 57px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer {
+    justify-content: space-between;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 0 0 30%;
+  }
 }
 @media (max-width: 768px) {
   .tabs-dropdown {
@@ -6637,6 +7817,186 @@ footer.footer .socmedias {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .sec-personalquestions .container-item form .main-label .radio-items {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 10px 20px;
+  }
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio {
+    padding-left: 51px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    word-break: break-all;
+    flex: 0 0 46.8%;
+    min-width: 150px;
+    height: 45px;
+  }
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio .checkmark-radio {
+    left: 19px;
+    width: 19px;
+    height: 19px;
+  }
+  .sec-personalquestions .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown-desktop {
+    display: none;
+  }
+  .sec-personalquestions .container-item form .main-label input {
+    margin-top: 10px;
+  }
+  .sec-personalquestions .container-item form .main-label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    padding-bottom: 30px;
+    border: 0;
+    margin-top: 0;
+  }
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio input {
+    margin-top: 0;
+  }
+  .sec-personalquestions .container-item .title {
+    margin-bottom: 20px;
+  }
+  .sec-personalquestions .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    line-height: 130%;
+  }
+  .sec-personalquestions .container-item form .selected-items {
+    padding-top: 0;
+  }
+  .sec-personalquestions .container-item form .selected-items .selected-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .sec-personalquestions .container-item form .selected-items .selected-descr {
+    color: #676767;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 10px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown {
+    gap: 10px 20px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    height: 45px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    word-break: break-all;
+    padding-left: 46px;
+    padding-right: 10px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+    width: 19px;
+    height: 19px;
+    left: 19px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 1 0 45%;
+    min-width: 150px;
+    max-width: 45%;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .show-all {
+    color: #4E869F;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 12.557px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.377px;
+    text-transform: uppercase;
+    height: 50px;
+    max-width: 195px;
+    margin: 20px auto 0;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer {
+    border: 0;
+  }
+  .sec-personalquestions .container-item form .selected-notdropdown a {
+    color: #6C9165;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 30px auto;
+  }
+  .sec-personalquestions {
+    padding-bottom: 70px;
+    padding-top: 35px;
+  }
+  .signin-header .container-item .logo img {
+    max-width: 105px;
+    margin: 0 auto;
+  }
+  .sec-personalquestions .container-item form button {
+    margin: 70px auto 0;
+  }
+  .sec-personalquestions .container-item form .dropdown-item {
+    padding-top: 0;
+  }
+  .sec-personalquestions .container-item form .dropdown-item span {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .sec-personalquestions .container-item form .main-label textarea {
+    max-height: 100px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .sec-personalquestions .container-item form .main-label {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .sec-personalquestions .container-item form .main-label #hiddenBlock span {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected,
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio {
+    max-width: unset;
+    flex: 0 0 46.8%;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    max-width: unset;
+  }
   .sec-generalquestions .container-item form .mainlabel-items {
     flex-direction: column;
   }
@@ -6995,7 +8355,7 @@ footer.footer .socmedias {
     padding-left: 50px;
     padding-right: 50px;
   }
-  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown {
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-dropdown-desktop {
     display: none;
   }
   .sec-personalquestions .container-item form .main-label input {
@@ -7041,5 +8401,123 @@ footer.footer .socmedias {
     line-height: 100%;
     margin-top: 10px;
   }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown {
+    gap: 10px 20px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    height: 45px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    word-break: break-all;
+    padding-left: 46px;
+    padding-right: 10px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+    width: 19px;
+    height: 19px;
+    left: 19px;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 1 0 45%;
+    min-width: 150px;
+    max-width: 45%;
+  }
+  .sec-personalquestions .container-item form .main-label .radio-items,
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .tab-content-dropdown,
+  .sec-personalquestions .container-item form .selected-notdropdown .tab-content {
+    justify-content: space-between;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .show-all {
+    color: #4E869F;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 12.557px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.377px;
+    text-transform: uppercase;
+    height: 50px;
+    max-width: 195px;
+    margin: 20px auto 0;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer {
+    border: 0;
+  }
+  .sec-personalquestions .container-item form .selected-notdropdown a {
+    color: #6C9165;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin: 30px auto;
+  }
+  .sec-personalquestions {
+    padding-bottom: 70px;
+    padding-top: 35px;
+  }
+  .signin-header .container-item .logo img {
+    max-width: 105px;
+    margin: 0 auto;
+  }
+  .sec-personalquestions .container-item form button {
+    margin: 70px auto 0;
+  }
+  .sec-personalquestions .container-item form .dropdown-item {
+    padding-top: 0;
+  }
+  .sec-personalquestions .container-item form .dropdown-item span {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .sec-personalquestions .container-item form .main-label textarea {
+    max-height: 100px;
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .sec-personalquestions .container-item form .main-label {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  .sec-personalquestions .container-item form .main-label #hiddenBlock span {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }
-";s:5:"files";a:6:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1695304326;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\modal.less";i:1635662832;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1695303581;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1695308940;}s:7:"updated";i:1695308940;}
+@media (max-width: 420px) {
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected,
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio {
+    max-width: unset;
+    min-width: unset;
+    flex: 1 0 100%;
+  }
+  .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container,
+  .sec-personalquestions .container-item form .main-label .radio-items .container-radio .container {
+    max-width: unset;
+  }
+}
+";s:5:"files";a:6:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1695649695;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\modal.less";i:1635662832;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1695303581;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1695388681;}s:7:"updated";i:1695649696;}
