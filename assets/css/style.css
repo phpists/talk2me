@@ -4164,6 +4164,9 @@ footer.footer .socmedias {
   display: flex;
   justify-content: center;
 }
+.wrapper-container-signin .main-content.type2 {
+  background-image: url('../img/signin-bgtype2.jpg');
+}
 .wrapper-container-signin .main-content .container {
   max-width: 1060px;
   width: 100%;
@@ -5437,6 +5440,8 @@ footer.footer .socmedias {
   max-width: 54px;
   max-height: 47px;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .personalaccount-header .container-item .person .name {
   color: #6C9165;
@@ -5683,6 +5688,17 @@ footer.footer .socmedias {
   justify-content: space-between;
   padding: 52px 0;
 }
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .avatar {
+  max-width: 120px;
+  max-height: 120px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 3.33333px 12.5px 0px rgba(0,0,0,0.1);
+}
 .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr {
   display: flex;
   flex-direction: column;
@@ -5821,6 +5837,7 @@ footer.footer .socmedias {
 .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr .name-specialist {
   display: flex;
   align-items: center;
+  padding-left: 40px;
 }
 .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult table tr .name-specialist .name {
   color: #305F74;
@@ -5858,6 +5875,40 @@ footer.footer .socmedias {
   content: url('../img/date-icon.svg');
   margin-right: 10px;
 }
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.type2 .tabs-consult .table-consult table tr .name-specialist {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.type2 .tabs-consult .table-consult table tr .name-specialist .avatar {
+  max-width: 90px;
+  max-height: 90px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.type2 .tabs-consult .table-consult table tr .name-specialist .name-item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.type2 .tabs-consult .table-consult table tr .name-specialist .name-item .position {
+  margin-top: 7px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.072px;
+  text-align: left;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.type2 .tabs-background {
+  max-width: unset;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.type2 .tabs-background .items .item:first-child {
+  display: flex;
+  gap: 30px;
+}
+.sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.type2 .tabs-background .items .item .buttons .cancel {
+  padding: 0 25px;
+}
 .sec-paspecialist__step2 {
   padding-top: 70px;
 }
@@ -5871,10 +5922,19 @@ footer.footer .socmedias {
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
+  display: flex;
+  align-items: center;
 }
 .sec-paspecialist__step2 .container-item .title a:before {
-  content: url('../img/arrow-back-consult.svg');
+  content: '';
   margin-right: 15px;
+  background-image: url('../img/arrow-back-consult.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  width: 28px;
+  height: 20px;
 }
 .sec-paspecialist__step2 .container-item .main-content {
   margin-top: 70px;
@@ -6094,7 +6154,6 @@ footer.footer .socmedias {
 .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .avatar {
   width: 104px;
   min-width: 104px;
-  margin-right: 25px;
 }
 .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .avatar img,
 .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .avatar img {
@@ -6119,6 +6178,12 @@ footer.footer .socmedias {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .avatar {
+  margin-right: 25px;
+}
+.sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .avatar {
+  margin-left: 25px;
 }
 .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to {
   flex-direction: row-reverse;
@@ -6181,18 +6246,18 @@ footer.footer .socmedias {
   font-weight: 500;
   line-height: 130%;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer {
   display: flex;
   gap: 30px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown {
   max-width: 260px;
   min-width: 260px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption .tabs__item {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .tab-dropdown {
   width: 100%;
   height: 50px;
   border-radius: 5px;
@@ -6208,20 +6273,84 @@ footer.footer .socmedias {
   align-items: center;
   padding: 0 25px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption .tabs__item:hover {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .tab-dropdown:hover {
   cursor: pointer;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__caption .tabs__item.active {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .tab-dropdown.active {
   color: #fff;
   background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
   box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown {
+  width: 100%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown .custom-select {
+  width: 100%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown .custom-select .select-selected {
+  color: #FFF;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+  box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown .custom-select .select-selected:after {
+  content: '';
+  border: 0;
+  right: 20px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background-image: url('../img/greendropdown-arrow.svg');
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown .custom-select .select-selected.select-arrow-active:after {
+  transform: translateY(-100%) rotate(180deg);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown .custom-select .select-items {
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.05);
+  top: calc(100% + 10px);
+  padding: 13px 0;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown .custom-select .select-items div {
+  border: 0;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 0;
+  padding: 5px 20px;
+  background: unset;
+  height: unset;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown .custom-select .select-items div.active {
+  box-shadow: unset;
+  background: #fff;
+  color: #4E869F;
+  border-radius: 0;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown {
+  flex-direction: column;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data {
   width: 100%;
   background: #fff;
   padding: 40px 40px 258px 50px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .title h3 {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title h3 {
   color: #212121;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: Raleway;
@@ -6231,7 +6360,7 @@ footer.footer .socmedias {
   line-height: 130%;
   text-transform: uppercase;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .title p {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title p {
   max-width: 545px;
   color: #353535;
   font-variant-numeric: lining-nums proportional-nums;
@@ -6242,22 +6371,25 @@ footer.footer .socmedias {
   line-height: 20px;
   margin-top: 15px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form {
   display: flex;
   gap: 55px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .avatar-item .avatar {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .avatar-item .avatar {
   width: 90px;
   min-width: 90px;
   height: 90px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .avatar-item .avatar img {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .avatar-item .avatar.type2 img {
+  box-shadow: 0px 7.48936px 28.08511px 0px rgba(0,0,0,0.1);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .avatar-item .avatar img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .avatar-item a {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .avatar-item a {
   margin-top: 12px;
   color: #6C9165;
   text-align: center;
@@ -6271,16 +6403,16 @@ footer.footer .socmedias {
   border-bottom: 1px dashed #6c9165;
   width: max-content;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label {
   display: flex;
   align-items: center;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label p {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label p {
   color: #353535;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: Raleway;
@@ -6289,7 +6421,7 @@ footer.footer .socmedias {
   font-weight: 400;
   line-height: 15px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label input {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input {
   max-width: 380px;
   min-width: 380px;
   width: 100%;
@@ -6306,14 +6438,14 @@ footer.footer .socmedias {
   letter-spacing: 0.48px;
   margin-right: 30px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label input:disabled {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input:disabled {
   color: #9E9E9E;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs label input:not(:disabled) {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input:not(:disabled) {
   border: 0.824px solid #353535;
   background: #fff;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs a {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs a {
   color: #818181;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: Raleway;
@@ -6324,7 +6456,7 @@ footer.footer .socmedias {
   margin-top: 20px;
   display: flex;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs a:before {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs a:before {
   content: url('../img/edit.svg');
   margin-right: 10px;
   display: block;
@@ -6332,7 +6464,7 @@ footer.footer .socmedias {
   height: 12px;
   margin-top: 1px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs #saveButton {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs #saveButton {
   max-width: 240px;
   margin-top: 50px;
   color: #FFF;
@@ -6352,7 +6484,7 @@ footer.footer .socmedias {
   letter-spacing: 0.36px;
   text-transform: uppercase;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs #saveButton:before {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs #saveButton:before {
   content: '';
   width: 100%;
   height: calc(100% - 3px);
@@ -6364,18 +6496,18 @@ footer.footer .socmedias {
   transition: .3s;
   background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.personal-data .personal-data-content form .inputs #saveButton:hover:before {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs #saveButton:hover:before {
   opacity: 0;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password {
   background: #fff;
   padding: 40px 50px 165px;
   width: 100%;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password .title {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password .title {
   margin-bottom: 40px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password .title h3 {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password .title h3 {
   color: #212121;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: Raleway;
@@ -6385,10 +6517,10 @@ footer.footer .socmedias {
   line-height: 130%;
   text-transform: uppercase;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form {
   max-width: 380px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form button {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form button {
   max-width: 240px;
   margin-top: 50px;
   color: #FFF;
@@ -6413,7 +6545,7 @@ footer.footer .socmedias {
   text-transform: uppercase;
   margin-top: 55px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form button:before {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form button:before {
   content: '';
   width: 100%;
   height: calc(100% - 3px);
@@ -6425,10 +6557,10 @@ footer.footer .socmedias {
   transition: .3s;
   background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form button:hover:before {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form button:hover:before {
   opacity: 0;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label {
   color: #353535;
   font-family: Raleway;
   font-size: 16px;
@@ -6439,17 +6571,17 @@ footer.footer .socmedias {
   display: flex;
   flex-direction: column;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label:focus-within .container-input:before {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label:focus-within .container-input:before {
   content: url('../img/password-icon-active.svg');
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label:focus-within .container-input input {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label:focus-within .container-input input {
   border: 0.824px solid #353535;
   background: #FFF;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input {
   position: relative;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input:before {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input:before {
   content: url('../img/password-icon.svg');
   position: absolute;
   top: 50%;
@@ -6459,7 +6591,7 @@ footer.footer .socmedias {
   height: 18px;
   display: block;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input input {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input input {
   border-radius: 5px;
   border: 1px solid #DBDBDB;
   background: #FFF;
@@ -6475,8 +6607,743 @@ footer.footer .socmedias {
   line-height: normal;
   letter-spacing: 0.48px;
 }
-.sec-pa-settings-specialist__step1 .container-item .tabs .tabs__content.change-password form label .container-input input::placeholder {
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input input::placeholder {
   color: #BFBFBF;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history {
+  padding: 40px 50px;
+  background: #fff;
+  width: 100%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .title h3 {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table {
+  min-height: 490px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-head {
+  display: flex;
+  justify-content: space-between;
+  background: #F8F8F8;
+  height: 40px;
+  align-items: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-head div {
+  color: #818181;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-head div:first-child {
+  text-align: left;
+  padding-left: 40px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents {
+  padding-top: 20px;
+  border: 0.824px solid #dbdbdb;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 449px;
+  padding-bottom: 30px;
+  border-radius: 0 0 10px 10px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .pages {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin-top: auto;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .pages form {
+  display: flex;
+  align-items: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .pages form span {
+  color: #818181;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .pages form input {
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #4E869F;
+  max-width: 61px;
+  text-align: center;
+  color: #4E869F;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  height: 29px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content .blue {
+  color: #4E869F;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content div {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content div:first-child {
+  text-align: left;
+  padding-left: 40px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw {
+  margin-top: 40px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .bill-amount {
+  white-space: nowrap;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .bill-amount span {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .bill-amount .summ {
+  margin-left: 15px;
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item input {
+  border-radius: 5px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  max-width: 280px;
+  margin-right: 20px;
+  text-align: left;
+  padding: 0 30px;
+  transition: .3s;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item input:focus {
+  border-color: #353535;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item input::placeholder {
+  color: #9E9E9E;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  border-radius: 5px;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+  height: 50px;
+  width: 100%;
+  max-width: 165px;
+  transition: .3s;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item button:hover {
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab {
+  padding: 40px 50px 98px 50px;
+  background: #fff;
+  width: 100%;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title h3 {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title p {
+  margin-top: 15px;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
+  height: 65px;
+  width: 100%;
+  max-width: 240px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 110px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form button:after {
+  content: url('../img/upload-icon.svg');
+  margin-left: 18px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form button:hover:before {
+  opacity: 0;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items {
+  display: flex;
+  gap: 40px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items .item .sertificat {
+  position: relative;
+  max-width: 260px;
+  max-height: 309px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items .item .sertificat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items .item .sertificat a {
+  color: #6C9165;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  border-radius: 5px;
+  background: #FFF;
+  position: absolute;
+  height: 30px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items .item .sertificat a:before {
+  content: url('../img/sertificat-edit.svg');
+  margin-right: 10px;
+  display: block;
+  width: 10px;
+  height: 18px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message {
+  padding: 40px 50px 50px;
+  background: #fff;
+  width: 100%;
+  min-height: 691px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message.active {
+  display: flex;
+  flex-direction: column;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title {
+  margin-bottom: 40px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title h3 {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.824px solid #dbdbdb;
+  padding: 25px 30px 25px 40px;
+  border-radius: 10px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content {
+  display: flex;
+  align-items: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .avatar {
+  width: 90px;
+  height: 90px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 3.33333px 12.5px 0px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .name {
+  margin-left: 26px;
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  max-width: 225px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item a {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  height: 65px;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 7.5px;
+  border: 1.5px solid #4E869F;
+  backdrop-filter: blur(1.875px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item a:hover {
+  color: #fff;
+  background: #4E869F;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items.type2 .item .name-item {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items.type2 .item .name-item .position {
+  margin-top: 10px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.072px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .pages {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  margin-top: auto;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .pages form {
+  display: flex;
+  align-items: center;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .pages form span {
+  color: #818181;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .pages form input {
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #4E869F;
+  max-width: 61px;
+  text-align: center;
+  color: #4E869F;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  height: 29px;
+}
+.sec-cancel-consult {
+  padding-top: 85px;
+  padding-bottom: 140px;
+}
+.sec-cancel-consult .container-item .title {
+  margin-bottom: 40px;
+}
+.sec-cancel-consult .container-item .title h2 {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.sec-cancel-consult .container-item .title h3 {
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.sec-cancel-consult .container-item .items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sec-cancel-consult .container-item .items .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 0.824px solid #dbdbdb;
+  padding: 24px 60px 24px 30px;
+  background: #fff;
+}
+.sec-cancel-consult .container-item .items .item .specialist {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.sec-cancel-consult .container-item .items .item .specialist .avatar {
+  width: 90px;
+  height: 90px;
+}
+.sec-cancel-consult .container-item .items .item .specialist .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.sec-cancel-consult .container-item .items .item .specialist .name-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 220px;
+}
+.sec-cancel-consult .container-item .items .item .specialist .name-item .name {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20.176px;
+}
+.sec-cancel-consult .container-item .items .item .specialist .name-item .position {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17.072px;
+  margin-top: 7px;
+}
+.sec-cancel-consult .container-item .items .item .date span {
+  color: #212121;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.176px;
+}
+.sec-cancel-consult .container-item .items .item .date span:before {
+  content: url('../img/date-icon.svg');
+  margin-right: 8px;
+}
+.sec-cancel-consult .container-item .items .item .button a {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  padding: 17px 29px;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+  border-radius: 7.5px;
+  border: 1.5px solid #4E869F;
+  backdrop-filter: blur(1.875px);
+  max-width: 260px;
+  display: flex;
+  transition: .3s;
+}
+.sec-cancel-consult .container-item .items .item .button a:hover {
+  color: #fff;
+  background: #4e869f;
+}
+.sec-specialist-list {
+  padding-top: 85px;
+  padding-bottom: 140px;
+}
+.sec-specialist-list .container-item .title {
+  margin-bottom: 40px;
+}
+.sec-specialist-list .container-item .title h2 {
+  color: #212121;
+  text-align: right;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+}
+.sec-specialist-list .container-item .title h2 span {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.sec-specialist-list .container-item .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.sec-specialist-list .container-item .cards .card {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.1);
+  padding: 18px 14px 14px 14px;
+  flex: 0 0 31.6%;
+}
+.sec-specialist-list .container-item .cards .card .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec-specialist-list .container-item .cards .card .descr .top-item {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sec-specialist-list .container-item .cards .card .descr .top-item .feedback {
+  color: #6C9165;
+  text-align: right;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration-line: underline;
+  margin-bottom: 5px;
+}
+.sec-specialist-list .container-item .cards .card .descr .top-item .rating-item span {
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sec-specialist-list .container-item .cards .card .descr .top-item .rating-item .stars-container {
+  display: flex;
+  align-items: center;
+}
+.sec-specialist-list .container-item .cards .card .descr .top-item .rating-item .stars-container span {
+  margin-right: 5px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sec-specialist-list .container-item .cards .card .descr .main-item {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sec-specialist-list .container-item .cards .card .descr .main-item .name {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  max-width: 190px;
+}
+.sec-specialist-list .container-item .cards .card .descr .main-item .position {
+  margin-top: 10px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.sec-specialist-list .container-item .cards .card .descr .main-item .seniority {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.sec-specialist-list .container-item .cards .card .descr .buttons {
+  margin-top: 30px;
+  gap: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.sec-specialist-list .container-item .cards .card .descr .buttons .details {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+  border-radius: 5.86px;
+  border: 1.172px solid #4E869F;
+  height: 38px;
+  transition: .3s;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-specialist-list .container-item .cards .card .descr .buttons .details:hover {
+  color: #fff;
+  background: #4e869f;
+}
+.sec-specialist-list .container-item .cards .card .descr .buttons .enrol {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  height: 38px;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 50%;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-specialist-list .container-item .cards .card .descr .buttons .enrol:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+}
+.sec-specialist-list .container-item .show-all a {
+  margin: 60px auto 0;
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1.172px solid #4E869F;
+  height: 85px;
+  transition: .3s;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-specialist-list .container-item .show-all a:hover {
+  color: #fff;
+  background: #4e869f;
 }
 @media (max-width: 1400px) {
   .info-block-2 .info-content {
@@ -6491,6 +7358,19 @@ footer.footer .socmedias {
     display: none !important;
   }
   .swiper-pagination-specialists {
+    display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .sec-pa-settings-specialist__step1 .container-item .title h2 {
+    text-align: center;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .tab-dropdown-desktop {
     display: none;
   }
 }
@@ -7806,6 +8686,281 @@ footer.footer .socmedias {
   .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
     flex: 0 0 30%;
   }
+  .personalaccount-header .container-item {
+    padding: 0 50px;
+  }
+  .sec-paspecialist__step4 {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .sec-paspecialist__step4 .container-item {
+    padding-left: 18.5px;
+    padding-right: 18.5px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window {
+    border: 0;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input {
+    padding: 0 31.5px 27px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list {
+    padding: 40px 31.5px;
+  }
+  .sec-paspecialist__step4 .container-item .title h2 {
+    display: none;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker {
+    display: none;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.active {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item {
+    display: flex;
+    align-items: center;
+  }
+  .sec-paspecialist__step1 {
+    padding: 35px 0 70px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect {
+    margin-top: 30px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    border-bottom: 1px solid #A0A0A0;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background {
+    padding: 0;
+    max-width: unset;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item {
+    justify-content: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .avatar {
+    margin-right: 20px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    padding: 30px 0 40px;
+  }
+  .sec-paspecialist__step1 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-paspecialist__step2 .container-item .title {
+    margin-left: 50px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form,
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer {
+    flex-direction: column;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label {
+    flex-direction: column-reverse;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label {
+    align-items: flex-start;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input {
+    min-width: unset;
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data {
+    background: #f9f9f9;
+    padding: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown {
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .avatar-item .avatar {
+    margin-right: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 30px 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title p {
+    margin: 10px auto 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 14px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs {
+    gap: 15px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input {
+    padding: 0 20px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown .mobile-dropdown {
+    margin: 0 auto;
+    max-width: 446px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs a {
+    margin-top: 15px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs #saveButton {
+    margin: 15px auto 0;
+    padding: 0 40px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .title {
+    margin-bottom: 37px;
+  }
+  .sec-pa-settings-specialist__step1 {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input:before {
+    left: 19px;
+    width: 9px;
+    height: 12px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form button {
+    margin: 59px auto 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form {
+    max-width: 446px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input input {
+    padding-left: 40px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history {
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item {
+    justify-content: flex-start;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab {
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title p {
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form button {
+    margin: 45px auto 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items .item .sertificat {
+    min-width: 260px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .avatar {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0 40px;
+    border: 0;
+    border-top: 1px solid #A0A0A0;
+    border-radius: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item:last-child {
+    padding-bottom: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items {
+    gap: 0;
+    width: 100%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title {
+    margin-bottom: 30px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item a {
+    margin-top: 30px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .name {
+    margin-left: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message {
+    min-height: 490px;
+  }
 }
 @media (max-width: 768px) {
   .tabs-dropdown {
@@ -8120,8 +9275,530 @@ footer.footer .socmedias {
   .sec-generalquestions .container-item form button {
     margin-top: 68px;
   }
+  .personalaccount-header .container-item .consult {
+    display: none;
+  }
+  .personalaccount-header .container-item {
+    padding: 0 50px;
+  }
+  .personalaccount-header .container-item .logo {
+    max-width: 104px;
+  }
+  .personalaccount-header .container-item .person .avatar {
+    width: 40px;
+    height: 36px;
+  }
+  .sec-paspecialist__step4 {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .sec-paspecialist__step4 .container-item {
+    padding-left: 18.5px;
+    padding-right: 18.5px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .avatar,
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .avatar {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window {
+    border: 0;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input {
+    padding: 0 31.5px 27px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container input {
+    font-size: 12px;
+    padding-left: 74px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons {
+    left: 7px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons a img {
+    width: 22px;
+    height: 20px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons a:not(:last-child) {
+    margin-right: 3px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container button {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list {
+    padding: 40px 31.5px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .message p,
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .message p {
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step4 .container-item .title a {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step4 .container-item .title h2 {
+    display: none;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker {
+    display: none;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.active {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 20px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item {
+    display: flex;
+    align-items: center;
+  }
+  .sec-paspecialist__step1 {
+    padding: 35px 0 70px;
+  }
+  .sec-paspecialist__step1 .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+  .sec-paspecialist__step1 .container-item .title p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption {
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption .tabs__item {
+    min-width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 11.02px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr .name {
+    margin-top: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr .date {
+    margin-top: 5px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .cancel,
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect {
+    max-width: 250px;
+    height: 67px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 0 60px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect {
+    margin-top: 30px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    border-bottom: 1px solid #A0A0A0;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background {
+    background: #f9f9f9;
+    padding: 0;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .goto-chat {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item {
+    justify-content: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item .all-date {
+    max-width: 250px;
+    height: 67px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 0 25px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .avatar {
+    margin-right: 20px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    padding: 30px 0 40px;
+  }
+  .sec-paspecialist__step1 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-paspecialist__step2 {
+    padding: 40px 0 70px;
+  }
+  .sec-paspecialist__step2 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-paspecialist__step2 .container-item .title a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step2 .container-item .main-content {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 53px;
+    background: #f9f9f9;
+    padding: 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item span {
+    display: none;
+  }
+  .sec-paspecialist__step2 .container-item .title a:before {
+    width: 19px;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-paspecialist__step2 .container-item .title {
+    margin-bottom: 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form button {
+    margin-top: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    max-width: 320px;
+    margin: 40px auto 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .stop-consult {
+    margin: 46px auto 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .dropdown-firststyle,
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item,
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .top-dropdowns .dropdown-firststyle:first-child {
+    max-width: unset;
+  }
+  .sec-paspecialist__step2 .container-item .main-content {
+    justify-content: center;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item {
+    min-width: 380px;
+    max-width: 45%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form,
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer {
+    flex-direction: column;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label {
+    flex-direction: column-reverse;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label {
+    align-items: flex-start;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input {
+    min-width: unset;
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data {
+    background: #f9f9f9;
+    padding: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown {
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .avatar-item .avatar {
+    margin-right: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 30px 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title p {
+    margin: 10px auto 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 14px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs {
+    gap: 15px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input {
+    padding: 0 20px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs a {
+    margin-top: 15px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs #saveButton {
+    margin: 15px auto 0;
+    padding: 0 40px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .title {
+    margin-bottom: 20px;
+  }
+  .sec-pa-settings-specialist__step1 {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input:before {
+    left: 19px;
+    width: 9px;
+    height: 12px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form button {
+    margin: 59px auto 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form {
+    max-width: 446px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input input {
+    padding-left: 40px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content div {
+    width: 33% !important;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content div:first-child {
+    width: 100% !important;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content {
+    flex-wrap: wrap;
+    border-top: 1px solid #A0A0A0;
+    padding: 15px 0 20px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history {
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-head {
+    display: none;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents {
+    border: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history {
+    padding: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .title {
+    margin-bottom: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table {
+    margin: 0 auto;
+    max-width: 446px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .pages {
+    justify-content: center;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item {
+    flex-direction: column;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item input {
+    height: 38px;
+    margin: 25px 0;
+    padding: 0 12px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    max-width: unset;
+    max-width: 446px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw {
+    margin-top: 0;
+    padding-top: 30px;
+    border-top: 1px solid #A0A0A0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .bill-amount span {
+    font-size: 16.002px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .bill-amount .summ {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab {
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title p {
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form button {
+    margin: 45px auto 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items .item .sertificat {
+    min-width: 260px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .avatar {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0 40px;
+    border: 0;
+    border-top: 1px solid #A0A0A0;
+    border-radius: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item:last-child {
+    padding-bottom: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items {
+    gap: 0;
+    margin: 0 auto;
+    max-width: 460px;
+    width: 100%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title {
+    margin-bottom: 30px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item a {
+    margin-top: 30px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .name {
+    margin-left: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .pages {
+    display: none;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message {
+    min-height: unset;
+  }
 }
 @media (min-width: 320px) and (max-width: 575px) {
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items.type2 .item .name-item .position {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
   .wrapper-container-signin footer {
     padding: 30px 0 40px;
   }
@@ -8506,6 +10183,505 @@ footer.footer .socmedias {
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
+  }
+  .personalaccount-header .container-item .consult {
+    display: none;
+  }
+  .personalaccount-header .container-item {
+    padding: 0 50px;
+  }
+  .personalaccount-header .container-item .logo {
+    max-width: 104px;
+  }
+  .personalaccount-header .container-item .person .avatar {
+    width: 40px;
+    height: 36px;
+  }
+  .sec-paspecialist__step4 {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .sec-paspecialist__step4 .container-item {
+    padding-left: 18.5px;
+    padding-right: 18.5px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .avatar,
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .avatar {
+    width: 45px;
+    min-width: 45px;
+    height: 45px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window {
+    border: 0;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.05);
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input {
+    padding: 0 31.5px 27px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container input {
+    font-size: 12px;
+    padding-left: 74px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons {
+    left: 7px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons a img {
+    width: 22px;
+    height: 20px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container .buttons a:not(:last-child) {
+    margin-right: 3px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-input .message-container button {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list {
+    padding: 40px 31.5px;
+  }
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-from .message p,
+  .sec-paspecialist__step4 .container-item .main-content .chat-window .message-list .message-to .message p {
+    font-size: 10px;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step4 .container-item .title a {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step4 .container-item .title h2 {
+    display: none;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item #datepicker {
+    display: none;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content.active {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    flex-direction: column;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item {
+    display: flex;
+    align-items: center;
+  }
+  .sec-paspecialist__step1 {
+    padding: 35px 0 70px;
+  }
+  .sec-paspecialist__step1 .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+  .sec-paspecialist__step1 .container-item .title p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption {
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__caption .tabs__item {
+    min-width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 11.02px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr .name {
+    margin-top: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .person-descr .date {
+    margin-top: 5px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .cancel,
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect {
+    max-width: 250px;
+    height: 67px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 0 60px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .connect {
+    margin-top: 30px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    border-bottom: 1px solid #A0A0A0;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background {
+    background: #f9f9f9;
+    padding: 0;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .buttons .goto-chat {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item {
+    justify-content: center;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .datepicker-item .all-date {
+    max-width: 250px;
+    height: 67px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 0 25px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items .item .avatar {
+    margin-right: 20px;
+  }
+  .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-background .items {
+    padding: 30px 0 40px;
+  }
+  .sec-paspecialist__step1 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-paspecialist__step2 {
+    padding: 40px 0 70px;
+  }
+  .sec-paspecialist__step2 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-paspecialist__step2 .container-item .title a {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-paspecialist__step2 .container-item .main-content {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 53px;
+    background: #f9f9f9;
+    padding: 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item span {
+    display: none;
+  }
+  .sec-paspecialist__step2 .container-item .title a:before {
+    width: 19px;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-paspecialist__step2 .container-item .title {
+    margin-bottom: 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form button {
+    margin-top: 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    max-width: 320px;
+    margin: 40px auto 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .stop-consult {
+    margin: 46px auto 0;
+  }
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .dropdown-firststyle,
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item,
+  .sec-paspecialist__step2 .container-item .main-content .item .add-consult-item form .top-dropdowns .dropdown-firststyle:first-child {
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form,
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer {
+    flex-direction: column;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label {
+    flex-direction: column-reverse;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label {
+    align-items: flex-start;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input {
+    min-width: unset;
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data {
+    background: #f9f9f9;
+    padding: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tabs-dropdown {
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .avatar-item .avatar {
+    margin-right: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 30px 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .title p {
+    margin-top: 10px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 14px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs {
+    gap: 15px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs label input {
+    padding: 0 20px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs a {
+    margin-top: 15px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.personal-data .personal-data-content form .inputs #saveButton {
+    margin: 15px auto 0;
+    padding: 0 40px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .title {
+    margin-bottom: 20px;
+  }
+  .sec-pa-settings-specialist__step1 {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input:before {
+    left: 19px;
+    width: 9px;
+    height: 12px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form button {
+    margin: 59px auto 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form {
+    max-width: 446px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password form label .container-input input {
+    padding-left: 40px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.change-password {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content div {
+    width: 33% !important;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content div:first-child {
+    width: 100% !important;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .table-content {
+    flex-wrap: wrap;
+    border-top: 1px solid #A0A0A0;
+    padding: 15px 0 20px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history {
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-head {
+    display: none;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents {
+    border: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history {
+    padding: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .title {
+    margin-bottom: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .table-parent .table .table-main-contents .pages {
+    justify-content: center;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item {
+    flex-direction: column;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .input-item input {
+    height: 38px;
+    margin: 25px 0;
+    padding: 0 12px;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%;
+    max-width: unset;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw {
+    margin-top: 0;
+    padding-top: 30px;
+    border-top: 1px solid #A0A0A0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .bill-amount span {
+    font-size: 16.002px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 135%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.payments-history .total-withdraw form .bill-amount .summ {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form .items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab .title p {
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.sertificates-tab form button {
+    margin: 45px auto 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .avatar {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item {
+    flex-direction: column;
+    padding: 20px 0 40px;
+    border: 0;
+    border-top: 1px solid #A0A0A0;
+    border-radius: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item:last-child {
+    padding-bottom: 0;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items {
+    gap: 0;
+    margin: 0 auto;
+    max-width: 460px;
+    width: 100%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title {
+    margin-bottom: 30px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .title h3 {
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item a {
+    margin-top: 30px;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .items .item .name-content .name {
+    margin-left: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message .pages {
+    display: none;
+  }
+  .sec-pa-settings-specialist__step1 .container-item .tabs-parentcontainer .tab-content-dropdown.private-message {
+    min-height: unset;
   }
 }
 @media (max-width: 420px) {

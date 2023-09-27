@@ -67,16 +67,25 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
             <div class="title">
               <h2>Управление аккаунтом</h2>
             </div>
-            <div class="tabs">
-              <ul class="tabs__caption">
-                <li class="tabs__item">Личные данные</li>
-                <li class="tabs__item">Изменить пароль</li>
-                <li class="tabs__item">История платежей</li>
-                <li class="tabs__item">Специализация</li>
-                <li class="tabs__item">Дипломы и сертификаты</li>
-                <li class="tabs__item">Личные сообщения</li>
-              </ul>
-              <div class="tabs__content personal-data">
+            <div class="tabs-parentcontainer">
+              <div class="tabs-dropdown">
+                <div class="tab-dropdown tab-dropdown-desktop active" data-tab="tab1">Личные данные</div>
+                <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab2">Изменить пароль</div>
+                <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab3">История платежей</div>
+                <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab4">Личные сообщения</div>
+                <div class="mobile-dropdown">
+                  <div class="custom-select">
+                    <select>
+                      <option value="0">Личные данные</option>
+                      <option value="1">Личные данные</option>
+                      <option value="2">Изменить пароль</option>
+                      <option value="3">История платежей</option>
+                      <option value="4">Личные сообщения</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-content-dropdown personal-data" id="tab1" style="display: flex;">
                 <div class="title">
                   <h3>Личные данные</h3>
                   <p>Вы можете изменить электронную почту, телефон или фотографию. Для создания быстрой аватарки
@@ -85,7 +94,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                 <div class="personal-data-content">
                   <form action="#">
                     <div class="avatar-item">
-                      <div class="avatar"><img src="./assets/img/personal-data-avatar.jpg" alt=""></div>
+                      <div class="avatar type2"><img src="./assets/img/privat-message-avatar.jpg" alt=""></div>
                       <a href="#">Изменить фото</a>
                     </div>
                     <div class="inputs">
@@ -105,7 +114,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                   </form>
                 </div>
               </div>
-              <div class="tabs__content change-password">
+              <div class="tab-content-dropdown change-password" id="tab2" style="display: none;">
                 <div class="title">
                   <h3>Изменить пароль</h3>
                 </div>
@@ -131,17 +140,87 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                   <button>сохранить изменения</button>
                 </form>
               </div>
-              <div class="tabs__content">
-                Контент 3 таба
+              <div class="tab-content-dropdown payments-history" id="tab3" style="display: none;">
+                <div class="title">
+                  <h3>история платежей</h3>
+                </div>
+                <div class="table-parent">
+                  <div class="table">
+                    <div class="table-head">
+                      <div style="width: 50%">Назначение платежа</div>
+                      <div style="width: 17%">Дата платежа</div>
+                      <div style="width: 17%">Сумма</div>
+                      <div style="width: 17%">Статус</div>
+                    </div>
+                    <div class="table-main-contents">
+                      <div class="table-content">
+                        <div style="width: 50%">Оплата за консультацию,<br>ФИО</div>
+                        <div style="width: 17%">29 мая 2023</div>
+                        <div style="width: 17%">1500 ₸</div>
+                        <div style="width: 17%" class="blue">оплачено</div>
+                      </div>
+                      <div class="table-content">
+                        <div style="width: 50%">Оплата за консультацию,<br>ФИО</div>
+                        <div style="width: 17%">29 мая 2023</div>
+                        <div style="width: 17%">1500 ₸</div>
+                        <div style="width: 17%" class="blue">оплачено</div>
+                      </div>
+                      <div class="pages">
+                        <form action="#">
+                          <span>Страница</span>
+                          <input type="text" value="1">
+                          <span>из 1</span>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="total-withdraw">
+                  <form action="#">
+                    <div class="bill-amount">
+                      <span>Мой счет:</span>
+                      <span class="summ">1500 ₸</span>
+                    </div>
+                    <div class="input-item">
+                      <input type="number" placeholder="Введите сумму для вывода">
+                      <button>Вывести</button>
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="tabs__content">
-                Контент 4 таба
-              </div>
-              <div class="tabs__content">
-                Контент 5 таба
-              </div>
-              <div class="tabs__content">
-                Контент 6 таба
+              <div class="tab-content-dropdown private-message" id="tab4" style="display: none;">
+                <div class="title">
+                  <h3>Личные сообщения</h3>
+                </div>
+                <div class="items type2">
+                  <div class="item">
+                    <div class="name-content">
+                      <div class="avatar"><img src="./assets/img/specialist-photo.jpg" alt=""></div>
+                      <div class="name-item">
+                        <span class="name">Андреева Оксана Валерьевна</span>
+                        <span class="position">Психолог, психолог</span>
+                      </div>
+                    </div>
+                    <a href="#">перейти к диалогу со специалистом</a>
+                  </div>
+                  <div class="item">
+                    <div class="name-content">
+                      <div class="avatar"><img src="./assets/img/specialist-photo.jpg" alt=""></div>
+                      <div class="name-item">
+                        <span class="name">Андреева Оксана Валерьевна</span>
+                        <span class="position">Психолог, психолог</span>
+                      </div>
+                    </div>
+                    <a href="#">перейти к диалогу со специалистом</a>
+                  </div>
+                </div>
+                <div class="pages">
+                  <form action="#">
+                    <span>Страница</span>
+                    <input type="text" value="1">
+                    <span>из 1</span>
+                  </form>
+                </div>
               </div>
             </div>
           </div>

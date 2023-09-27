@@ -80,7 +80,25 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                       <div class="items">
                         <div class="item">
                           <div class="avatar">
-                            <img src="./assets/img/client-avatar.jpg" alt="">
+                            <img src="./assets/img/privat-message-avatar.jpg" alt="">
+                          </div>
+                          <div class="person-descr">
+                            <span class="name">Иванов Иван Иванович</span>
+                            <span class="date">29 мая, понедельник в 12:00</span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="buttons">
+                            <a href="#" class="connect">подключиться к консультации</a>
+                            <a href="#" class="cancel">отменить консультацию</a>
+                            <a href="#" class="goto-chat">перейти в чат с клиентом</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="items">
+                        <div class="item">
+                          <div class="avatar">
+                            <img src="./assets/img/privat-message-avatar.jpg" alt="">
                           </div>
                           <div class="person-descr">
                             <span class="name">Иванов Иван Иванович</span>
