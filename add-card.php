@@ -62,36 +62,59 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
         </div>
       </header>
       <main>
-        <section class="sec-cancel-consult">
+        <section class="add-card">
           <div class="container-item">
             <div class="title">
-              <h2>Перенести или отменить консультацию</h2>
-              <h3>Ваш список назначенных консультаций</h3>
+              <h2>Добавьте карту для записи</h2>
             </div>
-            <div class="items">
-              <div class="item">
-                <div class="specialist">
-                  <div class="avatar"><img src="./assets/img/specialist-photo.jpg" alt=""></div>
-                  <div class="name-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <div class="date"><span>29 мая в 12:00</span></div>
-                  </div>
-                </div>
-                <div class="date"><span>29 мая в 12:00</span></div>
-                <div class="button"><a href="#">перенести или отменить консультацию</a></div>
+            <form action="#">
+              <div class="specialist-item">
+                <span class="name">Андреева Оксана Валерьевна</span>
+                <span class="date">29 мая, понедельник в 12:00</span>
               </div>
-              <div class="item">
-                <div class="specialist">
-                  <div class="avatar"><img src="./assets/img/specialist-photo.jpg" alt=""></div>
-                  <div class="name-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <div class="date"><span>29 мая в 12:00</span></div>
+              <div class="inputs">
+                <label>
+                  Введите номер карты
+                  <div class="items">
+                    <input type="text" placeholder="2222 2222 2222 2222">
+                    <input type="text" placeholder="Месяц/Год">
+                    <input type="text" placeholder="CVC/CVV-код">
                   </div>
+                </label>
+              </div>
+              <div class="summ-items">
+                <div class="item">
+                  <span class="time">Сессия, 50 мин</span>
+                  <span class="time">1500 ₸</span>
                 </div>
-                <div class="date"><span>29 мая в 12:00</span></div>
-                <div class="button"><a href="#">перенести или отменить консультацию</a></div>
+                <div class="item">
+                  <span class="price">Итого</span>
+                  <span class="price">1500 ₸</span>
+                </div>
+              </div>
+              <button>оплатить и записаться</button>
+            </form>
+            <div class="faq-cards wrapper">
+              <div class="faq-card">
+                <div class="faq-card-header">
+                  <div class="faq-title">В какой момент будет списана стоимость сессии?</div>
+                  <img src="./assets/img/open-faq.svg" alt="" />
+                </div>
+                <div class="text">Стоимость сессии спишется с вашей карты за 12 часов до её начала.</div>
+              </div>
+              <div class="faq-card">
+                <div class="faq-card-header">
+                  <div class="faq-title">ЧМогу ли я отменить или перенести сессию?</div>
+                  <img src="./assets/img/open-faq.svg" alt="" />
+                </div>
+                <div class="text">Стоимость сессии спишется с вашей карты за 12 часов до её начала.</div>
+              </div>
+              <div class="faq-card">
+                <div class="faq-card-header">
+                  <div class="faq-title">Как мы рассчитываем стоимость для оплаты иностранными картами?</div>
+                  <img src="./assets/img/open-faq.svg" alt="" />
+                </div>
+                <div class="text">Стоимость сессии спишется с вашей карты за 12 часов до её начала.</div>
               </div>
             </div>
           </div>

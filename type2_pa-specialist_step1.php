@@ -100,29 +100,45 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                   <div class="tabs__content type2">
                     <div class="tabs-consult">
                       <div class="table-consult">
-                        <table>
-                          <col style="width:33%">
-                          <col style="width:33%">
-                          <col style="width:33%">
-                          <tr class="table-head">
-                            <th>Специалист</th>
-                            <th>Дата консультации</th>
-                            <th>Чат консультации</th>
-                          </tr>
-                          <tr>
-                            <td class="name-specialist">
-                              <div class="avatar">
-                                <img src="./assets/img/specialist-photo.jpg" alt="">
+                      <div class="table">
+                          <div class="table-head">
+                            <div>Специалист</div>
+                            <div>Дата консультации</div>
+                            <div>Чат консультации</div>
+                          </div>
+                          <div class="table-body">
+                            <div class="table-line">
+                              <div class="name-specialist">
+                                <div class="avatar">
+                                  <img src="./assets/img/specialist-photo.jpg" alt="">
+                                </div>
+                                <div class="item-name">
+                                  <span class="name">Иванов Иван Иванович</span>
+                                  <span class="position">Психолог, психолог</span>
+                                  <div class="date-consult">29 мая в 12:00</div>
+                                  <div class="history-chat"><a href="#">История чата</a></div>
+                                </div>
                               </div>
-                              <div class="name-item">
-                                <span class="name">Иванов Иван Иванович</span>
-                                <span class="position">Психолог, психолог</span>
+                              <div class="date-consult">29 мая в 12:00</div>
+                              <div class="history-chat"><a href="#">История чата</a></div>
+                            </div>
+                            <div class="table-line">
+                              <div class="name-specialist">
+                                <div class="avatar">
+                                  <img src="./assets/img/specialist-photo.jpg" alt="">
+                                </div>
+                                <div class="item-name">
+                                  <span class="name">Иванов Иван Иванович</span>
+                                  <span class="position">Психолог, психолог</span>
+                                  <div class="date-consult">29 мая в 12:00</div>
+                                  <div class="history-chat"><a href="#">История чата</a></div>
+                                </div>
                               </div>
-                            </td>
-                            <td class="date-consult">29 мая в 12:00</td>
-                            <td class="history-chat"><a href="#">История чата</a></td>
-                          </tr>
-                        </table>
+                              <div class="date-consult">29 мая в 12:00</div>
+                              <div class="history-chat"><a href="#">История чата</a></div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

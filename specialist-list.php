@@ -58,256 +58,258 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
             <div class="title">
               <h2>Мы подобрали для вас <span>23 специалиста</span></h2>
             </div>
-            <div class="cards">
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+            <div class="swiper mySwiperCards">
+              <div class="swiper-wrapper cards">
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card">
-                <div class="photo">
-                  <img src="./assets/img/specialist-card-photo.jpg" alt="">
-                </div>
-                <div class="descr">
-                  <div class="top-item">
-                    <div class="rating-item">
-                      <span>Средняя оценка</span>
-                      <div class="stars-container">
-                        <span>5/5</span>
-                        <div class="stars-item">
-                          <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                <div class="swiper-slide card">
+                  <div class="photo">
+                    <img src="./assets/img/specialist-card-photo.jpg" alt="">
+                  </div>
+                  <div class="descr">
+                    <div class="top-item">
+                      <div class="rating-item">
+                        <span>Средняя оценка</span>
+                        <div class="stars-container">
+                          <span>5/5</span>
+                          <div class="stars-item">
+                            <div class="star-item"><img src="./assets/img/stars-item.svg" alt=""></div>
+                          </div>
                         </div>
                       </div>
+                      <div class="feedback"><a href="#">250 отзывов</a></div>
                     </div>
-                    <div class="feedback"><a href="#">250 отзывов</a></div>
-                  </div>
-                  <div class="main-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <span class="seniority">Опыт работы - 6 лет</span>
-                  </div>
-                  <div class="buttons">
-                    <a href="#" class="details">подробнее</a>
-                    <a href="#" class="enrol">записаться</a>
+                    <div class="main-item">
+                      <span class="name">Андреева Оксана Валерьевна</span>
+                      <span class="position">Психолог, психолог</span>
+                      <span class="seniority">Опыт работы - 6 лет</span>
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="details">подробнее</a>
+                      <a href="#" class="enrol">записаться</a>
+                    </div>
                   </div>
                 </div>
               </div>

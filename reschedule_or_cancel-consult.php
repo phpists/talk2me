@@ -62,36 +62,51 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
         </div>
       </header>
       <main>
-        <section class="sec-cancel-consult">
+        <section class="sec-rechedule-consult">
           <div class="container-item">
             <div class="title">
               <h2>Перенести или отменить консультацию</h2>
-              <h3>Ваш список назначенных консультаций</h3>
             </div>
-            <div class="items">
-              <div class="item">
-                <div class="specialist">
-                  <div class="avatar"><img src="./assets/img/specialist-photo.jpg" alt=""></div>
-                  <div class="name-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <div class="date"><span>29 мая в 12:00</span></div>
-                  </div>
+            <div class="content">
+              <div class="name-specialist">
+                <div class="avatar">
+                  <img src="./assets/img/specialist-photo.jpg" alt="">
                 </div>
-                <div class="date"><span>29 мая в 12:00</span></div>
-                <div class="button"><a href="#">перенести или отменить консультацию</a></div>
+                <div class="name-item">
+                  <span class="name">Андреева Оксана Валерьевна</span>
+                  <span class="date">29 мая, понедельник в 12:00</span>
+                </div>
               </div>
-              <div class="item">
-                <div class="specialist">
-                  <div class="avatar"><img src="./assets/img/specialist-photo.jpg" alt=""></div>
-                  <div class="name-item">
-                    <span class="name">Андреева Оксана Валерьевна</span>
-                    <span class="position">Психолог, психолог</span>
-                    <div class="date"><span>29 мая в 12:00</span></div>
+              <div class="main-content">
+                <span class="content-title">перенести консультацию</span>
+                <p>Перенести консультацию можно за 12 часов до её начала. В противном случае стоимость консультации
+                  будет списана с вашей карты.</p>
+                <form action="#">
+                  <div class="available-dates">
+                    <div class="item">
+                      <span class="item-title">Доступные даты приема</span>
+                      <div id="datepicker"></div>
+                    </div>
+                    <div class="item">
+                      <span class="item-title">Время приема <span>6 апреля</span></span>
+                      <div class="time-items">
+                        <div class="time-item nonactive">09:00</div>
+                        <div class="time-item nonactive">09:30</div>
+                        <div class="time-item nonactive">11:00</div>
+                        <div class="time-item nonactive">11:30</div>
+                        <div class="time-item active">12:30</div>
+                        <div class="time-item">13:00</div>
+                        <div class="time-item">13:30</div>
+                        <div class="time-item nonactive">14:00</div>
+                      </div>
+                      <button>перенести консультацию</button>
+                    </div>
                   </div>
-                </div>
-                <div class="date"><span>29 мая в 12:00</span></div>
-                <div class="button"><a href="#">перенести или отменить консультацию</a></div>
+                </form>
+                <span class="content-title">отменить консультацию</span>
+                <p>Отменить консультацию можно за 12 часов до её начала. В противном случае стоимость консультации будет
+                  списана с вашей карты.</p>
+                <a href="#" class="cancel-consult">отменить консультацию</a>
               </div>
             </div>
           </div>

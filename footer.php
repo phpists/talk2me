@@ -480,6 +480,29 @@
     });
 
 </script>
+<script>
+    var swiper = new Swiper(".mySwiperCards", {
+        allowTouchMove: true,
+        breakpoints: {
+            // Когда ширина экрана меньше или равна 768px
+            768: {
+                slidesPerView: 2, // Количество видимых слайдов
+                spaceBetween: 0, // Расстояние между слайдами
+                allowTouchMove: true,
+            },
+        },
+        pagination: {
+            el: ".swiper-pagination-cards",
+        },
+    });
+</script>
+<script>
+    $('.time-items .time-item:not(.nonactive)').click(function () {
+        $('.time-items .time-item').removeClass('active')
+        $(this).addClass('active')
+    });
+
+</script>
 </body>
 
 </html>
