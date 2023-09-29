@@ -483,12 +483,26 @@
 <script>
     var swiper = new Swiper(".mySwiperCards", {
         allowTouchMove: true,
+        // slidesPerView: 2,
+        spaceBetween: 15,
         breakpoints: {
             // Когда ширина экрана меньше или равна 768px
-            768: {
-                slidesPerView: 2, // Количество видимых слайдов
-                spaceBetween: 0, // Расстояние между слайдами
+            320: {
+                slidesPerView: 1.2, // Количество видимых слайдов
                 allowTouchMove: true,
+            },
+            480: {
+                slidesPerView: 2.2, // Количество видимых слайдов
+                allowTouchMove: true,
+            },
+            576: {
+                slidesPerView: 2.4, // Количество видимых слайдов
+                allowTouchMove: true,
+            },
+            768: {
+                slidesPerView: 'auto', // Количество видимых слайдов
+                allowTouchMove: false,
+                spaceBetween: 0,
             },
         },
         pagination: {
@@ -502,6 +516,20 @@
         $(this).addClass('active')
     });
 
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+        console.log(scrollbar);
+        document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+            document.body.style.overflow = 'hidden';
+            document.querySelector('#openModal').style.marginLeft = scrollbar;
+        });
+        document.querySelector('[href="#close"]').addEventListener('click', function () {
+            document.body.style.overflow = 'visible';
+            document.querySelector('#openModal').style.marginLeft = '0px';
+        });
+    });
 </script>
 </body>
 

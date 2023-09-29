@@ -27,6 +27,30 @@
 }
 
 @media (max-width: 1200px) {
+  .sec-specialist-list {
+    padding-top: 35px;
+    padding-bottom: 108px;
+  }
+
+  .sec-specialist-list .container-item .title {
+    margin-bottom: 25px;
+  }
+
+  .sec-specialist-list .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+
+    span {
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  // 
   .sec-pa-settings-specialist__step1 .container-item .title h2 {
     text-align: center;
   }
@@ -1521,6 +1545,13 @@
 }
 
 @media (max-width: 768px) {
+  .sec-specialist-list .container-item .show-all a {
+    display: none;
+  }
+
+  .personalaccount-header .container-item {
+    justify-content: center;
+  }
 
   .mySwiperSpecialists {
     .swiper-slide {
@@ -1626,9 +1657,26 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  .sec-specialist-list .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sec-specialist-list .container-item .cards {
+    gap: 15px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .sec-specialist-list .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sec-specialist-list .container-item .cards {
+    gap: 15px;
+  }
 
   // 
   .sec-cancel-consult {
@@ -2348,6 +2396,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .swiper-pagination-cards {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .tabs-dropdown {
     flex-direction: column;
@@ -2360,6 +2414,19 @@
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .sec-specialist-list .container-item .slider-containercards {
+    padding-left: 50px;
+  }
+
+  // 
+  .sec-specialist-list .container-item .cards {
+    flex-wrap: unset;
+    gap: 0;
+  }
+
+  .sec-specialist-list .container-item .cards .card {
+    flex: none;
+  }
 
   // 
   .sec-rechedule-consult .container-item .content .main-content .available-dates {
@@ -5614,6 +5681,20 @@
     .button {
       flex: 1 0 40%;
     }
+  }
+
+  // 
+  .sec-specialist-list .container-item .slider-containercards {
+    padding-left: 50px;
+  }
+
+  .sec-specialist-list .container-item .cards {
+    flex-wrap: unset;
+    gap: 0;
+  }
+
+  .sec-specialist-list .container-item .cards .card {
+    flex: none;
   }
 }
 
