@@ -944,6 +944,36 @@ nav ul li a {
 .swiper-pagination-specialists .swiper-pagination-bullet-active {
   background: #4E869F;
 }
+.swiper-pagination-AppointmentConsult {
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+.swiper-pagination-AppointmentConsult .swiper-pagination-bullet {
+  background: #D8DDE2;
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+  opacity: 1;
+}
+.swiper-pagination-AppointmentConsult .swiper-pagination-bullet-active {
+  background: #4E869F;
+}
+.swiper-paginationcurrency {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+}
+.swiper-paginationcurrency .swiper-pagination-bullet {
+  background: #D8DDE2;
+  width: 8px;
+  height: 8px;
+  border-radius: 0;
+  opacity: 1;
+}
+.swiper-paginationcurrency .swiper-pagination-bullet-active {
+  background: #4E869F;
+}
 .header_menu_link:last-child {
   margin-right: 47px;
 }
@@ -4888,6 +4918,562 @@ footer.footer .socmedias {
   background: #FFF;
   color: #212121;
 }
+.tabcontent-questions .title {
+  margin-bottom: 10px;
+}
+.tabcontent-questions .title h3 {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.tabcontent-questions .title p {
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.tabcontent-questions form .selected-items {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+.tabcontent-questions form .selected-items .selected-title {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.tabcontent-questions form .selected-items .selected-descr {
+  color: #676767;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 45px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer {
+  border-bottom: 1px solid #A0A0A0;
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tabs-dropdown {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px 0 40px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.05));
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown {
+  cursor: pointer;
+  height: 100%;
+  color: #9E9E9E;
+  text-align: center;
+  font-family: Raleway;
+  border-radius: 5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 45px;
+  min-width: 175px;
+  transition: .3s;
+  position: relative;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown:not(:last-child):not(.active):not(:hover):after {
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
+  background: #D5D5D5;
+  left: 100%;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown.active {
+  color: #FFF;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown:hover {
+  color: #FFF;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-content-dropdown {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  max-width: 1010px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .show-all {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1.172px solid #4E869F;
+  height: 65px;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .show-all:hover {
+  color: #fff;
+  background: #4E869F;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+  flex: 1 0 20%;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 66px;
+  border-radius: 10px;
+  border: 0.824px solid #DBDBDB;
+  background: #FFF;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 230px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  height: 25px;
+  width: 25px;
+  background-image: url('../img/radio-disabled.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container:hover {
+  color: #212121 !important;
+  background: #fff !important;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container:hover input~.checkmark {
+  background-image: url('../img/radio-active.svg');
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container input:checked~.checkmark {
+  background-image: url('../img/radio-active.svg');
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container input:checked~.checkmark:after {
+  display: block;
+}
+.tabcontent-questions form .selected-notdropdown a {
+  color: #6C9165;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin-top: 30px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #6C9165;
+  display: flex;
+  width: max-content;
+  transition: .3s;
+}
+.tabcontent-questions form .selected-notdropdown a:hover {
+  opacity: .7;
+}
+.tabcontent-questions form .selected-notdropdown .option-item {
+  margin-top: 26px;
+  display: none;
+}
+.tabcontent-questions form .selected-notdropdown .option-item.active {
+  display: block;
+}
+.tabcontent-questions form .selected-notdropdown .option-item input {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  height: 80px;
+  max-width: 490px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  transition: .3s;
+}
+.tabcontent-questions form .selected-notdropdown .option-item input:focus {
+  border: 0.824px solid #353535;
+}
+.tabcontent-questions form .selected-notdropdown .tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  max-width: 1010px;
+  margin-top: 20px;
+}
+.tabcontent-questions form .dropdown-item {
+  padding-top: 54px;
+}
+.tabcontent-questions form .dropdown-item span {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+.tabcontent-questions form .dropdown-item .dropdown-firststyle {
+  margin: 0;
+  margin-top: 10px;
+  max-width: 141px;
+}
+.tabcontent-questions form .main-label textarea {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  max-height: 247px;
+  max-width: 750px;
+  margin-top: 20px;
+  padding: 22px 26px;
+  transition: .3s;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.tabcontent-questions form .main-label textarea:focus {
+  border: 0.824px solid #353535;
+}
+.tabcontent-questions form button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  height: 85px;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.tabcontent-questions form button img {
+  margin-left: 26px;
+}
+.tabcontent-questions form button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.tabcontent-questions form button:hover:before {
+  opacity: 0;
+}
+.tabcontent-questions form .mainlabel-items,
+.tabcontent-questions form .main-label {
+  margin-top: 30px;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #A0A0A0;
+  display: flex;
+  flex-direction: column;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes,
+.tabcontent-questions form .main-label.parent-checkboxes {
+  display: flex;
+  flex-direction: row;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+  display: flex;
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container input,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container input {
+  width: 100%;
+  margin-top: 0;
+  margin-right: 60px;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox {
+  align-items: center;
+  display: flex;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox input,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox input {
+  height: unset;
+  width: unset;
+  margin: 0;
+}
+.tabcontent-questions form .mainlabel-items .password-container,
+.tabcontent-questions form .main-label .password-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-right: 60px;
+}
+.tabcontent-questions form .mainlabel-items .password-container .placeholder,
+.tabcontent-questions form .main-label .password-container .placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22px;
+  color: #BFBFBF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  max-width: 414px;
+  transition: .3s;
+}
+.tabcontent-questions form .mainlabel-items .password-container input,
+.tabcontent-questions form .main-label .password-container input {
+  margin: 0;
+}
+.tabcontent-questions form .mainlabel-items .password-container input:focus+.placeholder,
+.tabcontent-questions form .main-label .password-container input:focus+.placeholder {
+  opacity: 0;
+}
+.tabcontent-questions form .mainlabel-items input,
+.tabcontent-questions form .main-label input {
+  color: #353535;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  transition: .3s;
+  height: 65px;
+  padding-left: 30px;
+  max-width: 800px;
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items input:focus,
+.tabcontent-questions form .main-label input:focus {
+  border: 0.824px solid #353535;
+}
+.tabcontent-questions form .mainlabel-items input::placeholder,
+.tabcontent-questions form .main-label input::placeholder {
+  color: #BFBFBF;
+}
+.tabcontent-questions form .mainlabel-items .input-descr,
+.tabcontent-questions form .main-label .input-descr {
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items #hiddenBlock,
+.tabcontent-questions form .main-label #hiddenBlock {
+  margin-top: 30px;
+  display: none;
+  flex-direction: column;
+}
+.tabcontent-questions form .mainlabel-items #hiddenBlock span,
+.tabcontent-questions form .main-label #hiddenBlock span {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+.tabcontent-questions form .mainlabel-items #hiddenBlock textarea,
+.tabcontent-questions form .main-label #hiddenBlock textarea {
+  max-height: 95px;
+  margin-top: 0;
+}
+.tabcontent-questions form .mainlabel-items .radio-items,
+.tabcontent-questions form .main-label .radio-items {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio,
+.tabcontent-questions form .main-label .radio-items .container-radio {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  height: 70px;
+  width: 100%;
+  max-width: 236px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.096px;
+  height: 57px;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio:not(.active),
+.tabcontent-questions form .main-label .radio-items .container-radio:not(.active) {
+  background: #E5E7E9;
+  border: 1px solid #E5E7E9;
+  color: #9E9E9E;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio:not(.active):hover,
+.tabcontent-questions form .main-label .radio-items .container-radio:not(.active):hover {
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  color: #212121;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio .checkmark-radio,
+.tabcontent-questions form .main-label .radio-items .container-radio .checkmark-radio {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.tabcontent-questions form .mainlabel-items input[type="password"],
+.tabcontent-questions form .mainlabel-items input[type="email"],
+.tabcontent-questions form .main-label input[type="password"],
+.tabcontent-questions form .main-label input[type="email"] {
+  max-width: 600px;
+}
+.tabcontent-questions form .mainlabel-items {
+  flex-direction: row;
+  gap: 90px;
+}
+.tabcontent-questions form .mainlabel-items #childlabel {
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items #childlabel input {
+  margin-top: 0;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item {
+  width: 100%;
+  transition: .3s;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item label {
+  display: flex;
+  align-items: center;
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  transition: .3s;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item label input {
+  margin-right: 30px;
+  max-width: 235px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item label input:disabled {
+  background: #E5E7E9;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item .radio-items .container-radio {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.096px;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item .radio-items .container-radio:not(.active) {
+  background: #E5E7E9;
+  border: 1px solid #E5E7E9;
+  color: #9E9E9E;
+  height: 57px;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item .radio-items .container-radio:not(.active):hover {
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  color: #212121;
+}
 .sec-personalquestions .container-item form .selected-items .tabs-parentcontainer .mobile-dropdown .custom-select .select-selected:after {
   content: '';
   border: 0;
@@ -7792,13 +8378,13 @@ footer.footer .socmedias {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.5);
   z-index: 1050;
   opacity: 0;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none;
+  background: rgba(0,0,0,0.6);
 }
 .modal:target {
   opacity: 1;
@@ -7830,9 +8416,264 @@ footer.footer .socmedias {
   background-color: #fff;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-radius: .3rem;
   outline: 0;
+  border-radius: 20px;
+  background: #FFF;
+  padding: 83px 190px 57px 56px;
+}
+.modal-content .logo {
+  max-width: 104px;
+  position: absolute;
+  top: 0;
+}
+.modal-content .modal-body .psyhology-item {
+  display: flex;
+}
+.modal-content .modal-body .psyhology-item .avatar {
+  margin-right: 60px;
+  width: 210px;
+  min-width: 210px;
+  height: 210px;
+}
+.modal-content .modal-body .psyhology-item .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.modal-content .modal-body .psyhology-item .specialist-item {
+  display: flex;
+  flex-direction: column;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item:not(:first-child) {
+  padding-top: 20px;
+  border-top: 1px solid #A0A0A0;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item .name {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item .position {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item .experience {
+  margin-top: 5px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item .descr {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item .descr span {
+  color: #305F74;
+  font-weight: 600;
+}
+.modal-content .modal-body .psyhology-item .specialist-item .item .descr:before {
+  content: '';
+  background: #6C9165;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.modal-content .modal-body .item-mobile .descr {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.modal-content .modal-body .item-mobile .descr span {
+  color: #305F74;
+  font-weight: 600;
+}
+.modal-content .modal-body .item-mobile .descr:before {
+  content: '';
+  background: #6C9165;
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.modal-content .modal-body .main-items {
+  width: 100%;
+  max-width: calc(100% - 270px);
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+.modal-content .modal-body .main-items .main-title {
+  margin-bottom: 20px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 30px;
+}
+.modal-content .modal-body .main-items p {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.modal-content .modal-body .main-items a.button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  height: 85px;
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.modal-content .modal-body .main-items a.button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.modal-content .modal-body .main-items a.button:hover:before {
+  opacity: 0;
+}
+.modal-content .modal-body .main-items .times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.modal-content .modal-body .main-items .times .time {
+  flex: 1 0 40%;
+  border-radius: 5px;
+  background: #F8F8F8;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.modal-content .modal-body .main-items .times .time .date {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.modal-content .modal-body .main-items .times .time .active-time {
+  color: #4E869F;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #4E869F;
+  background: #F8F8F8;
+  height: 29px;
+  width: 100%;
+  max-width: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content .modal-body .main-items .year {
+  color: #212121;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  max-width: 55px;
+  height: 27px;
+  border-radius: 5px;
+  background: #D0DCCD;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.modal-content .modal-body .main-items ul li {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+}
+.modal-content .modal-body .main-items ul li:before {
+  content: '';
+  background: #6C9165;
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 50%;
+  margin-right: 13px;
 }
 @media (min-width: 768px) {
   .modal-content {
@@ -7895,6 +8736,955 @@ footer.footer .socmedias {
   padding: 15px;
   overflow: auto;
 }
+.mySwiperCurrency {
+  margin-top: 30px;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio {
+  padding-left: 0;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio .checkmark-radio {
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 21px;
+  background-size: contain;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio .top-radio {
+  padding-left: 66px;
+  border-radius: 10px;
+  background: #E5E7E9;
+  height: 57px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  color: #9E9E9E;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  position: relative;
+  border: 0.824px solid transparent;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio .descr-item {
+  filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.05));
+  background: #F4F4F5;
+  padding: 15px 15px 25px;
+  display: flex;
+  flex-direction: column;
+  min-height: 170px;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio .descr-item p {
+  color: #9E9E9E;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio .descr-item span {
+  color: #9E9E9E;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34.457px;
+  height: 30px;
+  width: 100%;
+  max-width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  border-radius: 3.85px;
+  background: #D9D9D9;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio.active .top-radio {
+  border-radius: 10px;
+  border: 0.824px solid #DBDBDB;
+  background: #FFF;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio.active .descr-item {
+  background: #fff;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio.active .descr-item p {
+  color: #212121;
+}
+.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio.active .descr-item span {
+  color: #FFF;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+}
+.sec-for_consult {
+  padding-top: 85px;
+  padding-bottom: 140px;
+}
+.sec-for_consult .container-item .title h2 {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.sec-for_consult .container-item form {
+  margin-top: 30px;
+}
+.sec-for_consult .container-item form .input {
+  position: relative;
+}
+.sec-for_consult .container-item form .input input {
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  padding-left: 30px;
+  padding-right: 50px;
+  transition: .3s;
+}
+.sec-for_consult .container-item form .input input:focus {
+  border: 0.824px solid #353535;
+}
+.sec-for_consult .container-item form .input input::placeholder {
+  color: #BFBFBF;
+}
+.sec-for_consult .container-item form .input button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 32px;
+}
+.sec-for_consult .container-item form .parametrs-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.sec-for_consult .container-item form .parametrs-item span {
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.sec-for_consult .container-item form .parametrs-item button {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  height: 65px;
+  width: 100%;
+  max-width: 290px;
+  border-radius: 10px;
+  border: 2px solid #4E869F;
+  backdrop-filter: blur(2.5px);
+  transition: .3s;
+}
+.sec-for_consult .container-item form .parametrs-item button:hover {
+  background: #4e869f;
+  color: #fff;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container {
+  max-width: 1590px;
+  margin-left: auto;
+  padding-left: 50px;
+  margin-top: 60px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.1);
+  padding: 18px 14px 14px 14px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .top-item {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .top-item .feedback {
+  color: #6C9165;
+  text-align: right;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration-line: underline;
+  margin-bottom: 5px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .top-item .rating-item span {
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .top-item .rating-item .stars-container {
+  display: flex;
+  align-items: center;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .top-item .rating-item .stars-container span {
+  margin-right: 5px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .main-item {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .main-item .name {
+  color: #305F74;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  max-width: 190px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .main-item .position {
+  margin-top: 10px;
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .main-item .seniority {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .buttons {
+  margin-top: 30px;
+  gap: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .buttons .details {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+  border-radius: 5.86px;
+  border: 1.172px solid #4E869F;
+  height: 38px;
+  transition: .3s;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .buttons .details:hover {
+  color: #fff;
+  background: #4e869f;
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .buttons .enrol {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  height: 38px;
+  transition: .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 50%;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.sec-for_consult .mySwiperAppointmentConsult-container .mySwiperAppointmentConsult .swiper-wrapper .card .descr .buttons .enrol:hover {
+  color: #fff;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+}
+.sec-for_consult .details-param {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  height: 65px;
+  transition: .3s;
+  width: 100%;
+  max-width: 290px;
+  border-radius: 10px;
+  border: 2px solid #4E869F;
+  backdrop-filter: blur(2.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto 0;
+}
+.sec-for_consult .details-param:hover {
+  color: #fff;
+  background: #4e869f;
+}
+.tabcontent-questions {
+  background: #fff;
+  padding: 40px 50px 50px;
+  border-radius: 10px;
+}
+.tabcontent-questions .title {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #A0A0A0;
+  margin-bottom: 15px !important;
+}
+.tabcontent-questions .title h3 {
+  color: #212121;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.tabcontent-questions .title p {
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 15px;
+}
+.tabcontent-questions form .selected-items {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+.tabcontent-questions form .selected-items .selected-title {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.tabcontent-questions form .selected-items .selected-descr {
+  color: #676767;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 45px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer {
+  border-bottom: 0;
+  padding-bottom: 40px;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+  flex: 1 0 30% !important;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tabs-dropdown {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+  margin: 10px 0 40px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.05));
+  flex-direction: row;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown-inner {
+  cursor: pointer;
+  height: 100%;
+  color: #9E9E9E;
+  text-align: center;
+  font-family: Raleway;
+  border-radius: 5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 45px;
+  min-width: 175px;
+  transition: .3s;
+  position: relative;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown-inner:not(:last-child):not(.active):not(:hover):after {
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
+  background: #D5D5D5;
+  left: 100%;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown-inner.active {
+  color: #FFF;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-dropdown-inner:hover {
+  color: #FFF;
+  background: linear-gradient(278deg,#6C9165 0%,#90B589 46.15%,#6C9165 100%);
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .tab-content-dropdown-inner {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  max-width: 1010px;
+  flex-direction: row;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .show-all {
+  color: #4E869F;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1.172px solid #4E869F;
+  height: 65px;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .show-all:hover {
+  color: #fff;
+  background: #4E869F;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+  flex: 1 0 20%;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 66px;
+  border-radius: 10px;
+  border: 0.824px solid #DBDBDB;
+  background: #FFF;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 230px;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  height: 25px;
+  width: 25px;
+  background-image: url('../img/radio-disabled.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container:hover {
+  color: #212121 !important;
+  background: #fff !important;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container:hover input~.checkmark {
+  background-image: url('../img/radio-active.svg');
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container input:checked~.checkmark {
+  background-image: url('../img/radio-active.svg');
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container input:checked~.checkmark:after {
+  display: block;
+}
+.tabcontent-questions form .selected-notdropdown a {
+  color: #6C9165;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin-top: 30px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #6C9165;
+  display: flex;
+  width: max-content;
+  transition: .3s;
+  margin-top: 0;
+}
+.tabcontent-questions form .selected-notdropdown a:hover {
+  opacity: .7;
+}
+.tabcontent-questions form .selected-notdropdown .option-item {
+  margin-top: 26px;
+  display: none;
+}
+.tabcontent-questions form .selected-notdropdown .option-item.active {
+  display: block;
+}
+.tabcontent-questions form .selected-notdropdown .option-item input {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  height: 45px;
+  max-width: 490px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  transition: .3s;
+}
+.tabcontent-questions form .selected-notdropdown .option-item input:focus {
+  border: 0.824px solid #353535;
+}
+.tabcontent-questions form .selected-notdropdown .tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  max-width: 1010px;
+  margin-top: 20px;
+}
+.tabcontent-questions form .main-label-cont {
+  display: flex;
+  gap: 70px;
+  width: 100%;
+}
+.tabcontent-questions form .main-label-cont .main-label:first-child {
+  width: 100%;
+}
+.tabcontent-questions form .main-label-cont .main-label:last-child {
+  max-width: 260px;
+  min-width: 260px;
+}
+.tabcontent-questions form .main-label-cont .main-label .input-cont {
+  max-width: 140px;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.tabcontent-questions form .main-label-cont .main-label .input-cont input {
+  height: 45px;
+  margin-top: 0;
+}
+.tabcontent-questions form .dropdown-item {
+  padding-top: 10px;
+}
+.tabcontent-questions form .dropdown-item span {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+}
+.tabcontent-questions form .dropdown-item .dropdown-firststyle {
+  margin: 0;
+  margin-top: 10px;
+  max-width: 141px;
+}
+.tabcontent-questions form .main-label textarea {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  max-height: 247px;
+  max-width: 750px;
+  margin-top: 20px;
+  padding: 22px 26px;
+  transition: .3s;
+  color: #353535;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.tabcontent-questions form .main-label textarea:focus {
+  border: 0.824px solid #353535;
+}
+.tabcontent-questions form button {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+  height: 85px;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(90deg,#4E869F 0%,#4E869F 53.96%,#4E869F 100%);
+  transition: .3s;
+}
+.tabcontent-questions form button img {
+  margin-left: 26px;
+}
+.tabcontent-questions form button:before {
+  content: '';
+  width: 100%;
+  height: calc(100% - 3px);
+  bottom: 3px;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+  transition: .3s;
+  background: linear-gradient(90deg,#58A4C3 0%,#97CCE1 53.96%,#5CA5C5 100%);
+}
+.tabcontent-questions form button:hover:before {
+  opacity: 0;
+}
+.tabcontent-questions form .mainlabel-items,
+.tabcontent-questions form .main-label {
+  margin-top: 0;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  padding-bottom: 40px;
+  border-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.tabcontent-questions form .mainlabel-items textarea,
+.tabcontent-questions form .main-label textarea {
+  max-height: 150px !important;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes,
+.tabcontent-questions form .main-label.parent-checkboxes {
+  display: flex;
+  flex-direction: row;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container {
+  display: flex;
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container input,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container input {
+  width: 100%;
+  margin-top: 0;
+  margin-right: 60px;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox {
+  align-items: center;
+  display: flex;
+}
+.tabcontent-questions form .mainlabel-items.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox input,
+.tabcontent-questions form .main-label.parent-checkboxes .mainlabel-checkboxitem .checkbox-container .container-checkbox input {
+  height: unset;
+  width: unset;
+  margin: 0;
+}
+.tabcontent-questions form .mainlabel-items .password-container,
+.tabcontent-questions form .main-label .password-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-right: 60px;
+}
+.tabcontent-questions form .mainlabel-items .password-container .placeholder,
+.tabcontent-questions form .main-label .password-container .placeholder {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22px;
+  color: #BFBFBF;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  max-width: 414px;
+  transition: .3s;
+}
+.tabcontent-questions form .mainlabel-items .password-container input,
+.tabcontent-questions form .main-label .password-container input {
+  margin: 0;
+}
+.tabcontent-questions form .mainlabel-items .password-container input:focus+.placeholder,
+.tabcontent-questions form .main-label .password-container input:focus+.placeholder {
+  opacity: 0;
+}
+.tabcontent-questions form .mainlabel-items input,
+.tabcontent-questions form .main-label input {
+  color: #353535;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  transition: .3s;
+  height: 65px;
+  padding-left: 30px;
+  max-width: 800px;
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items input:focus,
+.tabcontent-questions form .main-label input:focus {
+  border: 0.824px solid #353535;
+}
+.tabcontent-questions form .mainlabel-items input::placeholder,
+.tabcontent-questions form .main-label input::placeholder {
+  color: #BFBFBF;
+}
+.tabcontent-questions form .mainlabel-items .input-descr,
+.tabcontent-questions form .main-label .input-descr {
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items #hiddenBlock,
+.tabcontent-questions form .main-label #hiddenBlock {
+  margin-top: 30px;
+  display: none;
+  flex-direction: column;
+}
+.tabcontent-questions form .mainlabel-items #hiddenBlock span,
+.tabcontent-questions form .main-label #hiddenBlock span {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+.tabcontent-questions form .mainlabel-items #hiddenBlock textarea,
+.tabcontent-questions form .main-label #hiddenBlock textarea {
+  max-height: 95px;
+  margin-top: 0;
+}
+.tabcontent-questions form .mainlabel-items .radio-items,
+.tabcontent-questions form .main-label .radio-items {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio,
+.tabcontent-questions form .main-label .radio-items .container-radio {
+  border-radius: 10px;
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  height: 70px;
+  width: 100%;
+  max-width: 236px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.096px;
+  height: 45px;
+  font-size: 13px;
+  line-height: 30.574px;
+  padding-left: 54px;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio:not(.active),
+.tabcontent-questions form .main-label .radio-items .container-radio:not(.active) {
+  background: #E5E7E9;
+  border: 1px solid #E5E7E9;
+  color: #9E9E9E;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio:not(.active):hover,
+.tabcontent-questions form .main-label .radio-items .container-radio:not(.active):hover {
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  color: #212121;
+}
+.tabcontent-questions form .mainlabel-items .radio-items .container-radio .checkmark-radio,
+.tabcontent-questions form .main-label .radio-items .container-radio .checkmark-radio {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+.tabcontent-questions form .mainlabel-items input[type="password"],
+.tabcontent-questions form .mainlabel-items input[type="email"],
+.tabcontent-questions form .main-label input[type="password"],
+.tabcontent-questions form .main-label input[type="email"] {
+  max-width: 600px;
+}
+.tabcontent-questions form .mainlabel-items {
+  flex-direction: row;
+  gap: 90px;
+}
+.tabcontent-questions form .mainlabel-items #childlabel {
+  margin-top: 20px;
+}
+.tabcontent-questions form .mainlabel-items #childlabel input {
+  margin-top: 0;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item {
+  width: 100%;
+  transition: .3s;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item label {
+  display: flex;
+  align-items: center;
+  color: #676767;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 130%;
+  transition: .3s;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item label input {
+  margin-right: 30px;
+  max-width: 235px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item label input:disabled {
+  background: #E5E7E9;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item .radio-items .container-radio {
+  color: #212121;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.096px;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item .radio-items .container-radio:not(.active) {
+  background: #E5E7E9;
+  border: 1px solid #E5E7E9;
+  color: #9E9E9E;
+  height: 57px;
+}
+.tabcontent-questions form .mainlabel-items .mainlabel-item .radio-items .container-radio:not(.active):hover {
+  border: 1px solid #DBDBDB;
+  background: #FFF;
+  color: #212121;
+}
 @media (max-width: 1400px) {
   .info-block-2 .info-content {
     padding-left: 500px;
@@ -7917,6 +9707,15 @@ footer.footer .socmedias {
   }
 }
 @media (max-width: 1200px) {
+  #mobiledropdown2 {
+    margin: 0;
+    margin-right: auto;
+    max-width: 320px;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    box-shadow: unset;
+    background: transparent;
+  }
   .sec-specialist-list {
     padding-top: 35px;
     padding-bottom: 108px;
@@ -9041,7 +10840,28 @@ footer.footer .socmedias {
     border: 0;
   }
 }
+@media (min-width: 992px) {
+  .modal-content .modal-body .item-mobile {
+    display: none;
+  }
+  .modal-content .logo {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .modal-content .modal-body .item-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
 @media (max-width: 900px) {
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    max-width: unset;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 0 0 47% !important;
+  }
   .sertificates-normal .arrows {
     display: none;
   }
@@ -9150,6 +10970,134 @@ footer.footer .socmedias {
   }
 }
 @media (max-width: 768px) {
+  .tabcontent-questions {
+    padding: 0;
+    background: #f9f9f9;
+  }
+  .tabcontent-questions form .selected-items .selected-title,
+  .tabcontent-questions form .main-label {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    padding-bottom: 20px;
+  }
+  .tabcontent-questions form .selected-items .selected-title {
+    padding-bottom: 10px;
+  }
+  .tabcontent-questions form .selected-items .selected-descr {
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 45px;
+    line-height: 100%;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer {
+    gap: 0;
+  }
+  .tabcontent-questions form .selected-items .selected-title {
+    line-height: 100%;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    margin-bottom: 20px;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    height: 45px;
+    padding-right: 20px;
+  }
+  .tabcontent-questions form .dropdown-item span {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .tabcontent-questions form .main-label-cont .main-label .input-cont {
+    max-width: unset;
+  }
+  .tabcontent-questions form .selected-notdropdown a {
+    margin: 30px auto 0;
+    color: #6C9165;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  .tabcontent-questions form .main-label-cont .main-label:last-child {
+    max-width: 290px;
+  }
+  .tabcontent-questions form button {
+    margin: 50px auto 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    height: 65px;
+    max-width: 240px;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .show-all {
+    font-size: 12.557px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.377px;
+    text-transform: uppercase;
+    height: 50px;
+    max-width: 195px;
+    margin: 0 auto;
+  }
+  .tabcontent-questions form .selected-notdropdown .tab-content {
+    margin-top: 0;
+  }
+  .tabcontent-questions form .main-label textarea,
+  .tabcontent-questions form .main-label input {
+    margin-top: 10px;
+  }
+  .tabcontent-questions form .main-label-cont {
+    flex-direction: column;
+    gap: 0;
+  }
+  .tabcontent-questions .title {
+    border: 0;
+  }
+  .tabcontent-questions .title h3 {
+    color: #212121;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+  .tabcontent-questions .title p {
+    color: #353535;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+  }
   .sec-specialist-list .container-item .show-all a {
     display: none;
   }
@@ -9231,6 +11179,20 @@ footer.footer .socmedias {
     padding: 0 50px;
   }
 }
+@media (min-width: 992px) and (max-width: 1300px) {
+  .modal-dialog {
+    margin: 80px auto;
+  }
+  .modal-content .modal-body .main-items .times .time {
+    flex: 1 0 50%;
+  }
+  .close {
+    opacity: 1;
+    left: unset;
+    right: 0;
+    bottom: calc(100% + 10px);
+  }
+}
 @media (min-width: 992px) and (max-width: 1200px) {
   .sec-cancel-consult .container-item {
     padding-left: 50px;
@@ -9244,7 +11206,65 @@ footer.footer .socmedias {
     gap: 15px;
   }
 }
+@media (max-width: 600px) {
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    width: 140px;
+    padding-left: 40px;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: unset !important;
+  }
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+    left: 9px;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
+  .sec-for_consult {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-for_consult .container-item form .input button {
+    display: none;
+  }
+  .sec-for_consult .container-item form .parametrs-item {
+    margin-top: 30px;
+  }
+  .sec-for_consult .container-item form .parametrs-item span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-for_consult .mySwiperAppointmentConsult-container {
+    margin-top: 30px;
+  }
+  .sec-for_consult .container-item form {
+    margin-top: 20px;
+  }
+  .sec-for_consult .container-item form .input input {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec-for_consult .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-for_consult .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+  .sec-for_consult .container-item form .parametrs-item button {
+    display: none;
+  }
   .sec-specialist-list .container-item {
     padding-left: 50px;
     padding-right: 50px;
@@ -9370,6 +11390,127 @@ footer.footer .socmedias {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+  }
+  .modal-content {
+    padding: 93px 50px 70px;
+  }
+  .modal {
+    background: #fff;
+  }
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-content .modal-body .main-items {
+    max-width: 100%;
+  }
+  .modal-content .modal-body .psyhology-item .avatar {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .experience {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .position {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item-desktop {
+    display: none;
+  }
+  .modal-content .modal-body .main-items .main-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .modal-content .modal-body .main-items .times .time {
+    height: 32px;
+    flex: 1 0 50%;
+    max-width: 200px;
+  }
+  .modal-content .modal-body .main-items .times .time .date {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal-content .modal-body .main-items .times .time .active-time {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 19px;
+    max-width: 48px;
+  }
+  .modal-content .modal-body .main-items .times {
+    gap: 5px;
+  }
+  .modal-content .modal-body .main-items p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .modal-content .modal-body .main-items .year {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .modal-content .modal-body .main-items ul li {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal:target {
+    overflow-x: hidden;
+  }
+  .modal-content .modal-body .item-mobile .descr {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .specialist-list-header .container-item {
+    justify-content: flex-start;
+  }
+  .close {
+    background-image: url('../img/mobile-modal-close.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: unset;
+    bottom: unset;
+    top: 19px;
+    right: 50px;
+    opacity: 1;
+  }
+  .close img {
+    display: none;
+  }
+  .specialist-list-header .logo {
+    max-width: 104px;
+  }
+  .modal-content {
+    border-radius: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -9799,6 +11940,9 @@ footer.footer .socmedias {
   }
 }
 @media (min-width: 992px) {
+  .details-param {
+    display: none !important;
+  }
   .sec-cancel-consult .container-item .items .item .specialist .name-item .date span {
     display: none;
   }
@@ -11111,8 +13255,223 @@ footer.footer .socmedias {
   .appointment-consult .container-item .content form .buttons .button {
     flex: 1 0 40%;
   }
+  .modal-content {
+    padding: 93px 50px 70px;
+  }
+  .modal {
+    background: #fff;
+  }
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-content .modal-body .main-items {
+    max-width: 100%;
+  }
+  .modal-content .modal-body .psyhology-item .avatar {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .experience {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .position {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item-desktop {
+    display: none;
+  }
+  .modal-content .modal-body .main-items .main-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .modal-content .modal-body .main-items .times .time {
+    height: 32px;
+    flex: 1 0 50%;
+    max-width: 200px;
+  }
+  .modal-content .modal-body .main-items .times .time .date {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal-content .modal-body .main-items .times .time .active-time {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 19px;
+    max-width: 48px;
+  }
+  .modal-content .modal-body .main-items .times {
+    gap: 5px;
+  }
+  .modal-content .modal-body .main-items p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .modal-content .modal-body .main-items .year {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .modal-content .modal-body .main-items ul li {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal:target {
+    overflow-x: hidden;
+  }
+  .modal-content .modal-body .item-mobile .descr {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .specialist-list-header .container-item {
+    justify-content: flex-start;
+  }
+  .close {
+    background-image: url('../img/mobile-modal-close.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: unset;
+    bottom: unset;
+    top: 19px;
+    right: 50px;
+    opacity: 1;
+  }
+  .close img {
+    display: none;
+  }
+  .sec-personalquestions .container-item.type2 {
+    padding-right: 0;
+  }
+  .sec-personalquestions .container-item form .selected-items,
+  .sec-personalquestions .container-item form .main-label,
+  .sec-personalquestions .container-item .title {
+    padding-right: 50px;
+  }
+  .sec-for_consult {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-for_consult .container-item form .input button {
+    display: none;
+  }
+  .sec-for_consult .container-item form .parametrs-item {
+    margin-top: 30px;
+  }
+  .sec-for_consult .container-item form .parametrs-item span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-for_consult .mySwiperAppointmentConsult-container {
+    margin-top: 30px;
+  }
+  .sec-for_consult .container-item form {
+    margin-top: 20px;
+  }
+  .sec-for_consult .container-item form .input input {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec-for_consult .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-for_consult .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+  .sec-for_consult .container-item form .parametrs-item button {
+    display: none;
+  }
 }
 @media (min-width: 320px) and (max-width: 575px) {
+  .sec-for_consult {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .sec-for_consult .container-item form .input button {
+    display: none;
+  }
+  .sec-for_consult .container-item form .parametrs-item {
+    margin-top: 30px;
+  }
+  .sec-for_consult .container-item form .parametrs-item span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  .sec-for_consult .mySwiperAppointmentConsult-container {
+    margin-top: 30px;
+  }
+  .sec-for_consult .container-item form {
+    margin-top: 20px;
+  }
+  .sec-for_consult .container-item form .input input {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    height: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec-for_consult .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .sec-for_consult .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+  .sec-for_consult .container-item form .parametrs-item button {
+    display: none;
+  }
   .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult .table .table-head {
     display: none;
   }
@@ -12469,6 +14828,129 @@ footer.footer .socmedias {
   }
   .sec-specialist-list .container-item .cards .card {
     flex: none;
+  }
+  .modal-content {
+    padding: 93px 50px 70px;
+  }
+  .modal {
+    background: #fff;
+  }
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-content .modal-body .main-items {
+    max-width: 100%;
+  }
+  .modal-content .modal-body .psyhology-item .avatar {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .experience {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .position {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item-desktop {
+    display: none;
+  }
+  .modal-content .modal-body .main-items .main-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  .modal-content .modal-body .main-items .times .time {
+    height: 32px;
+    flex: 1 0 50%;
+    max-width: 200px;
+  }
+  .modal-content .modal-body .main-items .times .time .date {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal-content .modal-body .main-items .times .time .active-time {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 19px;
+    max-width: 48px;
+  }
+  .modal-content .modal-body .main-items .times {
+    gap: 5px;
+  }
+  .modal-content .modal-body .main-items p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .modal-content .modal-body .main-items .year {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .modal-content .modal-body .main-items ul li {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal:target {
+    overflow-x: hidden;
+  }
+  .modal-content .modal-body .item-mobile .descr {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .modal-content .modal-body .psyhology-item .specialist-item .item .name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+  .specialist-list-header .container-item {
+    justify-content: flex-start;
+  }
+  .close {
+    background-image: url('../img/mobile-modal-close.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: unset;
+    bottom: unset;
+    top: 19px;
+    right: 50px;
+    opacity: 1;
+  }
+  .close img {
+    display: none;
+  }
+  .sec-personalquestions .container-item.type2 {
+    padding-right: 0;
+  }
+  .sec-personalquestions .container-item form .selected-items,
+  .sec-personalquestions .container-item form .main-label,
+  .sec-personalquestions .container-item .title {
+    padding-right: 50px;
   }
 }
 @media (max-width: 420px) {

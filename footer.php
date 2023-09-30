@@ -289,6 +289,29 @@
             });
         });
     });
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab-dropdown-inner");
+        const tabContents = document.querySelectorAll(".tab-content-dropdown-inner");
+
+        tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                const tabId = tab.getAttribute("data-tab");
+
+                tabContents.forEach((content) => {
+                    content.style.display = "none";
+                });
+
+                document.getElementById(tabId).style.display = "flex";
+                // Удаляем класс "active" у всех табов
+                tabs.forEach((t) => {
+                    t.classList.remove("active");
+                });
+
+                // Добавляем класс "active" только активному табу
+                tab.classList.add("active");
+            });
+        });
+    });
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -337,7 +360,7 @@
     });
 </script>
 <script>
-    const customSelects = document.querySelectorAll('.custom-select');
+    const customSelects = document.querySelectorAll('#mobiledropdown1 .custom-select');
 
     customSelects.forEach((customSelect, index) => {
         const selectItemsDivs = customSelect.querySelectorAll('.select-items div');
@@ -347,6 +370,20 @@
             selectItem.setAttribute('data-tab', `tab${tabIndex + 1}`);
         });
     });
+
+</script>
+<script>
+    const customSelects1 = document.querySelectorAll('#mobiledropdown2 .custom-select');
+
+    customSelects1.forEach((customSelect1, index1) => {
+        const selectItemsDivs1 = customSelect1.querySelectorAll('.select-items div');
+
+        selectItemsDivs1.forEach((selectItem1, tabIndex1) => {
+            selectItem1.classList.add('tab-dropdown-inner');
+            selectItem1.setAttribute('data-tab', `tab${tabIndex1 + 6 + 1}`);
+        });
+    });
+
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -529,6 +566,89 @@
             document.body.style.overflow = 'visible';
             document.querySelector('#openModal').style.marginLeft = '0px';
         });
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiperCurrency", {
+        pagination: {
+            el: ".swiper-paginationcurrency",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.5,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            480: {
+                slidesPerView: 1.9,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            600: {
+                slidesPerView: 2.2,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            712: {
+                slidesPerView: 3,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            872: {
+                slidesPerView: 3.5,
+                spaceBetween: 30,
+            },
+            1050: {
+                slidesPerView: 4.55,
+                spaceBetween: 30,
+            },
+        },
+    });
+</script>
+<script>
+    $('.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio').click(function () {
+        $('.mySwiperCurrency .swiper-wrapper .swiper-slide .container-radio').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiperAppointmentConsult", {
+        slidesPerView: 4.8,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination-AppointmentConsult",
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.2,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            480: {
+                slidesPerView: 1.9,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            600: {
+                slidesPerView: 2.2,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            712: {
+                slidesPerView: 3,
+                // allowTouchMove: false,
+                spaceBetween: 15,
+            },
+            872: {
+                slidesPerView: 3.5,
+                spaceBetween: 30,
+            },
+            1050: {
+                slidesPerView: 4.55,
+                spaceBetween: 30,
+            },
+        },
     });
 </script>
 </body>

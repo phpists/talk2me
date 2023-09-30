@@ -45,7 +45,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
 <body>
   <div class="wrapper-container wrapper-container-pa">
     <div class="main-content">
-      <header class="personalaccount-header">
+      <header class="personalaccount-header specialist-list-header">
         <div class="container-item">
           <div class="logo">
             <img src="./assets/img/logo.svg" alt="">
@@ -57,9 +57,74 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
           <div id="openModal" class="modal">
             <div class="modal-dialog">
               <div class="modal-content">
+                <div class="logo">
+                  <img src="./assets/img/logo.svg" alt="">
+                </div>
                 <a href="#close" title="Close" class="close"><img src="./assets/img/close.svg" alt=""></a>
                 <div class="modal-body">
-                  Содержимое модального окна...
+                  <div class="psyhology-item">
+                    <div class="avatar">
+                      <img src="./assets/img/specialist-photo.jpg" alt="">
+                    </div>
+                    <div class="specialist-item">
+                      <div class="item">
+                        <span class="name">Андреева Оксана Валерьевна</span>
+                        <span class="position">Психолог, психолог</span>
+                        <span class="experience">Опыт работы - 6 лет</span>
+                      </div>
+                      <div class="item item-desktop">
+                        <span class="descr">Индивидуальная сессия 50 мин — <span>2 800 ₸</span></span>
+                        <span class="descr">Работает со всеми темами вашей анкеты</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-mobile">
+                    <span class="descr">Индивидуальная сессия 50 мин — <span>2 800 ₸</span></span>
+                    <span class="descr">Работает со всеми темами вашей анкеты</span>
+                  </div>
+                  <div class="main-items">
+                    <span class="main-title">Ближайшее время для записи:</span>
+                    <div class="times">
+                      <div class="time">
+                        <span class="date">26 мая, пятница</span>
+                        <span class="active-time">9:00</span>
+                      </div>
+                      <div class="time">
+                        <span class="date">29 мая, понедельник</span>
+                        <span class="active-time">12:00</span>
+                      </div>
+                    </div>
+                    <a href="#" class="button">выбрать время сессии</a>
+                    <span class="main-title">О специалисте</span>
+                    <p>К Оксане можно обращаться для решения проблем в межличностных отношениях (мужско-женских,
+                      родительско-детских). Различных кризисных состояниях, психосоматических симптомах. Оксана
+                      достаточно поддерживающий и устойчивый терапевт. Использует в своей работе гештальт подход и
+                      считает, что основное в подходе – это восприятие человека как цельной личности на
+                      интеллектуальном, эмоциональном и телесном уровнях. Оксана уверена, что терапевтический эффект
+                      достигается через построение доверительного, живого и эмоционального контакта с терапевтом. Так
+                      как жизнь человека есть взаимодействие с окружающим миром, то через гармонизацию отношений с собой
+                      и миром можно решить большинство проблем.</p>
+                    <span class="main-title">Образование</span>
+                    <div class="year">2016</div>
+                    <p>Институт практической психологии Иматон. Курс «Работа с психологической травмой»</p>
+                    <div class="year">2015</div>
+                    <p>Московский Гештальт Институт. Гештальт-терапевт, супервизор; первая, вторая и третья ступени</p>
+                    <div class="year">2014</div>
+                    <p>Московский Гештальт Институт. Специализация «Психосоматика в гештальт-терапии»</p>
+                    <div class="year">2011</div>
+                    <p>Южный федеральный университет. Практическая психология</p>
+                    <div class="year">1993</div>
+                    <p>Ростовский государственный медицинский институт. Медико-профилактический факультет</p>
+                    <span class="main-title">Метод терапии</span>
+                    <p>Гештальт-терапия</p>
+                    <span class="main-title">Работает с темами Вашей анкеты</span>
+                    <ul>
+                      <li>Моё состояние</li>
+                      <li>Стресс</li>
+                      <li>Работа, учёба</li>
+                      <li>Выгорание</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

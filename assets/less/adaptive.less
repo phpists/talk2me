@@ -27,6 +27,19 @@
 }
 
 @media (max-width: 1200px) {
+  #mobiledropdown2 {
+    margin: 0;
+    margin-right: auto;
+    max-width: 320px;
+
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    box-shadow: unset;
+    background: transparent;
+  }
+
+  // 
   .sec-specialist-list {
     padding-top: 35px;
     padding-bottom: 108px;
@@ -1409,7 +1422,34 @@
   }
 }
 
+@media (min-width: 992px) {
+  .modal-content .modal-body .item-mobile {
+    display: none;
+  }
+
+  .modal-content .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal-content .modal-body .item-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 900px) {
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    max-width: unset;
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: 0 0 47% !important;
+  }
+
+  // 
   .sertificates-normal .arrows {
     display: none;
   }
@@ -1545,6 +1585,161 @@
 }
 
 @media (max-width: 768px) {
+  .tabcontent-questions {
+    padding: 0;
+    background: #f9f9f9;
+  }
+
+
+  .tabcontent-questions form .selected-items .selected-title,
+  .tabcontent-questions form .main-label {
+    color: #212121;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    padding-bottom: 20px;
+  }
+
+  .tabcontent-questions form .selected-items .selected-title {
+    padding-bottom: 10px;
+  }
+
+  .tabcontent-questions form .selected-items .selected-descr {
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 45px;
+    line-height: 100%;
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer {
+    gap: 0;
+  }
+
+  .tabcontent-questions form .selected-items .selected-title {
+    line-height: 100%;
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .tabs-dropdown {
+    margin-bottom: 20px;
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    height: 45px;
+    padding-right: 20px;
+  }
+
+  .tabcontent-questions form .dropdown-item span {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .tabcontent-questions form .main-label-cont .main-label .input-cont {
+    max-width: unset;
+  }
+
+  .tabcontent-questions form .selected-notdropdown a {
+    margin: 30px auto 0;
+    color: #6C9165;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    /* 18.2px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  .tabcontent-questions form .main-label-cont .main-label:last-child {
+    max-width: 290px;
+  }
+
+  .tabcontent-questions form button {
+    margin: 50px auto 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    /* 15.6px */
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    height: 65px;
+    max-width: 240px;
+
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .show-all {
+    font-size: 12.557px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.377px;
+    text-transform: uppercase;
+    height: 50px;
+    max-width: 195px;
+    margin: 0 auto;
+  }
+
+  .tabcontent-questions form .selected-notdropdown .tab-content {
+    margin-top: 0;
+  }
+
+  .tabcontent-questions form .main-label textarea,
+  .tabcontent-questions form .main-label input {
+    margin-top: 10px;
+  }
+
+  .tabcontent-questions form .main-label-cont {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .tabcontent-questions .title {
+    border: 0;
+
+    h3 {
+      color: #212121;
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: Raleway;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+      /* 20.8px */
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #353535;
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+      font-family: Raleway;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 14px;
+      /* 140% */
+    }
+  }
+
+  // 
   .sec-specialist-list .container-item .show-all a {
     display: none;
   }
@@ -1652,6 +1847,23 @@
 }
 
 // NORMALBREAKPOINTS
+@media (min-width: 992px) and (max-width: 1300px) {
+  .modal-dialog {
+    margin: 80px auto;
+  }
+
+  .modal-content .modal-body .main-items .times .time {
+    flex: 1 0 50%;
+  }
+
+  .close {
+    opacity: 1;
+    left: unset;
+    right: 0;
+    bottom: ~'calc(100% + 10px)';
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
   .sec-cancel-consult .container-item {
     padding-left: 50px;
@@ -1666,9 +1878,86 @@
   .sec-specialist-list .container-item .cards {
     gap: 15px;
   }
+
+}
+
+@media (max-width: 600px) {
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .container {
+    width: 140px;
+    padding-left: 40px;
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected {
+    flex: unset !important;
+  }
+
+  .tabcontent-questions form .selected-items .tabs-parentcontainer .custom-checkbox-selected .checkmark {
+    left: 9px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+
+  // 
+  .sec-for_consult {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  .sec-for_consult .container-item form .input button {
+    display: none;
+  }
+
+  .sec-for_consult .container-item form .parametrs-item {
+    margin-top: 30px;
+
+    span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  .sec-for_consult .mySwiperAppointmentConsult-container {
+    margin-top: 30px;
+  }
+
+  .sec-for_consult .container-item form {
+    margin-top: 20px;
+
+    .input {
+      input {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.3px;
+        height: 42px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .sec-for_consult .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sec-for_consult .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  .sec-for_consult .container-item form .parametrs-item button {
+    display: none;
+  }
+
+  // 
   .sec-specialist-list .container-item {
     padding-left: 50px;
     padding-right: 50px;
@@ -1833,6 +2122,155 @@
   }
 
   //
+  // 
+  .modal-content {
+    padding: 93px 50px 70px;
+  }
+
+  .modal {
+    background: #fff;
+  }
+
+  .modal-dialog {
+    margin: 0;
+  }
+
+  .modal-content .modal-body .main-items {
+    max-width: 100%;
+  }
+
+  // .modal-content .modal-body .psyhology-item {
+  //   flex-direction: column;
+  // }
+  .modal-content .modal-body .psyhology-item .avatar {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .experience {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .position {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item-desktop {
+    display: none;
+  }
+
+  .modal-content .modal-body .main-items .main-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .modal-content .modal-body .main-items .times .time {
+    height: 32px;
+    flex: 1 0 50%;
+    max-width: 200px;
+  }
+
+  .modal-content .modal-body .main-items .times .time .date {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal-content .modal-body .main-items .times .time .active-time {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 19px;
+    max-width: 48px;
+  }
+
+  .modal-content .modal-body .main-items .times {
+    gap: 5px;
+  }
+
+  .modal-content .modal-body .main-items p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .modal-content .modal-body .main-items .year {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .modal-content .modal-body .main-items ul li {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal:target {
+    overflow-x: hidden;
+  }
+
+  .modal-content .modal-body .item-mobile .descr {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .specialist-list-header .container-item {
+    justify-content: flex-start;
+  }
+
+  .close {
+    background-image: url('../img/mobile-modal-close.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: unset;
+    bottom: unset;
+    top: 19px;
+    right: 50px;
+    opacity: 1;
+
+    img {
+      display: none;
+    }
+  }
+
+  .specialist-list-header .logo {
+    max-width: 104px;
+  }
+
+  .modal-content {
+    border-radius: 0;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -2381,6 +2819,10 @@
 }
 
 @media (min-width: 992px) {
+  .details-param {
+    display: none !important;
+  }
+
   .sec-cancel-consult .container-item .items .item .specialist .name-item .date span {
     display: none;
   }
@@ -2411,6 +2853,7 @@
   .tab-dropdown {
     margin-bottom: 10px;
   }
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -4013,9 +4456,281 @@
       flex: 1 0 40%;
     }
   }
+
+  // 
+  .modal-content {
+    padding: 93px 50px 70px;
+  }
+
+  .modal {
+    background: #fff;
+  }
+
+  .modal-dialog {
+    margin: 0;
+  }
+
+  .modal-content .modal-body .main-items {
+    max-width: 100%;
+  }
+
+  // .modal-content .modal-body .psyhology-item {
+  //   flex-direction: column;
+  // }
+  .modal-content .modal-body .psyhology-item .avatar {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .experience {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .position {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item-desktop {
+    display: none;
+  }
+
+  .modal-content .modal-body .main-items .main-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .modal-content .modal-body .main-items .times .time {
+    height: 32px;
+    flex: 1 0 50%;
+    max-width: 200px;
+  }
+
+  .modal-content .modal-body .main-items .times .time .date {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal-content .modal-body .main-items .times .time .active-time {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 19px;
+    max-width: 48px;
+  }
+
+  .modal-content .modal-body .main-items .times {
+    gap: 5px;
+  }
+
+  .modal-content .modal-body .main-items p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .modal-content .modal-body .main-items .year {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .modal-content .modal-body .main-items ul li {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal:target {
+    overflow-x: hidden;
+  }
+
+  .modal-content .modal-body .item-mobile .descr {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .specialist-list-header .container-item {
+    justify-content: flex-start;
+  }
+
+  .close {
+    background-image: url('../img/mobile-modal-close.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: unset;
+    bottom: unset;
+    top: 19px;
+    right: 50px;
+    opacity: 1;
+
+    img {
+      display: none;
+    }
+  }
+
+  // 
+  .sec-personalquestions .container-item.type2 {
+    padding-right: 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-items,
+  .sec-personalquestions .container-item form .main-label,
+  .sec-personalquestions .container-item .title {
+    padding-right: 50px;
+  }
+
+  // 
+  .sec-for_consult {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  .sec-for_consult .container-item form .input button {
+    display: none;
+  }
+
+  .sec-for_consult .container-item form .parametrs-item {
+    margin-top: 30px;
+
+    span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  .sec-for_consult .mySwiperAppointmentConsult-container {
+    margin-top: 30px;
+  }
+
+  .sec-for_consult .container-item form {
+    margin-top: 20px;
+
+    .input {
+      input {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.3px;
+        height: 42px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .sec-for_consult .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sec-for_consult .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  .sec-for_consult .container-item form .parametrs-item button {
+    display: none;
+  }
+
+  // 
 }
 
 @media (min-width: 320px) and (max-width: 575px) {
+  .sec-for_consult {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+
+  .sec-for_consult .container-item form .input button {
+    display: none;
+  }
+
+  .sec-for_consult .container-item form .parametrs-item {
+    margin-top: 30px;
+
+    span {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+
+  .sec-for_consult .mySwiperAppointmentConsult-container {
+    margin-top: 30px;
+  }
+
+  .sec-for_consult .container-item form {
+    margin-top: 20px;
+
+    .input {
+      input {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.3px;
+        height: 42px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .sec-for_consult .container-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sec-for_consult .container-item .title h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+  }
+
+  .sec-for_consult .container-item form .parametrs-item button {
+    display: none;
+  }
+
+  // 
   .sec-paspecialist__step1 .container-item .main-content .content .tabs .tabs__content .tabs-consult .table-consult .table .table-head {
     display: none;
   }
@@ -5695,6 +6410,158 @@
 
   .sec-specialist-list .container-item .cards .card {
     flex: none;
+  }
+
+  // 
+  .modal-content {
+    padding: 93px 50px 70px;
+  }
+
+  .modal {
+    background: #fff;
+  }
+
+  .modal-dialog {
+    margin: 0;
+  }
+
+  .modal-content .modal-body .main-items {
+    max-width: 100%;
+  }
+
+  // .modal-content .modal-body .psyhology-item {
+  //   flex-direction: column;
+  // }
+  .modal-content .modal-body .psyhology-item .avatar {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .experience {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .position {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 5px;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item-desktop {
+    display: none;
+  }
+
+  .modal-content .modal-body .main-items .main-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .modal-content .modal-body .main-items .times .time {
+    height: 32px;
+    flex: 1 0 50%;
+    max-width: 200px;
+  }
+
+  .modal-content .modal-body .main-items .times .time .date {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal-content .modal-body .main-items .times .time .active-time {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 19px;
+    max-width: 48px;
+  }
+
+  .modal-content .modal-body .main-items .times {
+    gap: 5px;
+  }
+
+  .modal-content .modal-body .main-items p {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .modal-content .modal-body .main-items .year {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  .modal-content .modal-body .main-items ul li {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal:target {
+    overflow-x: hidden;
+  }
+
+  .modal-content .modal-body .item-mobile .descr {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .modal-content .modal-body .psyhology-item .specialist-item .item .name {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  .specialist-list-header .container-item {
+    justify-content: flex-start;
+  }
+
+  .close {
+    background-image: url('../img/mobile-modal-close.svg');
+    width: 19px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: unset;
+    bottom: unset;
+    top: 19px;
+    right: 50px;
+    opacity: 1;
+
+    img {
+      display: none;
+    }
+  }
+
+  // 
+  .sec-personalquestions .container-item.type2 {
+    padding-right: 0;
+  }
+
+  .sec-personalquestions .container-item form .selected-items,
+  .sec-personalquestions .container-item form .main-label,
+  .sec-personalquestions .container-item .title {
+    padding-right: 50px;
   }
 }
 

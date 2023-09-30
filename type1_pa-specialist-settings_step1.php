@@ -75,7 +75,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                 <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab4">Специализация</div>
                 <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab5">Дипломы и сертификаты</div>
                 <div class="tab-dropdown tab-dropdown-desktop" data-tab="tab6">Личные сообщения</div>
-                <div class="mobile-dropdown">
+                <div class="mobile-dropdown" id="mobiledropdown1">
                   <div class="custom-select">
                     <select>
                       <option value="0">Личные данные</option>
@@ -89,7 +89,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                   </div>
                 </div>
               </div>
-              <div class="tab-content-dropdown personal-data" id="tab1" style="display: flex;">
+              <div class="tab-content-dropdown personal-data" id="tab1" style="display: none;">
                 <div class="title">
                   <h3>Личные данные</h3>
                   <p>Вы можете изменить электронную почту, телефон или фотографию. Для создания быстрой аватарки
@@ -192,8 +192,541 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                   </form>
                 </div>
               </div>
-              <div class="tab-content-dropdown" id="tab4" style="display: none;">
-                Контент 4 таба
+              <div class="tab-content-dropdown" id="tab4" style="display: flex;">
+                <div class="tabcontent-questions">
+                  <div class="title">
+                    <h3>Специализация</h3>
+                    <p>Заполните информацию о себе, вашем опыте работы и услугах</p>
+                  </div>
+                  <form action="#">
+                    <div class="main-label-cont">
+                      <label class="main-label">
+                        Выберите Ваш пол
+                        <div class="radio-items">
+                          <label class="container-radio active">Женщина
+                            <input type="radio" checked="checked" name="radio1">
+                            <span class="checkmark-radio"></span>
+                          </label>
+                          <label class="container-radio">Мужчина
+                            <input type="radio" name="radio1">
+                            <span class="checkmark-radio"></span>
+                          </label>
+                        </div>
+                      </label>
+                      <label class="main-label">
+                        Ваш опыт работы
+                        <div class="input-cont">
+                          <input type="text">
+                          Лет
+                        </div>
+                      </label>
+                    </div>
+                    <label class="main-label">
+                      Расскажите о себе
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <label class="main-label">
+                      Расскажите о Вашем образовании
+                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                    <div class="selected-items selected-notdropdown">
+                      <span class="selected-title">Какая у Вас специальность</span>
+                      <div class="tabs-parentcontainer">
+                        <div class="tab-content">
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Все
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Психолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Психотерапевт
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Невролог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Психиатр
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Коуч
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Гипнолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сексолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Клинический психолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Подростковый психолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Семейный психолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Нейропсихолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Детский психолог
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="selected-items selected-notdropdown">
+                      <span class="selected-title">Выберите методы Вашей работы</span>
+                      <div class="tabs-parentcontainer">
+                        <div class="tab-content">
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Гештальт-терапия
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Психодрама
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Экзистенциаль-ная психотерапия
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Юнгианский анализ
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Психоаналитичес-кая терапия
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Системный семейный подход
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Понимающая психотерапия
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Телесно-ориентированная психотерапия
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Позитивная психотерапия
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <a href="javascript:void(0)" class="show-add-options">Добавить свой вариант вручную</a>
+                        <div class="option-item">
+                          <input type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="selected-items">
+                      <span class="selected-title">Выберите темы, с которыми Вы работаете</span>
+                      <span class="selected-descr">Выберите один или несколько вариантов</span>
+                      <div class="tabs-parentcontainer">
+                        <div class="tabs-dropdown">
+                          <div class="tab-dropdown-inner tab-dropdown-desktop active" data-tab="tab7">Моё состояние
+                          </div>
+                          <div class="tab-dropdown-inner tab-dropdown-desktop" data-tab="tab8">Отношения</div>
+                          <div class="tab-dropdown-inner tab-dropdown-desktop" data-tab="tab9">Работа, учеба</div>
+                          <div class="tab-dropdown-inner tab-dropdown-desktop" data-tab="tab10">События в жизни</div>
+                          <div class="mobile-dropdown" id="mobiledropdown2">
+                            <div class="custom-select">
+                              <select>
+                                <option value="7">Мое состояние</option>
+                                <option value="7">Мое состояние</option>
+                                <option value="8">Отношения</option>
+                                <option value="9">Работа, учеба</option>
+                                <option value="10">События в жизни</option>
+                              </select>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="tab-content-dropdown-inner" id="tab7" style="display: flex;">
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Стресс
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Нестабильная самооценка
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Перепады настроения
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Обсессивно-компульсивное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <a href="#" class="show-all">показать еще</a>
+                        </div>
+                        <div class="tab-content-dropdown-inner" id="tab8" style="display: none;">
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Стресс
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Нестабильная самооценка
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Перепады настроения
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Обсессивно-компульсивное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <a href="#" class="show-all">показать еще</a>
+                        </div>
+                        <div class="tab-content-dropdown-inner" id="tab9" style="display: none;">
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Стресс
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Нестабильная самооценка
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Перепады настроения
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Обсессивно-компульсивное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <a href="#" class="show-all">показать еще</a>
+                        </div>
+                        <div class="tab-content-dropdown-inner" id="tab10" style="display: none;">
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Стресс
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Нестабильная самооценка
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Перепады настроения
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Обсессивно-компульсивное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Сложности с алкоголем
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Расстройство личности
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Генерализованное тревожное расстройство
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="custom-checkbox-selected">
+                            <label class="container">Панические атаки
+                              <input type="checkbox">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <a href="#" class="show-all">показать еще</a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="dropdown-item">
+                      <span>Выберите тариф консультации</span>
+                      <div class="custom-select dropdown-firststyle">
+                        <select>
+                          <option value="0">16 050 ₸</option>
+                          <option value="1">16 050 ₸</option>
+                          <option value="2">16 050 ₸</option>
+                          <option value="3">16 050 ₸</option>
+                          <option value="4">16 050 ₸</option>
+                          <option value="5">16 050 ₸</option>
+                          <option value="6">16 050 ₸</option>
+                          <option value="7">16 050 ₸</option>
+                          <option value="8">16 050 ₸</option>
+                          <option value="9">16 050 ₸</option>
+                          <option value="10">16 050 ₸</option>
+                        </select>
+                      </div>
+                    </div>
+                    <button>сохранить</button>
+                  </form>
+                </div>
               </div>
               <div class="tab-content-dropdown sertificates-tab" id="tab5" style="display: none;">
                 <div class="title">
@@ -265,5 +798,4 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
       </div>
     </footer>
   </div>
-  <?php require "modal.php" ?>
   <?php require "footer.php" ?>
