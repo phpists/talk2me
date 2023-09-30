@@ -177,5 +177,5 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
       </div>
     </footer>
   </div>
-  <?php require "modal.php" ?>
+ 
   <?php require "footer.php" ?>
