@@ -533,7 +533,7 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
               </div>
               <div class="swiper mySwiperCurrency">
                 <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                  <div class="swiper-slide">
                     <label class="container-radio active">
                       <div class="top-radio">
                         <span class="price">16 050 ₸</span>
@@ -555,7 +555,8 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                         <span class="checkmark-radio"></span>
                       </div>
                       <div class="descr-item">
-                        <p>Опыт от 5 лет. Работают в TALK2ME более года и за это время зарекомендовали себя наилучшим образом.</p>
+                        <p>Опыт от 5 лет. Работают в TALK2ME более года и за это время зарекомендовали себя наилучшим
+                          образом.</p>
                         <span>48 специалистов</span>
                       </div>
                     </label>
@@ -576,7 +577,9 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                 </div>
                 <div class="swiper-paginationcurrency"></div>
               </div>
-              <button>далее <img src="./assets/img/formarrow-next.svg" alt=""></button>
+              <div class="button-cont">
+                <button>далее <img src="./assets/img/formarrow-next.svg" alt=""></button>
+              </div>
             </form>
           </div>
         </section>

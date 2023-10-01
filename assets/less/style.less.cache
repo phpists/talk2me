@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:410454:"@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:410494:"@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @charset "UTF-8";
 @-ms-viewport {
   width: device-width;
@@ -9685,6 +9685,9 @@ footer.footer .socmedias {
   background: #FFF;
   color: #212121;
 }
+.button-cont {
+  padding-right: 50px;
+}
 @media (max-width: 1400px) {
   .info-block-2 .info-content {
     padding-left: 500px;
@@ -14965,4 +14968,4 @@ footer.footer .socmedias {
     max-width: unset;
   }
 }
-";s:5:"files";a:5:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1696095310;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1695303581;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1696095155;}s:7:"updated";i:1696095311;}
+";s:5:"files";a:5:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1696157828;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1695303581;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1696095325;}s:7:"updated";i:1696157830;}

@@ -9685,6 +9685,9 @@ footer.footer .socmedias {
   background: #FFF;
   color: #212121;
 }
+.button-cont {
+  padding-right: 50px;
+}
 @media (max-width: 1400px) {
   .info-block-2 .info-content {
     padding-left: 500px;
