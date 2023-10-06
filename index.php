@@ -731,6 +731,36 @@ autoCompileLess('./assets/less/style.less', './assets/css/style.css');
                 </div>
               </div>
             </div>
+            <div class="swiper-slide">
+              <div class="step">
+                <div class="status-title"><b>4</b> из 9</div>
+                <div class="title">Вид консультации</div>
+                <div class="radio-items">
+                  <label class="container-radio active">Индивидуальная
+                    <input type="radio" checked="checked" name="radio1">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                  <label class="container-radio">Парная
+                    <input type="radio" name="radio1">
+                    <span class="checkmark-radio"></span>
+                  </label>
+                </div>
+                <div class="flex items-center step-footer">
+                  <div class="progress-wrapper">
+                    <div class="progress">
+                      <div style="width: 44%"></div>
+                    </div>
+                    <div class="progress-title">осталось еще <b>5 вопросов</b></div>
+                  </div>
+                  <div class="flex items-center btns">
+                    <img src="./assets/img/back.svg" alt="" class="back-btn mySwiperQuestion-prev" />
+                    <button class="next-btn flex items-center mySwiperQuestion-next">
+                      Далее <img src="./assets/img/next-arrow.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- <div class="step">

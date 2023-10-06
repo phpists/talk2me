@@ -1,41 +1,3 @@
-
-//Инпут +-
-// Убавляем кол-во по клику
-$('.quantity_inner .bt_minus').click(function() {
-  let $input = $(this).parent().find('.quantity');
-  let count = parseInt($input.val()) - 1;
-  count = count < 1 ? 1 : count;
-  $input.val(count);
-});
-// Прибавляем кол-во по клику
-$('.quantity_inner .bt_plus').click(function() {
-  let $input = $(this).parent().find('.quantity');
-  let count = parseInt($input.val()) + 1;
-  count = count > parseInt($input.data('max-count')) ? parseInt($input.data('max-count')) : count;
-  $input.val(parseInt(count));
-}); 
-// Убираем все лишнее и невозможное при изменении поля
-$('.quantity_inner .quantity').bind("change keyup input click", function() {
-  if (this.value.match(/[^0-9]/g)) {
-      this.value = this.value.replace(/[^0-9]/g, '');
-  }
-  if (this.value == "") {
-      this.value = 1;
-  }
-  if (this.value > parseInt($(this).data('max-count'))) {
-      this.value = parseInt($(this).data('max-count'));
-  }    
-});
-//конец инпут +-
-// начало код срабатывания бургер меню на чистом javascript
-// var burgerCtr = document.querySelector("#burger-menu");
-// var menuCtr = document.querySelector("#mobile-menu");
-// burgerCtr.addEventListener("click", function () {
-//   this.classList.toggle("active");
-//   menuCtr.classList.toggle("show_mobile_menu");
-// });
-// конец бургера
-
 // ---------------------------------------------------------------------
 
 $(document).click(function (e) { // скрипт для клика по элементу и вне его
@@ -239,38 +201,6 @@ tabBlock.forEach(element => {
 // ---------------------------------------------------------------------
 
 $(document).ready(function () {
-  $(".phone").mask("+7 (999) 999-99-99"); // маска для всех инпутов с классом .phone
-
-  // ---------------------------------------------------------------------
-
-  // AJAX FORM
-  $(".send-form").click(function () {
-    // указываем класс по которому будет идти клик
-    var form = $(this).closest("form"); // заганяем ближайшую форму в переменную
-
-    if (form.valid()) {
-      // проверяем форму на валидность
-      form.css("opacity", ".5"); // сделаем ее полупрозрачной на момент
-      var actUrl = form.attr("action");
-
-      $.ajax({
-        url: actUrl,
-        type: "post",
-        dataType: "html",
-        data: form.serialize(),
-        success: function (data) {
-          form.html(data);
-          form.css("opacity", "1"); // вернем видимость
-          //form.find('.status').html('форма отправлена успешно');
-          //$('#myModal').modal('show') // для бутстрапа
-        },
-        error: function () {
-          form.find(".status").html("серверная ошибка");
-        },
-      });
-    }
-  });
-  // END AJAX FORM
 
   // ---------------------------------------------------------------------
 
@@ -344,15 +274,15 @@ if (screeHeight > 930) {
   offSet = offSet.toFixed();
 }
 
-wow = new WOW({
-  animateClass: "animated",
-  offset: offSet,
-  callback: function (box) {
-    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">");
-  },
-});
+// wow = new WOW({
+//   animateClass: "animated",
+//   offset: offSet,
+//   callback: function (box) {
+//     console.log("WOW: animating <" + box.tagName.toLowerCase() + ">");
+//   },
+// });
 
-wow.init();
+// wow.init();
 
 // ---------------------------------------------------------------------
 

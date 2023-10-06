@@ -1,29 +1,10 @@
 <link rel="stylesheet" href="./assets/css/animate.css" type="text/css" />
-<!-- FOR MODAL -->
-<script src="./assets/js/classie.js"></script>
-<script src="./assets/js/modalEffects.js"></script>
-<script src="./assets/js/cssParser.js"></script>
-<!-- FOR MODAL -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="./assets/js/jquery.validate.min.js"></script>
+<!-- <script src="./assets/js/jquery.validate.min.js"></script> -->
 <script src="./assets/js/jquery.maskedinput.js"></script>
-<script src="./assets/js/wow.min.js"></script>
+<!-- <script src="./assets/js/wow.min.js"></script> -->
 
-<!-- https://github.com/verlok/vanilla-lazyload#-getting-started---html -->
-<script src="./assets/js/lazyload.js"></script>
-
-<!-- Counter -->
-<script src="./assets/js/counter/jquery.cookie.js"></script>
-<script src="./assets/js/counter/jquery.plugin.js"></script>
-<script src="./assets/js/counter/jquery.countdown.js"></script>
-<script src="./assets/js/counter/jquery.countdown-ru.js"></script>
-<script>
-    var endDateTime = new Date();
-    var nowDateTime = new Date(3600 * 24 * 1000);
-</script>
-<!-- End Counter -->
-<script src="https://www.youtube.com/iframe_api"></script>
 <script src="./assets/js/script.js"></script>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -342,17 +323,20 @@
     const block = document.getElementById('hiddenBlock');
 
     // Добавляем обработчики событий при изменении состояния радиокнопок
-    showRadio.addEventListener('change', function () {
-        if (showRadio.checked) {
-            block.style.display = 'flex'; // Показываем блок
-        }
-    });
-
-    hideRadio.addEventListener('change', function () {
-        if (hideRadio.checked) {
-            block.style.display = 'none'; // Скрываем блок
-        }
-    });
+    if (showRadio) {
+        showRadio.addEventListener('change', function () {
+            if (showRadio.checked) {
+                block.style.display = 'flex'; // Показываем блок
+            }
+        });
+    }
+    if (hideRadio) {
+        hideRadio.addEventListener('change', function () {
+            if (hideRadio.checked) {
+                block.style.display = 'none'; // Скрываем блок
+            }
+        });
+    }
 </script>
 <script>
     $('.show-add-options').click(function () {
@@ -416,66 +400,73 @@
         });
     });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/jquery.inputmask.min.js"></script> -->
 <script>
     // Получаем элемент инпута
     var timeInput = document.getElementById('timeInput');
 
     // Добавляем обработчик события на клик
-    timeInput.addEventListener('click', function () {
-        // Устанавливаем значение инпута в пустую строку
-        timeInput.value = '';
+    if (timeInput) {
+        timeInput.addEventListener('click', function () {
+            // Устанавливаем значение инпута в пустую строку
+            timeInput.value = '';
 
-        // Добавляем маску "__:__" в инпут
-        timeInput.placeholder = '__:__';
-    });
-
-    // Добавляем обработчик события на убирание фокуса (клик вне инпута)
-    timeInput.addEventListener('blur', function () {
-        // Если значение инпута пустое, возвращаем маску "__:__"
-        if (timeInput.value === '') {
-            timeInput.placeholder = 'Укажите время консультации';
-        }
-    });
+            // Добавляем маску "__:__" в инпут
+            timeInput.placeholder = '__:__';
+        });
+    }
+    if (timeInput) {
+        // Добавляем обработчик события на убирание фокуса (клик вне инпута)
+        timeInput.addEventListener('blur', function () {
+            // Если значение инпута пустое, возвращаем маску "__:__"
+            if (timeInput.value === '') {
+                timeInput.placeholder = 'Укажите время консультации';
+            }
+        });
+    }
     // Добавляем обработчик события на изменение значения инпута
-    timeInput.addEventListener('input', function () {
-        // Оставляем только цифры введенного значения
-        var inputValue = timeInput.value.replace(/\D/g, '');
+    if (timeInput) {
+        timeInput.addEventListener('input', function () {
+            // Оставляем только цифры введенного значения
+            var inputValue = timeInput.value.replace(/\D/g, '');
 
-        // Форматируем введенное значение как "99:99"
-        if (inputValue.length >= 4) {
-            var hours = inputValue.slice(0, 2);
-            var minutes = inputValue.slice(2, 4);
-            timeInput.value = hours + ':' + minutes;
-        }
-    });
+            // Форматируем введенное значение как "99:99"
+            if (inputValue.length >= 4) {
+                var hours = inputValue.slice(0, 2);
+                var minutes = inputValue.slice(2, 4);
+                timeInput.value = hours + ':' + minutes;
+            }
+        });
+    }
 </script>
 <script>
     // JavaScript код
     const input = document.getElementById('message-input');
     const buttons = document.querySelectorAll('.message-container .buttons a');
-
-    input.addEventListener('focus', () => {
-        // При фокусировке на input изменяем src изображений внутри <a>
-        buttons.forEach(button => {
-            const img = button.querySelector('img');
-            if (img) {
-                // Заменяем src изображения на значение data-src
-                const dataSrc = button.getAttribute('data-src');
-                img.src = dataSrc;
-            }
+    if (input) {
+        input.addEventListener('focus', () => {
+            // При фокусировке на input изменяем src изображений внутри <a>
+            buttons.forEach(button => {
+                const img = button.querySelector('img');
+                if (img) {
+                    // Заменяем src изображения на значение data-src
+                    const dataSrc = button.getAttribute('data-src');
+                    img.src = dataSrc;
+                }
+            });
         });
-    });
-
-    input.addEventListener('blur', () => {
-        // При потере фокуса возвращаем изображения обратно
-        buttons.forEach(button => {
-            const img = button.querySelector('img');
-            if (img) {
-                img.src = img.getAttribute('alt'); // Возвращаем исходные изображения
-            }
+    }
+    if (input) {
+        input.addEventListener('blur', () => {
+            // При потере фокуса возвращаем изображения обратно
+            buttons.forEach(button => {
+                const img = button.querySelector('img');
+                if (img) {
+                    img.src = img.getAttribute('alt'); // Возвращаем исходные изображения
+                }
+            });
         });
-    });
+    }
 </script>
 <script>
     // Получаем ссылку "Редактировать" и инпуты
@@ -487,35 +478,37 @@
     const emailInput = document.getElementById("emailInput");
 
     // Обработчик события клика на ссылке "Редактировать"
-    editButton.addEventListener("click", function (event) {
-        event.preventDefault(); // Предотвращаем переход по ссылке
+    if (editButton) {
+        editButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Предотвращаем переход по ссылке
 
-        // Включаем редактирование для двух последних инпутов
-        phoneInput.disabled = false;
-        emailInput.disabled = false;
+            // Включаем редактирование для двух последних инпутов
+            phoneInput.disabled = false;
+            emailInput.disabled = false;
 
-        // Скрываем ссылку "Редактировать" и показываем кнопку "Сохранить изменения"
-        editButton.style.display = "none";
-        saveButton.style.display = "inline-block";
-    });
-
+            // Скрываем ссылку "Редактировать" и показываем кнопку "Сохранить изменения"
+            editButton.style.display = "none";
+            saveButton.style.display = "inline-block";
+        });
+    }
     // Обработчик события клика на кнопке "Сохранить изменения"
-    saveButton.addEventListener("click", function (event) {
-        event.preventDefault(); // Предотвращаем переход по кнопке
+    if (saveButton) {
+        saveButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Предотвращаем переход по кнопке
 
-        // Здесь можно добавить код для сохранения изменений (например, отправку данных на сервер)
+            // Здесь можно добавить код для сохранения изменений (например, отправку данных на сервер)
 
-        // Выключаем редактирование для всех инпутов
-        nameInput.disabled = true;
-        birthdateInput.disabled = true;
-        phoneInput.disabled = true;
-        emailInput.disabled = true;
+            // Выключаем редактирование для всех инпутов
+            nameInput.disabled = true;
+            birthdateInput.disabled = true;
+            phoneInput.disabled = true;
+            emailInput.disabled = true;
 
-        // Скрываем кнопку "Сохранить изменения" и показываем ссылку "Редактировать"
-        saveButton.style.display = "none";
-        editButton.style.display = "flex";
-    });
-
+            // Скрываем кнопку "Сохранить изменения" и показываем ссылку "Редактировать"
+            saveButton.style.display = "none";
+            editButton.style.display = "flex";
+        });
+    }
 </script>
 <script>
     var swiper = new Swiper(".mySwiperCards", {
@@ -557,15 +550,19 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-        console.log(scrollbar);
-        document.querySelector('[href="#openModal"]').addEventListener('click', function () {
-            document.body.style.overflow = 'hidden';
-            document.querySelector('#openModal').style.marginLeft = scrollbar;
-        });
-        document.querySelector('[href="#close"]').addEventListener('click', function () {
-            document.body.style.overflow = 'visible';
-            document.querySelector('#openModal').style.marginLeft = '0px';
-        });
+        // console.log(scrollbar);
+        if (input) {
+            document.querySelector('[href="#openModal"]').addEventListener('click', function () {
+                document.body.style.overflow = 'hidden';
+                document.querySelector('#openModal').style.marginLeft = scrollbar;
+            });
+        }
+        if (input) {
+            document.querySelector('[href="#close"]').addEventListener('click', function () {
+                document.body.style.overflow = 'visible';
+                document.querySelector('#openModal').style.marginLeft = '0px';
+            });
+        }
     });
 </script>
 <script>

@@ -1562,7 +1562,7 @@ nav ul li a {
   background: #FFF;
   height: 70px;
   width: 100%;
-  max-width: 236px;
+  max-width: 281px;
   display: flex;
   align-items: center;
   padding-left: 80px;
@@ -14968,4 +14968,4 @@ footer.footer .socmedias {
     max-width: unset;
   }
 }
-";s:5:"files";a:5:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1696157828;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1695303581;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1696095325;}s:7:"updated";i:1696157830;}
+";s:5:"files";a:5:{s:76:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\style.less";i:1696263149;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\normalize.less";i:1648324321;s:78:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\flexbox.less";i:1635662832;s:80:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\helpclass.less";i:1695303581;s:79:"F:\Programs\OSPanel\domains\localhost\talk2me\talk2me\assets\less\adaptive.less";i:1696095325;}s:7:"updated";i:1696263152;}
