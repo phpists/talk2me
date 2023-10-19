@@ -560,28 +560,34 @@ var swiper = new Swiper(".mySwiperSpecialists", {
       centeredSlides: false,
     },
     800: {
-      slidesPerView: 2.8,
+      slidesPerView: 2.6,
       spaceBetween: 15,
       centeredSlides: false,
       initialSlide: 0,
     },
     900: {
-      slidesPerView: 3.2,
+      slidesPerView: 3,
       spaceBetween: 15,
       initialSlide: 0,
       centeredSlides: false,
     },
     1100: {
-      slidesPerView: 3.8,
+      slidesPerView: 3.6,
       spaceBetween: 15,
       centeredSlides: true,
     },
     1360: {
-      slidesPerView: 4.8,
+      slidesPerView: 4.4,
       spaceBetween: 15,
       centeredSlides: true,
     },
     1626: {
+      slidesPerView: 5.1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      initialSlide: 1,
+    },
+    1850: {
       slidesPerView: 5.9,
       spaceBetween: 30,
       centeredSlides: true,
